@@ -1,0 +1,54 @@
+
+decoration-cow.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+corps
+  rotate: false
+  xy: 2, 118
+  size: 146, 80
+  orig: 148, 82
+  offset: 1, 1
+  index: -1
+eyeroll
+  rotate: false
+  xy: 2, 2
+  size: 58, 20
+  orig: 60, 22
+  offset: 1, 1
+  index: -1
+mouth
+  rotate: false
+  xy: 126, 92
+  size: 19, 24
+  orig: 21, 26
+  offset: 1, 1
+  index: -1
+nez
+  rotate: false
+  xy: 150, 145
+  size: 40, 20
+  orig: 42, 22
+  offset: 1, 1
+  index: -1
+tete
+  rotate: false
+  xy: 2, 200
+  size: 234, 272
+  orig: 236, 274
+  offset: 1, 1
+  index: -1
+touffe_queue
+  rotate: false
+  xy: 150, 167
+  size: 67, 31
+  orig: 69, 33
+  offset: 1, 1
+  index: -1
+yeux_fermes
+  rotate: false
+  xy: 2, 24
+  size: 122, 92
+  orig: 124, 94
+  offset: 1, 1
+  index: -1

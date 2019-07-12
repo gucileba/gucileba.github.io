@@ -1,0 +1,533 @@
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>гуси-лебеди</title>
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/GAMMES/perspectiveRules.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/scripts/jquery.fancybox.min.css">
+ <script src="/scripts/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/GAMMES/sharer.min.js"></script>
+<script type="text/javascript" src="/GAMMES/spine-widget.js"></script>
+<script type="text/javascript" src="/GAMMES/jquery.logosDistort.min.js"></script>
+<style>
+
+.header-menu-link, .sidebar-language-link, .sidebar-galaxy-thumnail-title {text-transform:uppercase;}
+.text-warning-anim-top {transform: translateY(-0.5%)!important;transition: transform 1.5s ease-out;}
+.text-warning-anim-bottom {transform: translateY(110%)!important;transition: transform 1.5s ease-out;}
+.product-presentation-container--decoration {background-image: url(/images/pattern-green.jpg);}
+.product-title-container--decoration {color: #7ebd54;}
+.product-hotspot-container--green .product-hotspot-header {background-color: #7ebd54;}
+.product-hotspot-container .product-hotspot-reference--green {color: #7ebd54;}
+.hotspot-container--small--green {background-color: #7ebd54;}
+.typeCss{animation: type 4s steps(60, end);white-space: nowrap;overflow: hidden;margin: auto;white-space: nowrap;overflow: hidden;width: 30em;}
+@keyframes type{from { width: 0; }} 
+#ambiance, #ambiance2 { position:absolute;top:-30px;}
+
+</style>
+<link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- LANGUES -->
+<application-sidebar class="sidebar flagButton" style="display:none;left:285px;"><div class="sidebar-wrapper"><div class="sidebar-component-wrapper sidebar-component-wrapper-languages"><div class="sidebar-component-container"><h2 class="sidebar-title">язык</h2><span class="sidebar-language-zigzag icon-zigzag"></span><ul class="header-component-wrapper sidebar-languages-wrapper"><li class="sidebar-language-container sidebar-language-container-en"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--en"></span><a class="sidebar-language-link" href="/decoration/en" title="английский">английский</a></div></li><li class="sidebar-language-container sidebar-language-container-da"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--da"></span><a class="sidebar-language-link" href="/decoration/da" title="датский">датский</a></div></li><li class="sidebar-language-container sidebar-language-container-es"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--es"></span><a class="sidebar-language-link" href="/decoration/es" title="испанский">испанский</a></div></li><li class="sidebar-language-container sidebar-language-container-de"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--de"></span><a class="sidebar-language-link" href="/decoration/de" title="немецкий">немецкий</a></div></li><li class="sidebar-language-container sidebar-language-container-fr"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--fr"></span><a class="sidebar-language-link" href="/decoration/fr" title="французский">французский</a></div></li><li class="sidebar-language-container sidebar-language-container-nl"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--nl"></span><a class="sidebar-language-link" href="/decoration/nl" title="голландский">голландский</a></div></li><li class="sidebar-language-container sidebar-language-container-it"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--it"></span><a class="sidebar-language-link" href="/decoration/it" title="итальянский">итальянский</a></div></li><li class="sidebar-language-container sidebar-language-container-pt"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--pt"></span><a class="sidebar-language-link" href="/decoration/pt" title="португальский">португальский</a></div></li><li class="sidebar-language-container sidebar-language-container-ru"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--ru"></span><a class="sidebar-language-link" href="/decoration/ru" title="русский">русский</a></div></li><li class="sidebar-language-container sidebar-language-container-se"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--se"></span><a class="sidebar-language-link" href="/decoration/se" title="шведский">шведский</a></div></li><li class="sidebar-language-container sidebar-language-container-hu"><div class="sidebar-language-hover"></div><div class="sidebar-language-infos-container"><span class="sidebar-language-icon flag flag--hu"></span><a class="sidebar-language-link" href="/decoration/hu" title="венгерский">венгерский</a></div></li></ul></div></div></div></application-sidebar>
+<!-- /LANGUES -->
+<!-- SITE GALAXY -->
+<application-sidebar class="sidebar galaxyButton" style="display:none;left:285px;"><div class="sidebar-wrapper"><div class="sidebar-component-wrapper sidebar-component-wrapper-galaxy"><ul class="sidebar-component-container"><li class="sidebar-galaxy-container"><a class="sidebar-galaxy-thumbnail-wrapper thumbnail-wrapper" href="http://www.djeco.com/magic/" title="Little Big Room" target="_blank"><span class="sidebar-galaxy-thumnail-picture sidebar-galaxy-thumnail-picture-magic thumnail-picture"></span><span class="sidebar-galaxy-thumnail-zigzag thumnail-zigzag icon-zigzag"></span><span class="sidebar-galaxy-thumnail-title thumnail-title">DJECO MAGIC</span></a></li></ul></div></div></application-sidebar>
+<!-- /SITE GALAXY -->
+<!-- RDJ -->
+<application-sidebar class="sidebar rdjButton" style="display:none;left:285px;">
+<div class="sidebar-wrapper">
+<div class="sidebar-component-wrapper sidebar-component-wrapper-rules">
+<div class="sidebar-component-container">
+<div class="sidebar-rules-search">
+<div class="sidebar-rules-search-form">
+<h2 class="sidebar-rules-title sidebar-title">
+ПОИСК</h2>
+<span class="sidebar-rules-icon-zigzag icon-zigzag"></span>
+<div class="sidebar-rules-search-input-wrapper">
+<input class="sidebar-rules-search-input" name="searchQuery" placeholder="Название или артикул">
+<span class="sidebar-rules-search-icon"></span>
+</div>
+</div>
+</div>
+<div class="sidebar-rules-results-wrapper">
+<h2 class="sidebar-rules-title sidebar-title">ИГРА</h2>
+<span class="sidebar-rules-icon-zigzag icon-zigzag"></span>
+<div class="sidebar-rules-results-shadow sidebar-rules-results-shadow--top"></div>
+<ul class="sidebar-rules-results optiscroll vtrack-on">
+<li class="optiscroll-content" style="overflow: scroll; right: -17px; bottom: -17px;">
+<ul>
+
+<li class="sidebar-rules-result"><div data-href="/DJ05102"><span class="sidebar-rules-result-name" title="7 familles Animaux du monde">7 familles Animaux du monde</span> <span class="sidebar-rules-result-reference">ref : DJ05102</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08484"><span class="sidebar-rules-result-name" title="ABCDring">ABCDring</span> <span class="sidebar-rules-result-reference">ref : DJ08484</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08435"><span class="sidebar-rules-result-name" title="Abracadamo">Abracadamo</span> <span class="sidebar-rules-result-reference">ref : DJ08435</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05221"><span class="sidebar-rules-result-name" title="Aglagla">Aglagla</span> <span class="sidebar-rules-result-reference">ref : DJ05221</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08410"><span class="sidebar-rules-result-name" title="Alien café">Alien café</span> <span class="sidebar-rules-result-reference">ref : DJ08410</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08475"><span class="sidebar-rules-result-name" title="Animo Dice">Animo Dice</span> <span class="sidebar-rules-result-reference">ref : DJ08475</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08446"><span class="sidebar-rules-result-name" title="Animouv">Animouv</span> <span class="sidebar-rules-result-reference">ref : DJ08446</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05188"><span class="sidebar-rules-result-name" title="Animazoo">Animazoo</span> <span class="sidebar-rules-result-reference">ref : DJ05188</span></div></li> 
+<li class="sidebar-rules-result"><div data-href="/DJ08442"><span class="sidebar-rules-result-name" title="Archichato">Archichato</span> <span class="sidebar-rules-result-reference">ref : DJ08442</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08370"><span class="sidebar-rules-result-name" title="Artist'ik">Artist'ik</span> <span class="sidebar-rules-result-reference">ref : DJ08370</span></div></li> 
+<li class="sidebar-rules-result"><div data-href="/DJ05206"><span class="sidebar-rules-result-name" title="Awalé">Awalé</span> <span class="sidebar-rules-result-reference">ref : DJ05206</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05205"><span class="sidebar-rules-result-name" title="Backgammon junior">Backgammon junior</span> <span class="sidebar-rules-result-reference">ref : DJ05205</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08452"><span class="sidebar-rules-result-name" title="Baloons">Baloons</span> <span class="sidebar-rules-result-reference">ref : DJ08452</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05199"><span class="sidebar-rules-result-name" title="Bananas">Bananas</span> <span class="sidebar-rules-result-reference">ref : DJ05199</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05189"><span class="sidebar-rules-result-name" title="Batamo">Batamo</span> <span class="sidebar-rules-result-reference">ref : DJ05189</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05125"><span class="sidebar-rules-result-name" title="Bata Puzzle">Bata Puzzle</span> <span class="sidebar-rules-result-reference">ref : DJ05125</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05104"><span class="sidebar-rules-result-name" title="Bata-waf">Bata-waf</span> <span class="sidebar-rules-result-reference">ref : DJ05104</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05114"><span class="sidebar-rules-result-name" title="Bata-meuh">Bata-meuh</span> <span class="sidebar-rules-result-reference">ref : DJ05114</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05195"><span class="sidebar-rules-result-name" title="Batabanga">Batabanga</span> <span class="sidebar-rules-result-reference">ref : DJ05195</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05118"><span class="sidebar-rules-result-name" title="Bataflash">Bataflash</span> <span class="sidebar-rules-result-reference">ref : DJ05118</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05139"><span class="sidebar-rules-result-name" title="Bata-Miaou">Bata-Miaou</span> <span class="sidebar-rules-result-reference">ref : DJ05139</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05177"><span class="sidebar-rules-result-name" title="Batanimo">Batanimo</span> <span class="sidebar-rules-result-reference">ref : DJ05177</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05165"><span class="sidebar-rules-result-name" title="Bataplouf">Bataplouf</span> <span class="sidebar-rules-result-reference">ref : DJ05165</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05156"><span class="sidebar-rules-result-name" title="Bataplouf!">Bataplouf!</span> <span class="sidebar-rules-result-reference">ref : DJ05156</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05134"><span class="sidebar-rules-result-name" title="Bataplus">Bataplus</span> <span class="sidebar-rules-result-reference">ref : DJ05134</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05132"><span class="sidebar-rules-result-name" title="Beasties">Beasties</span> <span class="sidebar-rules-result-reference">ref : DJ05132</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08548"><span class="sidebar-rules-result-name" title="Bee Logic">Bee Logic</span> <span class="sidebar-rules-result-reference">ref : DJ08548</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05136"><span class="sidebar-rules-result-name" title="Batasaurus">Batasaurus</span> <span class="sidebar-rules-result-reference">ref : DJ05136</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08423"><span class="sidebar-rules-result-name" title="Big pirate">Big pirate</span> <span class="sidebar-rules-result-reference">ref : DJ08423</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05176"><span class="sidebar-rules-result-name" title="Bisou dodo">Bisou dodo</span> <span class="sidebar-rules-result-reference">ref : DJ05176</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08490"><span class="sidebar-rules-result-name" title="Bizaroid">Bizaroid</span> <span class="sidebar-rules-result-reference">ref : DJ08490</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08499"><span class="sidebar-rules-result-name" title="Bizzzz">Bizzzz</span> <span class="sidebar-rules-result-reference">ref : DJ08499</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08462"><span class="sidebar-rules-result-name" title="Blablabla">Blablabla</span> <span class="sidebar-rules-result-reference">ref : DJ08462</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08472"><span class="sidebar-rules-result-name" title="Boa">Boa</span> <span class="sidebar-rules-result-reference">ref : DJ08472</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05160"><span class="sidebar-rules-result-name" title="Bogoss">Bogoss</span> <span class="sidebar-rules-result-reference">ref : DJ05160</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02010"><span class="sidebar-rules-result-name" title="Bolido">Bolido</span> <span class="sidebar-rules-result-reference">ref : DJ02010</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08424"><span class="sidebar-rules-result-name" title="Bondo">Bondo</span> <span class="sidebar-rules-result-reference">ref : DJ08424</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05196"><span class="sidebar-rules-result-name" title="Bonomix">Bonomix</span> <span class="sidebar-rules-result-reference">ref : DJ05196</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08459"><span class="sidebar-rules-result-name" title="Bubble">Bubble</span> <span class="sidebar-rules-result-reference">ref : DJ08459</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02104"><span class="sidebar-rules-result-name" title="Cache-cache">Cache-cache</span> <span class="sidebar-rules-result-reference">ref : DJ02104</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08436"><span class="sidebar-rules-result-name" title="Cacophony">Cacophony</span> <span class="sidebar-rules-result-reference">ref : DJ08436</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08549"><span class="sidebar-rules-result-name" title="Cadomino">Cadomino</span> <span class="sidebar-rules-result-reference">ref : DJ08549</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08497"><span class="sidebar-rules-result-name" title="Camouflanimo">Camouflanimo</span> <span class="sidebar-rules-result-reference">ref : DJ08497</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08440"><span class="sidebar-rules-result-name" title="Candy Palace">Candy Palace</span> <span class="sidebar-rules-result-reference">ref : DJ08440</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05167"><span class="sidebar-rules-result-name" title="Casino Pirate">Casino Pirate</span> <span class="sidebar-rules-result-reference">ref : DJ05167</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08479"><span class="sidebar-rules-result-name" title="Champions">Champions</span> <span class="sidebar-rules-result-reference">ref : DJ08479</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05133"><span class="sidebar-rules-result-name" title="Chapo Magic">Chapo Magic</span> <span class="sidebar-rules-result-reference">ref : DJ05133</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08401"><span class="sidebar-rules-result-name" title="Chop Chop">Chop Chop</span> <span class="sidebar-rules-result-reference">ref : DJ08401</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08477"><span class="sidebar-rules-result-name" title="Cubissimo">Cubissimo</span> <span class="sidebar-rules-result-reference">ref : DJ08477</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08430"><span class="sidebar-rules-result-name" title="City Express">City Express</span> <span class="sidebar-rules-result-reference">ref : DJ08430</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08475"><span class="sidebar-rules-result-name" title="Color doudous">Color doudous</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08475</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08474"><span class="sidebar-rules-result-name" title="Color rouli">Color rouli</span> <span class="sidebar-rules-result-reference">ref : DJ08474</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08493"><span class="sidebar-rules-result-name" title="Cot Cot Panik">Cot Cot Panik</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08493</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05181"><span class="sidebar-rules-result-name" title="Crazy ducks">Crazy ducks</span> <span class="sidebar-rules-result-reference">ref : DJ05181</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05109"><span class="sidebar-rules-result-name" title="Cridanimo">Cridanimo</span> <span class="sidebar-rules-result-reference">ref : DJ05109</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08468"><span class="sidebar-rules-result-name" title="Hurluberlus">Hurluberlus</span> <span class="sidebar-rules-result-reference">ref : DJ08468</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08463"><span class="sidebar-rules-result-name" title="Crazix">Crazix</span> <span class="sidebar-rules-result-reference">ref : DJ08463</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08483"><span class="sidebar-rules-result-name" title="Farmanimo">Farmanimo</span> <span class="sidebar-rules-result-reference">ref : DJ08483</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08483"><span class="sidebar-rules-result-name" title="Crazy Mix">Crazy Mix</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08483</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08425"><span class="sidebar-rules-result-name" title="Crazy Nuts">Crazy Nuts</span> <span class="sidebar-rules-result-reference">ref : DJ08425</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08476"><span class="sidebar-rules-result-name" title="Crazy Pad">Crazy Pad</span> <span class="sidebar-rules-result-reference">ref : DJ08476</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05112"><span class="sidebar-rules-result-name" title="Crazy Family">Crazy Family</span> <span class="sidebar-rules-result-reference">ref : DJ05112</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05276"><span class="sidebar-rules-result-name" title="Crazy ring">Crazy ring</span> <span class="sidebar-rules-result-reference">ref : DJ05276</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08371"><span class="sidebar-rules-result-name" title="Créat'ik">Créat'ik</span> <span class="sidebar-rules-result-reference">ref : DJ08371</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08433"><span class="sidebar-rules-result-name" title="Croassimo">Croassimo</span> <span class="sidebar-rules-result-reference">ref : DJ08433</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05211"><span class="sidebar-rules-result-name" title="Dames">Dames</span> <span class="sidebar-rules-result-reference">ref : DJ05211</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05129"><span class="sidebar-rules-result-name" title="Deserto">Deserto</span> <span class="sidebar-rules-result-reference">ref : DJ05129</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05117"><span class="sidebar-rules-result-name" title="Diamoniak">Diamoniak</span> <span class="sidebar-rules-result-reference">ref : DJ05117</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05229"><span class="sidebar-rules-result-name" title="Domino">Domino</span> <span class="sidebar-rules-result-reference">ref : DJ05229</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08486"><span class="sidebar-rules-result-name" title="Duck Danse">Duck Danse</span> <span class="sidebar-rules-result-reference">ref : DJ08486</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05225"><span class="sidebar-rules-result-name" title="Echecs + dames">Echecs + dames</span> <span class="sidebar-rules-result-reference">ref : DJ05225</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05220"><span class="sidebar-rules-result-name" title="Echecs">Echecs</span> <span class="sidebar-rules-result-reference">ref : DJ05220</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05216"><span class="sidebar-rules-result-name" title="Echecs">Echecs</span> <span class="sidebar-rules-result-reference">ref : DJ05216</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08300"><span class="sidebar-rules-result-name" title="Eduludo Formes">Eduludo Formes</span> <span class="sidebar-rules-result-reference">ref : DJ08300</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08301"><span class="sidebar-rules-result-name" title="Eduludo Lettres - 4 jeux">Eduludo Lettres - 4 jeux</span> <span class="sidebar-rules-result-reference">ref : DJ08301</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08311"><span class="sidebar-rules-result-name" title="Eduludo Tocto Loto">Eduludo Tocto Loto</span> <span class="sidebar-rules-result-reference">ref : DJ08311</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08312"><span class="sidebar-rules-result-name" title="Eduludo Additions">Eduludo Additions</span> <span class="sidebar-rules-result-reference">ref : DJ08312</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08307"><span class="sidebar-rules-result-name" title="Eduludo chiffres">Eduludo chiffres</span> <span class="sidebar-rules-result-reference">ref : DJ08307</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08305"><span class="sidebar-rules-result-name" title="Eduludo dessin 1">Eduludo dessin 1</span> <span class="sidebar-rules-result-reference">ref : DJ08305</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08308"><span class="sidebar-rules-result-name" title="Eduludo saisons">Eduludo saisons</span> <span class="sidebar-rules-result-reference">ref : DJ08308</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08315"><span class="sidebar-rules-result-name" title="Eduludo - 123">Eduludo - 123</span> <span class="sidebar-rules-result-reference">ref : DJ08315</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08314"><span class="sidebar-rules-result-name" title="Eduludo - ABC">Eduludo - ABC</span> <span class="sidebar-rules-result-reference">ref : DJ08314</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02105"><span class="sidebar-rules-result-name" title="Equilispace">Equilispace</span> <span class="sidebar-rules-result-reference">ref : DJ02105</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08467"><span class="sidebar-rules-result-name" title="Quick Couic">Quick Couic</span> <span class="sidebar-rules-result-reference">ref : DJ08467</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05103"><span class="sidebar-rules-result-name" title="Familou">Familou</span> <span class="sidebar-rules-result-reference">ref : DJ05103</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08456"><span class="sidebar-rules-result-name" title="Féé Toibelle">Féé Toibelle</span> <span class="sidebar-rules-result-reference">ref : DJ08456</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05278"><span class="sidebar-rules-result-name" title="Fish ze fish">Fish ze fish</span> <span class="sidebar-rules-result-reference">ref : DJ05278</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08360"><span class="sidebar-rules-result-name" title="Flashcards - Animaux">Flashcards - Animaux</span> <span class="sidebar-rules-result-reference">ref : DJ08360</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08361"><span class="sidebar-rules-result-name" title="Flashcards - Maison">Flashcards - Maison</span> <span class="sidebar-rules-result-reference">ref : DJ08361</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08362"><span class="sidebar-rules-result-name" title="Flashcards - Nature">Flashcards - Nature</span> <span class="sidebar-rules-result-reference">ref : DJ08362</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02107"><span class="sidebar-rules-result-name" title="Flipper">Flipper</span> <span class="sidebar-rules-result-reference">ref : DJ02107</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08453"><span class="sidebar-rules-result-name" title="Flora Color">Flora Color</span> <span class="sidebar-rules-result-reference">ref : DJ08453</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02016"><span class="sidebar-rules-result-name" title="Flowers">Flowers</span> <span class="sidebar-rules-result-reference">ref : DJ02016</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08465"><span class="sidebar-rules-result-name" title="Folanimos">Folanimos</span> <span class="sidebar-rules-result-reference">ref : DJ08465</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05173"><span class="sidebar-rules-result-name" title="Follomix">Follomix</span> <span class="sidebar-rules-result-reference">ref : DJ05173</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05180"><span class="sidebar-rules-result-name" title="Forest Adventure">Forest Adventure</span> <span class="sidebar-rules-result-reference">ref : DJ05180</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ02106"><span class="sidebar-rules-result-name" title="Fortissimo">Fortissimo</span> <span class="sidebar-rules-result-reference">ref : DJ02106</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08460"><span class="sidebar-rules-result-name" title="Coconut Pirate">Coconut Pirate</span> <span class="sidebar-rules-result-reference">ref : DJ08460</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08406"><span class="sidebar-rules-result-name" title="Glisse Glace">Glisse Glace</span> <span class="sidebar-rules-result-reference">ref : DJ08406</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05222"><span class="sidebar-rules-result-name" title="Frogammon">Frogammon</span> <span class="sidebar-rules-result-reference">ref : DJ05222</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08413"><span class="sidebar-rules-result-name" title="Froggy">Froggy</span> <span class="sidebar-rules-result-reference">ref : DJ08413</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08455"><span class="sidebar-rules-result-name" title="Gatoloco">Gatoloco</span> <span class="sidebar-rules-result-reference">ref : DJ08455</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05182"><span class="sidebar-rules-result-name" title="Geomemorix">Geomemorix</span> <span class="sidebar-rules-result-reference">ref : DJ05182</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05241"><span class="sidebar-rules-result-name" title="Golfy Arthur">Golfy Arthur</span> <span class="sidebar-rules-result-reference">ref : DJ05241</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08498"><span class="sidebar-rules-result-name" title="Good Look">Good Look</span> <span class="sidebar-rules-result-reference">ref : DJ08498</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05123"><span class="sidebar-rules-result-name" title="Gorilla">Gorilla</span> <span class="sidebar-rules-result-reference">ref : DJ05123</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05169"><span class="sidebar-rules-result-name" title="Grimaces">Grimaces</span> <span class="sidebar-rules-result-reference">ref : DJ05169</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ05110"><span class="sidebar-rules-result-name" title="Grooaw !">Grooaw !</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ05110</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05115"><span class="sidebar-rules-result-name" title="Happy Family">Happy Family</span> <span class="sidebar-rules-result-reference">ref : DJ05115</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08434"><span class="sidebar-rules-result-name" title="Hector Tayleplufor">Hector Tayleplufor</span> <span class="sidebar-rules-result-reference">ref : DJ08434</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05143"><span class="sidebar-rules-result-name" title="Hero Town">Hero Town</span> <span class="sidebar-rules-result-reference">ref : DJ05143</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05190"><span class="sidebar-rules-result-name" title="Hiboufou">Hiboufou</span> <span class="sidebar-rules-result-reference">ref : DJ05190</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08411"><span class="sidebar-rules-result-name" title="Glouton">Glouton</span> <span class="sidebar-rules-result-reference">ref : DJ08411</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08411"><span class="sidebar-rules-result-name" title="Hi ! Hi ! Hi !">Hi ! Hi ! Hi !</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08411</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05154"><span class="sidebar-rules-result-name" title="Holidays">Holidays</span> <span class="sidebar-rules-result-reference">ref : DJ05154</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08408"><span class="sidebar-rules-result-name" title="Hop ! Hop ! Hop !">Hop ! Hop ! Hop !</span> <span class="sidebar-rules-result-reference">ref : DJ08408</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05202"><span class="sidebar-rules-result-name" title="Impossiblo">Impossiblo</span> <span class="sidebar-rules-result-reference">ref : DJ05202</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08482"><span class="sidebar-rules-result-name" title="Jack o jack">Jack o jack</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08482</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05212"><span class="sidebar-rules-result-name" title="Jeu de l'oie">Jeu de l'oie</span> <span class="sidebar-rules-result-reference">ref : DJ05212</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05230"><span class="sidebar-rules-result-name" title="Jeu d'équilibre">Jeu d'équilibre</span> <span class="sidebar-rules-result-reference">ref : DJ05230</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08450"><span class="sidebar-rules-result-name" title="Jungle logic">Jungle logic</span> <span class="sidebar-rules-result-reference">ref : DJ08450</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05244"><span class="sidebar-rules-result-name" title="Jumpy">Jumpy</span> <span class="sidebar-rules-result-reference">ref : DJ05244</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08412"><span class="sidebar-rules-result-name" title="Jungolo">Jungolo</span> <span class="sidebar-rules-result-reference">ref : DJ08412</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08416"><span class="sidebar-rules-result-name" title="Katudi 2">Katudi 2</span> <span class="sidebar-rules-result-reference">ref : DJ08416</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05201"><span class="sidebar-rules-result-name" title="Katupri">Katupri</span> <span class="sidebar-rules-result-reference">ref : DJ05201</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05204"><span class="sidebar-rules-result-name" title="Katuvu">Katuvu</span> <span class="sidebar-rules-result-reference">ref : DJ05204</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08421"><span class="sidebar-rules-result-name" title="Kelbazar junior">Kelbazar junior</span> <span class="sidebar-rules-result-reference">ref : DJ08421</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02103"><span class="sidebar-rules-result-name" title="Keops">Keops</span> <span class="sidebar-rules-result-reference">ref : DJ02103</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08428"><span class="sidebar-rules-result-name" title="Kimavu">Kimavu</span> <span class="sidebar-rules-result-reference">ref : DJ08428</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08401"><span class="sidebar-rules-result-name" title="Kiékoi">Kiékoi</span> <span class="sidebar-rules-result-reference">ref : DJ08401</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08547"><span class="sidebar-rules-result-name" title="Kipikot">Kipikot</span> <span class="sidebar-rules-result-reference">ref : DJ08547</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08487"><span class="sidebar-rules-result-name" title="Labyrintix">Labyrintix</span> <span class="sidebar-rules-result-reference">ref : DJ08487</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05174"><span class="sidebar-rules-result-name" title="Letters' go">Letters' go</span> <span class="sidebar-rules-result-reference">ref : DJ05174</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08437"><span class="sidebar-rules-result-name" title="Lezard Domino">Lezard Domino</span> <span class="sidebar-rules-result-reference">ref : DJ08437</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08553"><span class="sidebar-rules-result-name" title="Little Association">Little Association</span> <span class="sidebar-rules-result-reference">ref : DJ08553</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08554"><span class="sidebar-rules-result-name" title="Little Balancing">Little Balancing</span> <span class="sidebar-rules-result-reference">ref : DJ08554</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08550"><span class="sidebar-rules-result-name" title="Little Circuit">Little Circuit</span> <span class="sidebar-rules-result-reference">ref : DJ08550</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08555"><span class="sidebar-rules-result-name" title="Little Coopération">Little Coopération</span> <span class="sidebar-rules-result-reference">ref : DJ08555</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08552"><span class="sidebar-rules-result-name" title="Little Memo">Little Memo</span> <span class="sidebar-rules-result-reference">ref : DJ08552</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08551"><span class="sidebar-rules-result-name" title="Little Observation">Little Observation</span> <span class="sidebar-rules-result-reference">ref : DJ08551</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08557"><span class="sidebar-rules-result-name" title="Little Action">Little Action</span> <span class="sidebar-rules-result-reference">ref : DJ08557</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08558"><span class="sidebar-rules-result-name" title="Little Collect">Little Collect</span> <span class="sidebar-rules-result-reference">ref : DJ08558</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02109"><span class="sidebar-rules-result-name" title="Lucky-Rouly">Lucky-Rouly</span> <span class="sidebar-rules-result-reference">ref : DJ02109</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08420"><span class="sidebar-rules-result-name" title="Ludanimo">Ludanimo</span> <span class="sidebar-rules-result-reference">ref : DJ08420</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05226"><span class="sidebar-rules-result-name" title="Ludo and Co Junior">Ludo and Co Junior</span> <span class="sidebar-rules-result-reference">ref : DJ05226</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05223"><span class="sidebar-rules-result-name" title="Ludo and Co">Ludo and Co</span> <span class="sidebar-rules-result-reference">ref : DJ05223</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ005277"><span class="sidebar-rules-result-name" title="Lutin malin">Lutin malin</span> <span class="sidebar-rules-result-reference">ref : DJ005277</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08438"><span class="sidebar-rules-result-name" title="Mamicatchmi">Mamicatchmi</span> <span class="sidebar-rules-result-reference">ref : DJ08438</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05144"><span class="sidebar-rules-result-name" title="Magic School">Magic School</span> <span class="sidebar-rules-result-reference">ref : DJ05144</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05131"><span class="sidebar-rules-result-name" title="Manchomémo">Manchomémo</span> <span class="sidebar-rules-result-reference">ref : DJ05131</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05275"><span class="sidebar-rules-result-name" title="Marguerite melody">Marguerite melody</span> <span class="sidebar-rules-result-reference">ref : DJ05275</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08402"><span class="sidebar-rules-result-name" title="Matoudematata">Matoudematata</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08402</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08491"><span class="sidebar-rules-result-name" title="Melimagic">Melimagic</span> <span class="sidebar-rules-result-reference">ref : DJ08491</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08487"><span class="sidebar-rules-result-name" title="Memo Family">Memo Family</span> <span class="sidebar-rules-result-reference">ref : DJ08487</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08473"><span class="sidebar-rules-result-name" title="Memo grizzly">Memo grizzly</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08473</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08482"><span class="sidebar-rules-result-name" title="Memo Meuh">Memo Meuh</span> <span class="sidebar-rules-result-reference">ref : DJ08482</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05121"><span class="sidebar-rules-result-name" title="Memo kado">Memo kado</span> <span class="sidebar-rules-result-reference">ref : DJ05121</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08480"><span class="sidebar-rules-result-name" title="Memo silhouettes">Memo silhouettes</span> <span class="sidebar-rules-result-reference">ref : DJ08480</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08466"><span class="sidebar-rules-result-name" title="Memo - Il était une fois">Memo - Il était une fois</span> <span class="sidebar-rules-result-reference">ref : DJ08466</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08444"><span class="sidebar-rules-result-name" title="Memo Tropico">Memo Tropico</span> <span class="sidebar-rules-result-reference">ref : DJ08444</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08481"><span class="sidebar-rules-result-name" title="Miaou matou">Miaou matou</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08481</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05210"><span class="sidebar-rules-result-name" title="Mikado">Mikado</span> <span class="sidebar-rules-result-reference">ref : DJ05210</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05138"><span class="sidebar-rules-result-name" title="Mimo Rigolo">Mimo Rigolo</span> <span class="sidebar-rules-result-reference">ref : DJ05138</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05128"><span class="sidebar-rules-result-name" title="Mini Nature">Mini Nature</span> <span class="sidebar-rules-result-reference">ref : DJ05128</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05101"><span class="sidebar-rules-result-name" title="Mini family">Mini family</span> <span class="sidebar-rules-result-reference">ref : DJ05101</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05178"><span class="sidebar-rules-result-name" title="Mini Magic">Mini Magic</span> <span class="sidebar-rules-result-reference">ref : DJ05178</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ05178"><span class="sidebar-rules-result-name" title="Mini magix">Mini magix</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ05178</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05175"><span class="sidebar-rules-result-name" title="Minimatch">Minimatch</span> <span class="sidebar-rules-result-reference">ref : DJ05175</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08485"><span class="sidebar-rules-result-name" title="Minimi">Minimi</span> <span class="sidebar-rules-result-reference">ref : DJ08485</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ05124"><span class="sidebar-rules-result-name" title="Mini Monster">Mini Monster</span> <span class="sidebar-rules-result-reference">ref : DJ05124</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05179"><span class="sidebar-rules-result-name" title="MiniPlus">MiniPlus</span> <span class="sidebar-rules-result-reference">ref : DJ05179</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05116"><span class="sidebar-rules-result-name" title="Mistibooh">Mistibooh</span> <span class="sidebar-rules-result-reference">ref : DJ05116</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05141"><span class="sidebar-rules-result-name" title="Misticat">Misticat</span> <span class="sidebar-rules-result-reference">ref : DJ05141</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05105"><span class="sidebar-rules-result-name" title="Mistigri">Mistigri</span> <span class="sidebar-rules-result-reference">ref : DJ05105</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05142"><span class="sidebar-rules-result-name" title="Mistigriff">Mistigriff</span> <span class="sidebar-rules-result-reference">ref : DJ05142</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05130"><span class="sidebar-rules-result-name" title="Miximatou">Miximatou</span> <span class="sidebar-rules-result-reference">ref : DJ05130</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08429"><span class="sidebar-rules-result-name" title="Mixanimo">Mixanimo</span> <span class="sidebar-rules-result-reference">ref : DJ08429</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08445"><span class="sidebar-rules-result-name" title="Monster Ghost">Monster Ghost</span> <span class="sidebar-rules-result-reference">ref : DJ08445</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08137"><span class="sidebar-rules-result-name" title="Mosaico animo">Mosaico animo</span> <span class="sidebar-rules-result-reference">ref : DJ08137</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08469"><span class="sidebar-rules-result-name" title="Mosquito">Mosquito</span> <span class="sidebar-rules-result-reference">ref : DJ08469</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05126"><span class="sidebar-rules-result-name" title="Méchanlou">Méchanlou</span> <span class="sidebar-rules-result-reference">ref : DJ05126</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08471"><span class="sidebar-rules-result-name" title="Mémo-simili">Mémo-simili</span> <span class="sidebar-rules-result-reference">ref : DJ08471</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05209"><span class="sidebar-rules-result-name" title="Nain Jaune">Nain Jaune</span> <span class="sidebar-rules-result-reference">ref : DJ05209</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05140"><span class="sidebar-rules-result-name" title="Navi Family">Navi Family</span> <span class="sidebar-rules-result-reference">ref : DJ05140</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05270"><span class="sidebar-rules-result-name" title="Naviplouf">Naviplouf</span> <span class="sidebar-rules-result-reference">ref : DJ05270</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08489"><span class="sidebar-rules-result-name" title="Niwa">Niwa</span> <span class="sidebar-rules-result-reference">ref : DJ08489</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08405"><span class="sidebar-rules-result-name" title="Octopus">Octopus</span> <span class="sidebar-rules-result-reference">ref : DJ08405</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05106"><span class="sidebar-rules-result-name" title="Oudordodo">Oudordodo</span> <span class="sidebar-rules-result-reference">ref : DJ05106</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05186"><span class="sidebar-rules-result-name" title="Ousitiwist">Ousitiwist</span> <span class="sidebar-rules-result-reference">ref : DJ05186</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08458"><span class="sidebar-rules-result-name" title="Packbo">Packbo</span> <span class="sidebar-rules-result-reference">ref : DJ08458</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08489"><span class="sidebar-rules-result-name" title="Patrix">Patrix</span> <span class="sidebar-rules-result-reference">ref : DJ08489</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05215"><span class="sidebar-rules-result-name" title="Petits Chevaux">Petits Chevaux</span> <span class="sidebar-rules-result-reference">ref : DJ05215</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08481"><span class="sidebar-rules-result-name" title="Pinc'mi Pinc'moi">Pinc'mi Pinc'moi</span> <span class="sidebar-rules-result-reference">ref : DJ08481</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08426"><span class="sidebar-rules-result-name" title="Pico pico">Pico pico</span> <span class="sidebar-rules-result-reference">ref : DJ08426</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05119"><span class="sidebar-rules-result-name" title="Piou Piou">Piou Piou</span> <span class="sidebar-rules-result-reference">ref : DJ05119</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05108"><span class="sidebar-rules-result-name" title="Pipolo">Pipolo</span> <span class="sidebar-rules-result-reference">ref : DJ05108</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05113"><span class="sidebar-rules-result-name" title="Piratatak">Piratatak</span> <span class="sidebar-rules-result-reference">ref : DJ05113</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08431"><span class="sidebar-rules-result-name" title="Pirates !">Pirates !</span> <span class="sidebar-rules-result-reference">ref : DJ08431</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05127"><span class="sidebar-rules-result-name" title="Piti Kem's">Piti Kem's</span> <span class="sidebar-rules-result-reference">ref : DJ05127</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08443"><span class="sidebar-rules-result-name" title="Pixel Tangram">Pixel Tangram</span> <span class="sidebar-rules-result-reference">ref : DJ08443</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08480"><span class="sidebar-rules-result-name" title="Pokerdice">Pokerdice</span> <span class="sidebar-rules-result-reference">ref : DJ08480</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08451"><span class="sidebar-rules-result-name" title="Polyssimo">Polyssimo</span> <span class="sidebar-rules-result-reference">ref : DJ08451</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08493"><span class="sidebar-rules-result-name" title="Polyssimo Challenge">Polyssimo Challenge</span> <span class="sidebar-rules-result-reference">ref : DJ08493</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08407"><span class="sidebar-rules-result-name" title="Potomac">Potomac</span> <span class="sidebar-rules-result-reference">ref : DJ08407</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05152"><span class="sidebar-rules-result-name" title="Pouet ! Pouet !">Pouet ! Pouet !</span> <span class="sidebar-rules-result-reference">ref : DJ05152</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08488"><span class="sidebar-rules-result-name" title="Crazy Sudoku">Crazy Sudoku</span> <span class="sidebar-rules-result-reference">ref : DJ08488</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/OLD-DJ08488"><span class="sidebar-rules-result-name" title="Poulkiri">Poulkiri</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08488</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05191"><span class="sidebar-rules-result-name" title="Pyjama party">Pyjama party</span> <span class="sidebar-rules-result-reference">ref : DJ05191</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08447"><span class="sidebar-rules-result-name" title="Quadri Color">Quadri Color</span> <span class="sidebar-rules-result-reference">ref : DJ08447</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08461"><span class="sidebar-rules-result-name" title="Rallye">Rallye</span> <span class="sidebar-rules-result-reference">ref : DJ08461</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05197"><span class="sidebar-rules-result-name" title="Rami'no">Rami'no</span> <span class="sidebar-rules-result-reference">ref : DJ05197</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08494"><span class="sidebar-rules-result-name" title="Rapido météo">Rapido météo</span> <span class="sidebar-rules-result-reference">ref : DJ08494</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05137"><span class="sidebar-rules-result-name" title="RapidoFruit">RapidoFruit</span> <span class="sidebar-rules-result-reference">ref : DJ05137</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05135"><span class="sidebar-rules-result-name" title="Recto Verso">Recto Verso</span> <span class="sidebar-rules-result-reference">ref : DJ05135</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05273"><span class="sidebar-rules-result-name" title="Robinetto">Robinetto</span> <span class="sidebar-rules-result-reference">ref : DJ05273</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02101"><span class="sidebar-rules-result-name" title="Robot">Robot</span> <span class="sidebar-rules-result-reference">ref : DJ02101</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05111"><span class="sidebar-rules-result-name" title="Sakapuss">Sakapuss</span> <span class="sidebar-rules-result-reference">ref : DJ05111</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05161"><span class="sidebar-rules-result-name" title="Sardines">Sardines</span> <span class="sidebar-rules-result-reference">ref : DJ05161</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08403"><span class="sidebar-rules-result-name" title="Savanimo">Savanimo</span> <span class="sidebar-rules-result-reference">ref : DJ08403</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05110"><span class="sidebar-rules-result-name" title="Savana">Savana</span> <span class="sidebar-rules-result-reference">ref : DJ05110</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08473"><span class="sidebar-rules-result-name" title="Sheep Logic">Sheep Logic</span> <span class="sidebar-rules-result-reference">ref : DJ08473</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05217"><span class="sidebar-rules-result-name" title="Shut the box">Shut the box</span> <span class="sidebar-rules-result-reference">ref : DJ05217</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05208"><span class="sidebar-rules-result-name" title="Snake and Ladders">Snake and Ladders</span> <span class="sidebar-rules-result-reference">ref : DJ05208</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05192"><span class="sidebar-rules-result-name" title="Smoothie">Smoothie</span> <span class="sidebar-rules-result-reference">ref : DJ05192</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05107"><span class="sidebar-rules-result-name" title="Squelettos">Squelettos</span> <span class="sidebar-rules-result-reference">ref : DJ05107</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05213"><span class="sidebar-rules-result-name" title="Solidaire">Solidaire</span> <span class="sidebar-rules-result-reference">ref : DJ05213</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08414"><span class="sidebar-rules-result-name" title="Speedy Bee">Speedy Bee</span> <span class="sidebar-rules-result-reference">ref : DJ08414</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05155"><span class="sidebar-rules-result-name" title="Spidifish!">Spidifish!</span> <span class="sidebar-rules-result-reference">ref : DJ05155</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05193"><span class="sidebar-rules-result-name" title="Spidmonsters">Spidmonsters</span> <span class="sidebar-rules-result-reference">ref : DJ05193</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05171"><span class="sidebar-rules-result-name" title="Stop Spot !">Stop Spot !</span> <span class="sidebar-rules-result-reference">ref : DJ05171</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08492"><span class="sidebar-rules-result-name" title="Snow Snow">Snow Snow</span> <span class="sidebar-rules-result-reference">ref : DJ08492</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08492"><span class="sidebar-rules-result-name" title="Stupix">Stupix</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08492</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05198"><span class="sidebar-rules-result-name" title="Super Rapido">Super Rapido</span> <span class="sidebar-rules-result-reference">ref : DJ05198</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05172"><span class="sidebar-rules-result-name" title="Athetic Games">Athetic Games</span> <span class="sidebar-rules-result-reference">ref : DJ05172</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ05172"><span class="sidebar-rules-result-name" title="Super héros">Super héros</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ05172</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08478"><span class="sidebar-rules-result-name" title="Kuna Yala">Kuna Yala</span> <span class="sidebar-rules-result-reference">ref : DJ08478</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08457"><span class="sidebar-rules-result-name" title="Memo Diabolo">Memo Diabolo</span> <span class="sidebar-rules-result-reference">ref : DJ08457</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ08457"><span class="sidebar-rules-result-name" title="Symbols">Symbols</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ08457</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08129"><span class="sidebar-rules-result-name" title="Tactilo">Tactilo</span> <span class="sidebar-rules-result-reference">ref : DJ08129</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08470"><span class="sidebar-rules-result-name" title="Tangram">Tangram</span> <span class="sidebar-rules-result-reference">ref : DJ08470</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08135"><span class="sidebar-rules-result-name" title="Tactilo loto">Tactilo loto</span> <span class="sidebar-rules-result-reference">ref : DJ08135</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05203"><span class="sidebar-rules-result-name" title="Teki">Teki</span> <span class="sidebar-rules-result-reference">ref : DJ05203</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05272"><span class="sidebar-rules-result-name" title="Tesoro">Tesoro</span> <span class="sidebar-rules-result-reference">ref : DJ05272</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08449"><span class="sidebar-rules-result-name" title="Tic Tic cats">Tic Tic cats</span> <span class="sidebar-rules-result-reference">ref : DJ08449</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05122"><span class="sidebar-rules-result-name" title="Tic tac toe">Tic tac toe</span> <span class="sidebar-rules-result-reference">ref : DJ05122</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05120"><span class="sidebar-rules-result-name" title="Tip Top Clap !">Tip Top Clap !</span> <span class="sidebar-rules-result-reference">ref : DJ05120</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08432"><span class="sidebar-rules-result-name" title="Tombalo">Tombalo</span> <span class="sidebar-rules-result-reference">ref : DJ08432</span></div></li>
+<li class="sidebar-rules-result"><div data-href="/DJ08354"><span class="sidebar-rules-result-name" title="Topologix">Topologix</span> <span class="sidebar-rules-result-reference">ref : DJ08354</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02110"><span class="sidebar-rules-result-name" title="Torpedo">Torpedo</span> <span class="sidebar-rules-result-reference">ref : DJ02110</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08495"><span class="sidebar-rules-result-name" title="Tortuboom">Tortuboom</span> <span class="sidebar-rules-result-reference">ref : DJ08495</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08454"><span class="sidebar-rules-result-name" title="Totem Zen">Totem Zen</span> <span class="sidebar-rules-result-reference">ref : DJ08454</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05183"><span class="sidebar-rules-result-name" title="Trezors">Trezors</span> <span class="sidebar-rules-result-reference">ref : DJ05183</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05187"><span class="sidebar-rules-result-name" title="Triomonster">Triomonster</span> <span class="sidebar-rules-result-reference">ref : DJ05187</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ05124"><span class="sidebar-rules-result-name" title="Troc-sushi">Troc-sushi</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ05124</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08400"><span class="sidebar-rules-result-name" title="Tulum">Tulum</span> <span class="sidebar-rules-result-reference">ref : DJ08400</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08404"><span class="sidebar-rules-result-name" title="Twisty">Twisty</span> <span class="sidebar-rules-result-reference">ref : DJ08404</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05194"><span class="sidebar-rules-result-name" title="Tyrannik">Tyrannik</span> <span class="sidebar-rules-result-reference">ref : DJ05194</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08464"><span class="sidebar-rules-result-name" title="Woodix">Woodix</span> <span class="sidebar-rules-result-reference">ref : DJ08464</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08439"><span class="sidebar-rules-result-name" title="Vamos a la playa">Vamos a la playa</span> <span class="sidebar-rules-result-reference">ref : DJ08439</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08402"><span class="sidebar-rules-result-name" title="Wonderzoo">Wonderzoo</span> <span class="sidebar-rules-result-reference">ref : DJ08402</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08427"><span class="sidebar-rules-result-name" title="Woolfy">Woolfy</span> <span class="sidebar-rules-result-reference">ref : DJ08427</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ08496"><span class="sidebar-rules-result-name" title="Yacumama">Yacumama</span> <span class="sidebar-rules-result-reference">ref : DJ08496</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05231"><span class="sidebar-rules-result-name" title="Yam">Yam</span> <span class="sidebar-rules-result-reference">ref : DJ05231</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05224"><span class="sidebar-rules-result-name" title="Yam's &amp; Co">Yam's &amp; Co</span> <span class="sidebar-rules-result-reference">ref : DJ05224</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05209"><span class="sidebar-rules-result-name" title="Yams junior">Yams junior</span> <span class="sidebar-rules-result-reference">ref : DJ05209</span></div></li><li class="sidebar-rules-result"><div data-href="/OLD-DJ05109"><span class="sidebar-rules-result-name" title="Zabifuzz">Zabifuzz</span> <span class="sidebar-rules-result-reference">ref : OLD-DJ05109</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05153"><span class="sidebar-rules-result-name" title="Zanimatch">Zanimatch</span> <span class="sidebar-rules-result-reference">ref : DJ05153</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ05153"><span class="sidebar-rules-result-name" title="Zanimatch">Zanimatch</span> <span class="sidebar-rules-result-reference">ref : DJ05153</span></div></li><li class="sidebar-rules-result"><div data-href="/DJ02102"><span class="sidebar-rules-result-name" title="Zig-Zag">Zig-Zag</span> <span class="sidebar-rules-result-reference">ref : DJ02102</span></div></li>
+
+<li class="sidebar-rules-result"><div data-href="/DJ05215"><span class="sidebar-rules-result-name" title="Petits Chevaux">Petits Chevaux</span> <span class="sidebar-rules-result-reference">ref : DJ05215</span></div></li>
+
+
+</ul>
+</li>
+</ul>
+
+<div class="sidebar-rules-results-shadow sidebar-rules-results-shadow--bottom"></div><button class="sidebar-rules-download disabled" type="button">Télécharger</button></div></div><div class="sidebar-rules-bottom"><p class="sidebar-rules-disclaimer">Если вы не нашли необходимые правила игры, </p><a class="sidebar-rules-contact" href="/contact">свяжитесь с нами</a></div></div></div>
+</application-sidebar>
+<!-- /RDJ -->
+
+
+
+<div class="application-wrapper">
+
+<!-- Animation Scene -->
+<div class="scene-sky-wrapper" style=""><div class="scene-sky scene-sky--decoration"></div></div>
+		
+<img style="position:absolute;top:50%;left:50%;z-index:1;display:none;cursor:pointer;" id="button" src="/GAMMES/button.png">
+
+
+	<div id="MyScene" style="z-index: 0; " class="application-container application-component-scene">
+	<section class="scene scene-decoration" style="visibility: visible;">
+	<div style="height:380%;" id="MyScene2"  class="scene-animations-wrapper">
+
+	<div class="animation animation-decoration-floor animation--basic animation-floor" style="transform: matrix3d(1, 0, 0, 0, 0, 0.0175, 0.9998, 0, 0, -0.9998, 0.0175, 0, -677.5, -625, 150, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-ball-0 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 314.456, 16.5245, 415.129, 1); z-index: 27; visibility: visible;"></div>
+	<div class="animation animation-decoration-ball-1 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 306.244, -19.5067, 166.297, 1); z-index: 16; visibility: visible;"></div>
+	<div class="animation animation-decoration-bed animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -182.738, -129.46, 234.511, 1); z-index: 3; visibility: visible;"></div>
+	<div class="animation animation-decoration-car-0 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -328.479, 22.1514, 487.195, 1); z-index: 26; visibility: visible;"></div>
+	<div class="animation animation-decoration-car-1 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -251.44, 8.2136, 409.095, 1); z-index: 23; visibility: visible;"></div>
+	<div class="animation animation-decoration-castle animation--basic" style="transform: matrix3d(0.5794, 0, 0.0265, 0, 0.001, 0.5796, -0.021, 0, -0.0457, 0.0363, 0.9983, 0, -170.909, -52.0973, 432.454, 1); z-index: 24; visibility: visible;"></div>
+	<div class="animation animation-decoration-chair animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -354.201, -81.087, 314.774, 1); z-index: 12; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-0 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -98.4368, -299.647, 271.917, 1); z-index: 9; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-1 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 265.933, -160.309, 19.7427, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-2 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 308.218, -191.823, 91.2295, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-3 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -365.205, -174.495, 41.3903, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-top-0 animation--basic" style="transform: matrix3d(0.6993, 0, 0.032, 0, 0.0012, 0.6995, -0.0254, 0, -0.0457, 0.0363, 0.9983, 0, 135.512, -978.589, 671.917, 1); z-index: 3; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-top-1 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -309.873, -889.003, 942.424, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-top-2 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 263.959, -601.777, 445.679, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-top-3 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 23.5288, -437.3, 941.279, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-cloud-top-4 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -304.418, -519.407, 593.964, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-elephant animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 106.448, -9.8071, 452.561, 1); z-index: 26; visibility: visible;"></div>
+	<div class="animation animation-decoration-hill animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -840.196, -82.7918, -104.91, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-house-wall-left animation--basic" style="transform: matrix3d(0.6993, 0, 0.032, 0, 0.0012, 0.6995, -0.0254, 0, -0.0457, 0.0363, 0.9983, 0, -229.582, -311.092, 185.288, 1); z-index: 2; visibility: visible;"></div>
+	<div class="animation animation-decoration-house-wall-right animation--basic" style="transform: matrix3d(0.6993, 0, 0.032, 0, 0.0012, 0.6995, -0.0254, 0, -0.0457, 0.0363, 0.9983, 0, -66.9396, -342.382, 187.044, 1); z-index: 2; visibility: visible;"></div>
+	<div class="animation animation-decoration-house animation--basic" style="transform: matrix3d(0.4827, 0.1293, 0.0174, 0, -0.1285, 0.4826, -0.0234, 0, -0.0457, 0.0363, 0.9983, 0, 387.371, -46.8156, -85.6888, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-plane animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 207.521, -22.8279, 291.857, 1); z-index: 18; visibility: visible;"></div>
+	<div class="animation animation-decoration-tree-0 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 154.303, -109.177, -79.1037, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-tree-1 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -372.5, -96.2695, -106.42, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-tree-2 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, -383.402, -97.7797, -10.4231, 1); z-index: 0; visibility: visible;"></div>
+	<div class="animation animation-decoration-tree-3 animation--basic" style="transform: matrix3d(0.5994, 0, 0.0274, 0, 0.001, 0.5996, -0.0217, 0, -0.0457, 0.0363, 0.9983, 0, 273.917, -115.761, -89.7136, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-tree-4 animation--basic" style="transform: matrix3d(0.4995, 0, 0.0229, 0, 0.0008, 0.4997, -0.0181, 0, -0.0457, 0.0363, 0.9983, 0, 336.934, -82.8136, -88.5532, 1); z-index: 1; visibility: visible;"></div>
+	<div class="animation animation-decoration-cow animation--spine" style="transform: matrix3d(0.4089, 0, -0.0302, 0, -0.0009, 0.4098, -0.0124, 0, 0.0737, 0.0303, 0.9968, 0, -254.436, -342.458, 289.487, 1); z-index: 7; visibility: visible;"></div>
+
+
+	<article class="spine-widget animation-wrapper" style="width: 500px; height: 93px; transform: matrix3d(0.5494, 0, 0.0252, 0, 0, 0.5496, -0.0199, 0, -0.0457, 0.0363, 0.9983, 0, -700.409, -179.805, 99.5182, 1); visibility: visible; z-index: 0;"
+    data-json="/GAMMES/scenes/decoration-ovni-red.json"
+    data-atlas="/GAMMES/scenes/decoration-ovni-red.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true" 
+	></article>
+
+	<article id="spine-cow" class="spine-widget animation-wrapper " style="width: 299px; height: 381px; transform: matrix3d(0.41, 0, 0, 0, 0, 0.41, 0, 0, 0, 0, 1, 0, -289.5, -350, 350, 1); visibility: visible; z-index: 7;" 
+	data-json="/GAMMES/scenes/decoration-cow.json"
+	data-atlas="/GAMMES/scenes/decoration-cow.atlas"
+	data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+
+	<article class="spine-widget animation-wrapper"  style="width: 210px; height: 298px; transform: matrix3d(0.50, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 11, -313, 162, 1); visibility: visible; z-index: 0;"
+    data-json="/GAMMES/scenes/decoration-child.json"
+    data-atlas="/GAMMES/scenes/decoration-child.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="width: 551px; height: 537px; transform: matrix3d(0.43, 0, 0.0183, 0, 0.0007, 0.43, -0.0145, 0, -0.0457, 0.0363, 0.9983, 0, -506.398, -501.289, 172, 1); visibility: visible; z-index: 1;" 
+    data-json="/GAMMES/scenes/decoration-horse.json"
+    data-atlas="/GAMMES/scenes/decoration-horse.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="width: 495px; height: 365px; transform: matrix3d(0.50, 0, 0, 0, 0, 0.50, 0, 0, 0, 0, 1, 0, -315, -406, 207, 1); visibility: visible; z-index: 4;" 
+    data-json="/GAMMES/scenes/decoration-elk.json"
+    data-atlas="/GAMMES/scenes/decoration-elk.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	data-premultiplied-alpha="false" 
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="width: 204px; height: 222px; transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 11, -384, 250, 1); visibility: visible; z-index: 8;" 
+    data-json="/GAMMES/scenes/decoration-bird-red.json"
+    data-atlas="/GAMMES/scenes/decoration-bird-red.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, -252.006, -322.535, 225.5, 1); z-index: 8; visibility: visible;" 
+    data-json="/GAMMES/scenes/decoration-bird-blue.json"
+    data-atlas="/GAMMES/scenes/decoration-bird-blue.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="z-index: 20;visibility:visible;width: 313px; height: 300px; transform: matrix3d(0.42, 0, 0, 0, 0, 0.42, 0, 0, 0, 0, 1, 0, -150, -258, 450, 1);" 
+    data-json="/GAMMES/scenes/decoration-knight.json"
+    data-atlas="/GAMMES/scenes/decoration-knight.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+		
+	<article class="spine-widget animation-wrapper" style="width: 318px; height: 353px; transform: matrix3d(0.45, 0, 0.0183, 0, 0.0007, 0.45, -0.0145, 0, -0.0457, 0.0363, 0.9983, 0, 88.2359, -312.833, 175.79, 1); visibility: visible; z-index: 1;"
+    data-json="/GAMMES/scenes/decoration-tiger.json"
+    data-atlas="/GAMMES/scenes/decoration-tiger.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="width: 149px; height: 164px; transform: matrix3d(0.2997, 0, 0.0137, 0, 0.0005, 0.2998, -0.0109, 0, -0.0457, 0.0363, 0.9983, 0, 64.2725, -123.311, 292.366, 1); visibility: visible; z-index: 24;"
+    data-json="/GAMMES/scenes/decoration-ovni-yellow.json" 
+    data-atlas="/GAMMES/scenes/decoration-ovni-yellow.atlas" 
+    data-animation="loop"
+	data-background-color="#00000000"
+	data-alpha="true"
+	></article>
+	
+	<article class="spine-widget animation-wrapper" style="width: 145px; height: 97px; transform: matrix3d(0.60, 0, 0.0261, 0, 0.0009, 0.60, -0.0207, 0, -0.0457, 0.0363, 0.9983, 0, -10.2152, -48.1077, 357.031, 1); visibility: visible; z-index: 2;"
+    data-json="/GAMMES/scenes/decoration-queue.json"
+    data-atlas="/GAMMES/scenes/decoration-queue.atlas"
+    data-animation="loop"
+	data-background-color="#00000000"
+	></article>
+	
+	</div>
+
+	</section></div>
+	
+	<div class="application-component-overlay"></div>
+	<div class="application-container application-component-product" style="bottom: 38px;">
+	<div class="product-container product-container--games-toys" style="transform: translateY(110%);">
+	<div style="top: -40px;opacity:0;z-index:200;" class="page-navigation-element page-navigation-element--top"><a class="page-navigation-element-button" style="background-color: #7ebd54" href="/fr/games-toys"></a></div>
+	<div class="product-page-wrapper" style="width: 101%;">
+
+	<section>
+		<div class="product-masthead-sprite-container" style="text-align:center;"><img src="/images/cow.png"></div>
+		<div class="product-title-transition-container transition"><div class="icon-zigzag-mask"><div class="icon-zigzag-block"></div></div>
+			<h1 class="product-title-container product-title-container--decoration">
+				<span class="product-title">ДЕТСКИЙ САДИК</span>
+			</h1>
+			<div class="icon-zigzag-mask"><div class="icon-zigzag-block"></div></div>
+			<h2 style="opacity: 0;" class="product-description">
+В обычном детском саду нет возможности уделить должного внимания каждому отдельному малышу. 
+Группы в государственных садиках переполнены, а персонала катастрофически не хватает. 
+Частный детский сад - это индивидуальный подход к каждому ребенку, это развивающие занятия, 
+увлекательные игры, весёлые праздники. Ребенок будет чувствовать себя так же комфортно и хорошо как дома. 
+Мы сделаем все зависящее от нас, чтобы расставание с любимыми родителями показалось ребенку непродолжительным.
+			</h2>
+			
+		</div>
+		<div class="animation-scroll-red"></div>
+	</section>
+	
+	</div></div></div>
+	
+</div>
+
+<footer id="footer" class="footer">
+
+<div class="page-navigation-element page-navigation-element--bottom page-navigation-element--upper"><div style="background-color: #7ebd54" class="page-navigation-element-button"></div></div>
+
+<p style="margin:10px; font-family: 'royana'; font-size:30px;">
+	guci-lebedi.ru
+</p>
+
+</footer>
+
+<audio tabindex="0" id="ambiance" style="position:absolute;top:-100px;left:-100px;" controls preload="auto" loop><source src="/sounds/ambiance.mp3"><source src="/sounds/ambiance.ogg"></audio>
+<audio tabindex="1" id="ambiance2" style="position:absolute;top:-100px;left:-100px;" controls preload="auto" loop><source src="/sounds/decoration.mp3"><source src="/sounds/decoration.ogg"></audio>
+
+</body>
+</html>
+
+
+
+        <script>
+
+/* Redirection vers la site mobile si "mobile" est détecté */
+window.mobilecheck = function () {
+	var check = false;
+	(function (a) {
+		if (
+			/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i
+			.test(a) ||
+			/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i
+			.test(a.substr(0, 4))) check = true;
+	})(navigator.userAgent || navigator.vendor || window.opera);
+	if (check == true) {
+			window.location.href = "http://www.djeco.com/mobile/decoration.html"; 
+	} 
+};
+mobilecheck();
+
+</script>
+
+<script>
+/* Gestion du son HTML5 Balise <audio> */
+var myAudio = document.getElementById("ambiance");
+var myAudio2 = document.getElementById("ambiance2");
+var isPlaying = false;
+
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause();
+	myAudio2.pause();
+	myAudio.currentTime = 0;
+	myAudio2.currentTime = 0;
+  } else {
+	myAudio.play();
+	myAudio2.play();
+	myAudio.volume=0.3;
+	myAudio2.volume=0.7;
+  }
+};
+
+myAudio.onplaying = function() {   isPlaying = true; };
+myAudio.onpause = function() {   isPlaying = false; };
+
+$(function(){
+	
+$(".footer-link-mention").on("click", function(){
+
+var contenu =   '<p><strong>Mention légales </strong></p>'+
+                            '<p>Le présent site est la propriété de la Société DJECO SAS au  capital social de 315 495,00 Euros<br />'+
+                            'Siège social :  3, rue  des Grands Augustins – 75006 PARIS<br />'+
+                            'Immatriculée au Registre du commerce et des sociétés de  PARIS sous le numéro 418 255 121<br />'+
+                            'SIRET : 41825512100018<br />'+
+                            'N° identifiant TVA FR 50418255121</p>'+
+                            '<p>Tél. : +33 (0) 1 43 54 01 77<br />'+
+                            'Courriel&nbsp;: info@djeco.com</p>'+
+                            '<p>Directeur de la publication : Marion Fau</p>'+
+                            '<p>Prestataire technique (hébergeur)&nbsp;:<br />'+
+                            'OVH<br />'+
+                            'Siège social : 2 rue Kellermann - 59100 Roubaix - France<br />'+
+                            'SAS au capital de 10 069 020 €<br />'+
+                            'RCS Lille  Métropole 424 761 419 00045<br />'+
+                            'Code APE  2620Z<br />'+
+                            'N° TVA : FR  22 424 761&nbsp;419</p>'+
+                            '<p>Tél :&nbsp;  09 72 37 97 74<br />'+
+                            'Tél :&nbsp;  09 72 54 87 70<br />'+
+                            'Tél :&nbsp;  09 72 54 96 80 </p>';
+
+$.fancybox.open('<div class="message">'+contenu+'</div>');
+
+});
+
+/* Animation scene */
+$("#MyScene2").animate({"height":"100%"}, 5000, function(){
+$("#button").show("fast");
+$(".scene").logosDistort({
+          container: 'self',
+          perspectiveMulti: 1.2,
+          mouseMode: 'magnetic',
+          outerBuffer:1.1,
+		  elementDepth: 100,
+          effectWeight: 0.5,
+		  smoothingMultiplier: 2,
+		  directions: [ 1, 1, 1, 1, 1, 1, 1, 1 ]
+        });
+});
+
+	
+/* Animation header */
+$("#header").animate({"top":"0px"}, 800);
+/* On initialise toutes les infosbulles pour une meilleurs init*/
+$(".hotspot-wrapper").removeClass("hotspot-container--open hotspot-wrapper--open").css('z-index','1');
+$("button.hotspot-container").addClass("hotspot-container--closed");
+$("button.hotspot-container .hotspot-cross").css('background-color','#ffffff');
+$("div.product-hotspot-container").removeClass("product-hotspot-container--open product-hotspot-container--show").css({"display" : "none", "height" : "0px" });
+$("div.product-hotspot-header").css({"transform" : "matrix(0, 0, 0, 0, 0, 0)", "width" : "0%", "border-radius" : "20px"});
+$(".product-hotspot-title").css({'opacity':'0'});
+/* Clic sur une infobulle */
+$(".hotspot-wrapper").on("click", function(){
+if($(this).hasClass("hotspot-container--open hotspot-wrapper--open")){	
+$(this).removeClass("hotspot-container--open hotspot-wrapper--open").css('z-index','1');
+$("button.hotspot-container", this).addClass("hotspot-container--closed");
+$("button.hotspot-container .hotspot-cross", this).css('background-color','#ffffff');
+$("div.product-hotspot-container", this).removeClass("product-hotspot-container--open product-hotspot-container--show").css({"display" : "none"}).animate({"height" : "0px"}, 250);
+$("div.product-hotspot-header", this).css({"transform" : "matrix(0, 0, 0, 0, 0, 0)", "width" : "0%", "border-radius" : "20px"});
+$(".product-hotspot-title", this).css('opacity','0');
+}else{
+/* On ferme d'abord tous ceux qui sont ouvert */
+$(".hotspot-wrapper").removeClass("hotspot-container--open hotspot-wrapper--open").css('z-index','1');
+$("button.hotspot-container").addClass("hotspot-container--closed");
+$("button.hotspot-container .hotspot-cross").css('background-color','#ffffff');
+$("div.product-hotspot-container").removeClass("product-hotspot-container--open product-hotspot-container--show").css({"display" : "none", "height" : "0px" });
+$("div.product-hotspot-header").css({"transform" : "matrix(0, 0, 0, 0, 0, 0)", "width" : "0%", "border-radius" : "20px"});
+$(".product-hotspot-title").css({'opacity':'0'});
+/* On ouvre celui qu'on a cliqué */	
+$(this).addClass("hotspot-container--open hotspot-wrapper--open").css('z-index','5000');
+$("button.hotspot-container", this).removeClass("hotspot-container--closed");
+$("button.hotspot-container .hotspot-cross", this).css('background-color','#78BA5F');
+$("div.product-hotspot-container", this).addClass("product-hotspot-container--open product-hotspot-container--show").css({"display" : "block"}).animate({"height" : "160px"}, 250);
+$("div.product-hotspot-header", this).css({"transform" : "matrix(1, 0, 0, 1, 0, 0)", "width" : "100%", "border-radius" : "0px"});
+$(".product-hotspot-title", this).css('opacity','1');
+}
+});
+/* Clic fleche pour faire descendre sur le planche de produit */
+$('.animation-scroll-red').on("click", function(){
+$('div.product-page-wrapper').animate( { scrollTop: $("div.product-page-wrapper").offset().top + 350 }, 400 );
+});
+/* Clic pour fermer la planche de produits */
+$(".page-navigation-element--top").on("click", function(e){
+e.preventDefault();
+$("#button").css("z-index","1");
+$(".product-container").removeClass("text-warning-anim-top").addClass("text-warning-anim-bottom");
+$(".page-navigation-element--bottom").show();
+$(".application-component-overlay").css('display', 'none');
+$(this).hide();
+$('div.product-page-wrapper').animate( { scrollTop: $("div.product-page-wrapper").offset().top - 100 }, 1 );
+$(".product-description").css({opacity:0});
+$("span.product-title--smaller").css({opacity:0});
+$("span.product-title:nth-child(1)").removeClass("typeCss");
+$(".page-navigation-element--top").css({opacity:0}).animate({top:"-40px"},300, function(){
+	$("div.icon-zigzag-mask").removeClass("animated-on");
+});
+});
+/* Clic pour ouvrir la planche de produits */
+$(".page-navigation-element--bottom, #button").on("click", function(e){
+e.preventDefault();
+$("#button").css("z-index","0");
+$(".product-description").delay(400).animate({opacity:1});
+$("span.product-title--smaller").delay(200).animate({opacity:1});
+$("span.product-title:nth-child(1)").delay(200).addClass("typeCss");
+$(".product-container").removeClass("text-warning-anim-bottom").addClass("text-warning-anim-top");
+$(".page-navigation-element--top").show();
+$(".application-component-overlay").show().css( "opacity", 0.2 );
+$(".page-navigation-element--bottom").hide();
+$(".page-navigation-element--top").delay(1500).css({opacity:1}).animate({top:"0px"},300, function(){
+	$("div.icon-zigzag-mask").addClass("animated-on");
+});
+});
+/* Recherche de RDJ - On recherche les éléments qui matchs avec ce qu'on entre dans le input */
+$( ".sidebar-rules-search-input" ).keyup(function() {
+	var search = $(".sidebar-rules-search-input").val();
+	if(search){
+		$('li.sidebar-rules-result').hide();
+		$('span[title*="'+search+'" i]').parent().closest('li').show();
+		$('div[data-href*="'+search+'" i]').parent().closest('li').show();
+	}else{
+		$('li.sidebar-rules-result').show();	
+	}
+});
+
+$(".header-menu-link-rule").on("click", function(e){
+e.preventDefault();
+$(".header-toolbar-action-container-rules").trigger("click");
+});
+
+/* Panneau GALAXY */
+$(".footer-galaxy-button").on("click", function(){
+if($(".galaxyButton").css("left") == "285px"){
+	/* On affiche galaxy */
+	$(".galaxyButton").show();
+	$(".galaxyButton").animate({left: "0px"}, 200);
+	/* mais on cache les autres */
+	$(".rdjButton").animate({left: "285px"}, 200, function(){ $(".rdjButton").hide(); });
+	$(".flagButton").animate({left: "285px"}, 200, function(){ $(".flagButton").hide(); });
+}else{
+	$(".galaxyButton").animate({left: "285px"}, 200, function(){ $(".galaxyButton").hide(); });
+}
+});
+/* PANNEAU RDJ */
+$(".header-toolbar-action-container-rules").on("click", function(){
+if($(".rdjButton").css("left") == "285px"){
+	/* On affiche rdj */
+	$(".rdjButton").show();
+	$(".rdjButton").animate({left: "0px"}, 200);
+	/* mais on cache les autres */
+	$(".galaxyButton").animate({left: "285px"}, 200, function(){ $(".galaxyButton").hide(); });
+	$(".flagButton").animate({left: "285px"}, 200, function(){ $(".flagButton").hide(); });
+}else{
+	$(".rdjButton").animate({left: "285px"}, 200, function(){ $(".rdjButton").hide(); });
+}
+});
+/* PANNEAU LANGUES */
+$(".header-toolbar-action-container-languages").on("click", function(){
+if($(".flagButton").css("left") == "285px"){
+	/* On affiche flag */
+	$(".flagButton").show();
+	$(".flagButton").animate({left: "0px"}, 200);
+	/* mais on cache les autres */
+	$(".galaxyButton").animate({left: "285px"}, 200, function(){ $(".galaxyButton").hide(); });
+	$(".rdjButton").animate({left: "285px"}, 200, function(){ $(".rdjButton").hide(); });
+}else{
+	$(".flagButton").animate({left: "285px"}, 200, function(){ $(".flagButton").hide(); });
+}
+});
+/* Icone pour arrêter / lancer le son et animer / suspendre le petit personnage */
+$(".header-toolbar-action-button-sound").on("click", function(){
+	togglePlay();
+	if($(this).hasClass( "header-toolbar-action-button-sound--off" )) {
+		$(this).removeClass("header-toolbar-action-button-sound--off").addClass("header-toolbar-action-button-sound--on");
+	}else{
+		$(this).removeClass("header-toolbar-action-button-sound--on").addClass("header-toolbar-action-button-sound--off");
+	}
+});
+/* Sélection de la RDJ */
+$(".sidebar-rules-result").on("click", function(){
+	$(".sidebar-rules-result").removeClass("sidebar-rules-result--is-selected");
+	$(this).addClass("sidebar-rules-result--is-selected");
+	$(".sidebar-rules-download").removeClass("disabled");
+});
+/* BTN DOWNLOAD */
+$(".sidebar-rules-download").on("click", function(){
+if($(this).hasClass("disabled")) {
+/* On ne fait rien :) */
+}else{
+	var ref = $(".sidebar-rules-result--is-selected div").attr("data-href");
+	var lang = "RU";
+	window.open('http://www.djeco.com/data/rules'+ref+'_'+lang+'.pdf','_blank');
+}
+});
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+decoration-ovni-yellow.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ovni_jaune
+  rotate: false
+  xy: 2, 2
+  size: 112, 105
+  orig: 114, 107
+  offset: 1, 1
+  index: -1

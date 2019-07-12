@@ -1,0 +1,31 @@
+
+body					{ background:#E8E4DB url('./img/pribeh_pozadi.jpg') 50% 0 repeat-y; -webkit-background-size:  100% auto; -moz-background-size:  100% auto; -o-background-size:  100% auto; background-size: 100% auto;  -webkit-box-shadow: 0px 10px 20px 0px rgba(77, 75, 71, 0.5); -moz-box-shadow:    0px 10px 20px 0px rgba(77, 75, 71, 0.5); box-shadow:         0px 10px 20px 0px rgba(77, 75, 71, 0.5); } 
+.wrapper 				{ overflow-x:hidden; min-width:780px; width:100%; }
+div.papir 				{ width:760px; margin:50px auto; overflow:visible; position:relative;  }
+div.papir .papir_top 	{ width:100%; height:93px; background:url('./img/pribeh_papir_top.png') 0 0 no-repeat; }
+div.papir .papir_1		{ background:url('./img/pribeh_papir_left.png')    0% 0% repeat-y; margin-top:93px; }
+div.papir .papir_2		{ background:url('./img/pribeh_papir_right.png') 100% 0% repeat-y; }
+div.papir .papir_3		{ background:url('./img/pribeh_papir.jpg') 30px 0 repeat-y; }
+div.papir .text		{ margin:-110px 30px 0 30px; position:relative; padding: 0px 20px 40px 20px; font-family:courier; font-size:24px; line-height:1.5em; color:#52696a; }
+div.papir .text h1  	{ font-size:inherit; font-family:inherit; color:inherit; text-transform:uppercase; background:url('./img/h1_underline.png') 0 100% no-repeat; background-size:17% 20%; padding-left:7px; margin-left:-7px; padding-bottom:7px; }
+div.papir .text strong { color:#293536; }
+div.stroj_back 		{ width: 384px; height:202px; background:url('./img/pribeh-stroj-back.png') 0 0 no-repeat; margin-bottom:-178px; margin-left:-370px; margin-top:-80px; }
+div.stroj 				{ width:1500px; height:650px; background:url('./img/pribeh_stroj.png') 0 0 no-repeat; margin-top:-50px; margin-left:-190px; }
+
+.bublina 					{ position:absolute; width: 200px; height:200px; background:url('./img/b_bubliny-mobil.png') 0 0 no-repeat; background-size:600% 100%; -webkit-border-radius: 300px; -moz-border-radius: 300px; border-radius: 300px; cursor:pointer;	}
+.bublina.zpet				{ background-position:100% 0; }
+#bublina_1	{ width:280px; height:280px; top:-90px; right:50%; margin-right:-470px; }
+#bublina_2	{ width:210px; height:210px; top:50%; left:-130px; }
+#bublina_3	{ width:240px; height:240px; bottom:600px; right:-105px; }
+
+a.socials					{ position:absolute; width:180px; height:124px; background:url('./img/socials_zed.png') 0 0 no-repeat; background-size:300% 200%; cursor:pointer; }
+a.socials.twitter 			{ background-position:  0% 0; left: -150px; bottom:670px; }
+a.socials.google 			{ background-position: 50% 0; left: -130px; bottom:800px; }
+a.socials.facebook 			{ background-position:100% 0; left: -160px; bottom:920px; }
+
+/* EN */
+body.en .bublina { background-image:url('./img/b_bubliny-mobil.en.png'); }
+body.en #bublina_3 { right:-80px; bottom:680px; }
+
+
+

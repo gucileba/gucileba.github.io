@@ -1,0 +1,189 @@
+<section id="rooms">
+	<div id="mouse">
+		<div class="circle"></div>
+	</div>
+	<div class="dummy"></div>
+	<div class="scroller"></div>
+	<div class="back">
+		<div class="img"></div>
+		<div class="text">Retour</div>
+	</div>
+	<div id="mouse-detail"></div>
+	<div id="animate-ingredient"></div>
+	{% include '@partials/help.twig' %}
+	{% include '@partials/congrats.twig' %}
+	{% include '@partials/more.twig' %}
+	<div id="scene-view">
+		<div id="scene">
+			<div class="layers-fixed"></div>
+			{% if (params.id == 'cuisine') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg-extra"></div>
+						<div class="layer layer-bg"></div>
+						<div class="list-ingredients">
+							<div id="selection">
+								<a class="left" href="#">
+									<span></span>
+								</a>
+								<span class="selection_title"></span>
+								<a class="right" href="#">
+									<span></span>
+								</a>
+							</div>
+							<ul>
+							</ul>
+						</div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'chambre') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'hall-of-fame') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'salon') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'geekroom') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'salledejeux') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'boutique') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div  id="grid-view">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+			{% elseif (params.id == 'grenier') %}
+				<div data-depth="0.2" class="layer-grid">
+					<div class="layer layer-grid-back">
+						<div class="bg"></div>
+					</div>
+					<div class="layer-grid-scene">
+						<div class="layer layer-bg"></div>
+						<div class="layers"></div>
+						<div id="grid-view">
+							<div id="grid">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			{% elseif (params.id == 'coin-parents') %}
+				<div class="layer">
+					<div class="close">
+						<div class="img"></div>
+					</div>
+					<div class="scrolling">
+						<div class="center">
+							<ul>
+								{% for item in l10n.scenes[5].layers %}
+									{% if item.slides is defined %}
+										<li>
+											<div class="top">
+												<div style="background: #{{item.color}}" class="bg"></div>
+												<div class="img"><img src="{{resolveImage(item.img)}}" /></div><!--
+												--><div class="content">
+													<div class="title">
+														<p>{{item.title|raw}}</p>
+													</div>
+												</div>
+												<div class="toggle"></div>
+											</div>
+											<div class="bottom">
+												<div class="left">
+													<div class="content">
+														{{item.content}}
+														{% if item.production_img is defined %}
+															<div class="production">
+																<img src="{{resolveImage(item.production_img)}}" />
+															</div>
+														{% endif %}
+													</div>
+												</div>
+												<div class="right">
+													<div class="nav">
+														<div class="prev"></div>
+														<div class="next"></div>
+													</div>
+													<div id="swiper">
+														<div class="slides">
+															{% for slide in item.slides %}
+																<div class="slide">
+																	<img src="{{resolveImage(slide.img)}}" />
+																</div>
+															{% endfor %}
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									{% else %}
+										<li>
+											<div class="top">
+												<div style="background: #{{item.color}}" class="bg"></div>
+												<div class="img"><img src="{{resolveImage(item.img)}}" /></div><!--
+												--><div class="content">
+													<div class="title">
+														<p>{{item.title|raw}}</p>
+													</div>
+												</div>
+												<div class="toggle"></div>
+											</div>
+											<div class="bottom bottom-full">
+												<div class="left">
+													<div class="content">
+														{{item.content}}
+													</div>
+												</div>
+											</div>
+										</li>
+									{% endif %}
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div> 
+			{% endif %}
+		</div>
+	</div>
+</section>

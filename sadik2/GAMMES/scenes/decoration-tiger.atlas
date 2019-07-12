@@ -1,0 +1,47 @@
+
+decoration-tiger.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 204, 101
+  size: 166, 139
+  orig: 168, 141
+  offset: 1, 1
+  index: -1
+point_yeux
+  rotate: false
+  xy: 2, 2
+  size: 46, 15
+  orig: 48, 17
+  offset: 1, 1
+  index: -1
+queue
+  rotate: false
+  xy: 204, 42
+  size: 154, 57
+  orig: 156, 59
+  offset: 1, 1
+  index: -1
+tete
+  rotate: false
+  xy: 2, 19
+  size: 200, 221
+  orig: 202, 223
+  offset: 1, 1
+  index: -1
+yeux
+  rotate: false
+  xy: 372, 187
+  size: 83, 53
+  orig: 85, 55
+  offset: 1, 1
+  index: -1
+yeux_fermes
+  rotate: false
+  xy: 372, 132
+  size: 80, 53
+  orig: 82, 55
+  offset: 1, 1
+  index: -1

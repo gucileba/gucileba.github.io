@@ -1,0 +1,54 @@
+
+decoration-bird-red.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aile_d
+  rotate: false
+  xy: 478, 54
+  size: 48, 72
+  orig: 50, 74
+  offset: 1, 1
+  index: -1
+aile_g
+  rotate: false
+  xy: 377, 46
+  size: 99, 80
+  orig: 101, 82
+  offset: 1, 1
+  index: -1
+corps
+  rotate: false
+  xy: 2, 12
+  size: 173, 114
+  orig: 175, 116
+  offset: 1, 1
+  index: -1
+nuage
+  rotate: false
+  xy: 177, 67
+  size: 198, 59
+  orig: 200, 61
+  offset: 1, 1
+  index: -1
+oeil
+  rotate: false
+  xy: 177, 37
+  size: 35, 28
+  orig: 37, 30
+  offset: 1, 1
+  index: -1
+oeil_ferme
+  rotate: false
+  xy: 528, 98
+  size: 35, 28
+  orig: 37, 30
+  offset: 1, 1
+  index: -1
+point_oeil
+  rotate: false
+  xy: 2, 2
+  size: 6, 8
+  orig: 8, 10
+  offset: 1, 1
+  index: -1

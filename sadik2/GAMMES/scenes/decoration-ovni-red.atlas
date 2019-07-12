@@ -1,0 +1,19 @@
+
+decoration-ovni-red.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ovni_Rouge
+  rotate: false
+  xy: 2, 2
+  size: 62, 57
+  orig: 64, 59
+  offset: 1, 1
+  index: -1
+Ovni_Rouge
+  rotate: false
+  xy: 2, 2
+  size: 62, 57
+  orig: 64, 59
+  offset: 1, 1
+  index: -1

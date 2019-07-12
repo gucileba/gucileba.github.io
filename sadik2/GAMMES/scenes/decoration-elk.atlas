@@ -1,0 +1,40 @@
+
+decoration-elk.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+corps
+  rotate: false
+  xy: 444, 114
+  size: 134, 136
+  orig: 136, 138
+  offset: 1, 1
+  index: -1
+point_yeux
+  rotate: false
+  xy: 444, 69
+  size: 27, 9
+  orig: 29, 11
+  offset: 1, 1
+  index: -1
+tete
+  rotate: false
+  xy: 2, 2
+  size: 440, 248
+  orig: 442, 250
+  offset: 1, 1
+  index: -1
+yeux
+  rotate: false
+  xy: 444, 80
+  size: 45, 32
+  orig: 47, 34
+  offset: 1, 1
+  index: -1
+yeux_fermes
+  rotate: false
+  xy: 580, 218
+  size: 45, 32
+  orig: 47, 34
+  offset: 1, 1
+  index: -1

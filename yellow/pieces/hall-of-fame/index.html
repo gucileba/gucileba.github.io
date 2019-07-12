@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html class="fr" lang="fr">
+
+<head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="robots" content="index, follow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Whaou! - Le Hall Of Fame de Whaou !</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../assets/20190620_104841/css/style.css" media="screen, projection" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-121245736-1');
+    </script>
+    <script>
+        // (function(h,o,t,j,a,r){
+        // h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        // h._hjSettings={hjid:993293,hjsv:6};
+        // a=o.getElementsByTagName('head')[0];
+        // r=o.createElement('script');r.async=1;
+        // r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        // a.appendChild(r);
+        // })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <script type="text/javascript">
+        var appDebug = "" != "";
+        var appVersion = "20190620_104841";
+        var env = "prod";
+        var baseURL = "http://127.0.0.1:8080/";
+        var basePath = "/";
+        var assetsBaseURL = "http://127.0.0.1:8080/";
+        var assetsPath = "assets/20190620_104841/";
+        var locale = "fr";
+        var noLocaleInRoute = true;
+        var apiURL = "http://127.0.0.1:8080/api/v1";
+    </script>
+    <script type="text/javascript">
+        var l10nJSON = {
+            "lang": "fr",
+            "fallback": "Ton navigateur n'est pas a jour.",
+            "boutique_pdf": "\/static\/whaou_collecteur.pdf",
+            "cookies": {
+                "pdf": "\/static\/politique_de_gestion_des_cookies.pdf"
+            },
+            "meta": {
+                "site_name": "Whaou!",
+                "keywords": null,
+                "share": {
+                    "title": "Whaou! - Ton go\u00fbter avec les cr\u00eapes et g\u00e2teaux de Whaou!",
+                    "description": "Viens d\u00e9couvrir la maison de Whaou ! et tous nos produits pour de meilleurs go\u00fbters : Cr\u00eapes, Cr\u00eapes Cracky, Muffins etc...",
+                    "chambre": {
+                        "meta_title": "Whaou! - La chambre de Whaou!",
+                        "meta_description": "D\u00e9couvre la chambre de Whaou! remplie de nombreuses surprises \u00e0 t\u00e9l\u00e9charger et \u00e0 partager avec tes amis",
+                        "title": "D\u00e9couvre la chambre de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "cuisine": {
+                        "meta_title": "Whaou! - La cuisine de Whaou!",
+                        "meta_description": "Explore la cuisine de Whaou! pour d\u00e9couvrir l\u2019ensemble de nos produits et cuisiner tes go\u00fbters pr\u00e9f\u00e9r\u00e9s",
+                        "title": "D\u00e9couvre la cuisine de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "halloffame": {
+                        "meta_title": "Whaou! - Le Hall Of Fame de Whaou !",
+                        "meta_description": "Explore le Hall Of Fame de Whaou!",
+                        "title": "D\u00e9couvre le Hall Of Fame de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "grenier": {
+                        "meta_title": "Whaou! - Le Grenier de Whaou !",
+                        "meta_description": "Explore le Grenier de Whaou!",
+                        "title": "D\u00e9couvre le Grenier de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "boutique": {
+                        "meta_title": "Whaou! - La Boutique de Whaou !",
+                        "meta_description": "Explore la Boutique de Whaou!",
+                        "title": "D\u00e9couvre la Boutique de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "coinparents": {
+                        "meta_title": "Whaou! - Le Coin des Parents de Whaou !",
+                        "meta_description": "Explore le Coin des Parents de Whaou!",
+                        "title": "D\u00e9couvre le Coin des Parents de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "salon": {
+                        "meta_title": "Whaou! - Le Salon de Whaou !",
+                        "meta_description": "Explore le Salon de Whaou!",
+                        "title": "D\u00e9couvre le Salon de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "geekroom": {
+                        "meta_title": "Whaou! - La Geek room de Whaou !",
+                        "meta_description": "Explore la Geek room de Whaou!",
+                        "title": "D\u00e9couvre la Geek room de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    },
+                    "salledejeux": {
+                        "meta_title": "Whaou! - La Salle de Jeux de Whaou !",
+                        "meta_description": "Explore la Salle de Jeux de Whaou!",
+                        "title": "D\u00e9couvre la Salle de Jeux de Whaou!",
+                        "description": "De nombreuses surprises t'y attendent !"
+                    }
+                }
+            },
+            "menu": {
+                "slider": [{
+                    "date": null,
+                    "color": "default",
+                    "img": "actu_adventurechallengeopti.png",
+                    "description": null,
+                    "link": "\/pieces\/salledejeux",
+                    "target": "internal"
+                }, {
+                    "date": null,
+                    "color": "default",
+                    "img": "actu_nouvelles_crepes.png",
+                    "description": "NOUVEAU !<br \/>Les cr\u00eapes<br \/>\u00e0 la compote !",
+                    "link": "\/pieces\/cuisine\/",
+                    "target": "internal"
+                }],
+                "lists": [{
+                    "title": "Accueil",
+                    "active": true,
+                    "link": "\/"
+                }, {
+                    "title": "La salle de jeux",
+                    "id": 0,
+                    "active": true,
+                    "link": "\/pieces\/salledejeux"
+                }, {
+                    "title": "La cuisine",
+                    "id": 1,
+                    "active": true,
+                    "link": "\/pieces\/cuisine"
+                }, {
+                    "title": "La chambre",
+                    "id": 2,
+                    "active": true,
+                    "link": "\/pieces\/chambre"
+                }, {
+                    "title": "Le Hall of Fame",
+                    "id": 3,
+                    "active": true,
+                    "link": "\/pieces\/hall-of-fame"
+                }, {
+                    "title": "Le Grenier",
+                    "id": 4,
+                    "active": true,
+                    "link": "\/pieces\/grenier"
+                }, {
+                    "title": "La Boutique",
+                    "id": 5,
+                    "active": true,
+                    "link": "\/pieces\/boutique"
+                }, {
+                    "title": "Le coin des parents",
+                    "id": 6,
+                    "active": true,
+                    "link": "\/pieces\/coin-parents"
+                }, {
+                    "title": "Le salon",
+                    "id": 7,
+                    "active": true,
+                    "link": "\/pieces\/salon"
+                }, {
+                    "title": "La geek room",
+                    "id": 8,
+                    "active": true,
+                    "link": "\/pieces\/geekroom"
+                }]
+            },
+            "scenes": [{
+                "title": "La Salle <br \/>de Jeux",
+                "link": "\/pieces\/salledejeux",
+                "active": true,
+                "posY": 1200,
+                "subtitle": null,
+                "id": 0,
+                "layers": [{
+                    "id": 0,
+                    "top": "auto",
+                    "right": "auto",
+                    "left": "-10%",
+                    "bottom": "30%",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.salledejeux.maison_shelf"
+                }, {
+                    "id": 0,
+                    "top": "auto",
+                    "right": "-4%",
+                    "left": "auto",
+                    "bottom": "-6%",
+                    "depth": 0.59999999999999998,
+                    "img": "img.rooms.salledejeux.maison_cactus"
+                }, {
+                    "id": 0,
+                    "top": "auto",
+                    "right": "auto",
+                    "left": "-6%",
+                    "bottom": "-14%",
+                    "depth": 0.5,
+                    "img": "img.rooms.salledejeux.maison_plant"
+                }, {
+                    "id": 0,
+                    "top": "-20%",
+                    "right": "auto",
+                    "left": "-20%",
+                    "bottom": "auto",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.salledejeux.maison_plant_top"
+                }],
+                "layers_decoration": [{
+                    "id": 0,
+                    "x": 1100,
+                    "y": 100,
+                    "img": "img.rooms.salledejeux.maison_table_0"
+                }, {
+                    "id": 1,
+                    "x": 1400,
+                    "y": 180,
+                    "img": "img.rooms.salledejeux.maison_table_1"
+                }, {
+                    "id": 2,
+                    "x": 1360,
+                    "y": 600,
+                    "img": "img.rooms.salledejeux.maison_balloon"
+                }, {
+                    "id": 3,
+                    "x": 1000,
+                    "y": 900,
+                    "img": "img.rooms.salledejeux.maison_morpion"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "width": 1600,
+                    "height": 912,
+                    "x": 160,
+                    "y": 30,
+                    "link": "video-0",
+                    "type": "large",
+                    "img": "img.rooms.salledejeux.0",
+                    "iframe_url": "https:\/\/adventurechallenge.whaou.com\/",
+                    "color": "red"
+                }]
+            }, {
+                "title": "La<br \/> cuisine",
+                "posY": 2800,
+                "active": true,
+                "link": "\/pieces\/cuisine",
+                "subtitle": "et ses recettes",
+                "id": 1,
+                "layers": [{
+                    "id": 0,
+                    "top": "auto",
+                    "left": "auto",
+                    "right": "auto",
+                    "bottom": "-10%",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.kitchen.kitchen_mug_green"
+                }, {
+                    "id": 0,
+                    "top": "auto",
+                    "right": "auto",
+                    "left": "5%",
+                    "bottom": "-10%",
+                    "depth": 0.5,
+                    "img": "img.rooms.kitchen.kitchen_mug_yellow"
+                }, {
+                    "id": 0,
+                    "right": "-10%",
+                    "top": "-5%",
+                    "left": "auto",
+                    "bottom": "auto",
+                    "depth": 0.45000000000000001,
+                    "img": "img.rooms.kitchen.kitchen_plant"
+                }, {
+                    "id": 0,
+                    "top": "auto",
+                    "bottom": "-12%",
+                    "right": "-8%",
+                    "left": "auto",
+                    "depth": 0.29999999999999999,
+                    "img": "img.rooms.kitchen.kitchen_toaster"
+                }],
+                "layers_sprite": [{
+                    "id": 0,
+                    "x": 1120,
+                    "y": 564,
+                    "x_mobile": 200,
+                    "y_mobile": 544,
+                    "img": "img.rooms.kitchen.sprite"
+                }],
+                "layers_decoration": [{
+                    "id": 0,
+                    "x": 395,
+                    "y": 155,
+                    "x_mobile": -10,
+                    "y_mobile": 105,
+                    "img": "img.rooms.kitchen.kitchen_shelf_empty_shadow"
+                }, {
+                    "id": 1,
+                    "x": 960,
+                    "y": 700,
+                    "x_mobile": 50,
+                    "y_mobile": 680,
+                    "img": "img.rooms.kitchen.kitchen_salad"
+                }],
+                "layers_ingredients": [{
+                    "id": 0,
+                    "x": 460,
+                    "y": 175,
+                    "x_mobile": 55,
+                    "y_mobile": 125,
+                    "detail": "Lait",
+                    "name": "lait",
+                    "img": "img.rooms.kitchen.ingredients.lait"
+                }, {
+                    "id": 1,
+                    "x": 580,
+                    "y": 200,
+                    "x_mobile": 175,
+                    "y_mobile": 150,
+                    "detail": "Farine",
+                    "name": "farine",
+                    "img": "img.rooms.kitchen.ingredients.farine"
+                }, {
+                    "id": 2,
+                    "x": 675,
+                    "y": 280,
+                    "x_mobile": 270,
+                    "y_mobile": 230,
+                    "detail": "Oeufs",
+                    "name": "oeufs",
+                    "img": "img.rooms.kitchen.ingredients.oeufs"
+                }, {
+                    "id": 3,
+                    "x": 800,
+                    "y": 160,
+                    "x_mobile": 395,
+                    "y_mobile": 110,
+                    "detail": "Huile",
+                    "name": "huile",
+                    "img": "img.rooms.kitchen.ingredients.huile"
+                }, {
+                    "id": 4,
+                    "x": 870,
+                    "y": 215,
+                    "x_mobile": 465,
+                    "y_mobile": 165,
+                    "detail": "Billettes de c\u00e9r\u00e9ales",
+                    "name": "billes",
+                    "img": "img.rooms.kitchen.ingredients.billes"
+                }, {
+                    "id": 5,
+                    "x": 950,
+                    "y": 290,
+                    "x_mobile": 545,
+                    "y_mobile": 240,
+                    "detail": "Beurre",
+                    "name": "beurre",
+                    "img": "img.rooms.kitchen.ingredients.beurre"
+                }, {
+                    "id": 6,
+                    "x": 470,
+                    "y": 485,
+                    "x_mobile": 65,
+                    "y_mobile": 435,
+                    "detail": "P\u00e9pites de chocolat",
+                    "name": "pepites",
+                    "img": "img.rooms.kitchen.ingredients.pepites"
+                }, {
+                    "id": 7,
+                    "x": 570,
+                    "y": 460,
+                    "x_mobile": 165,
+                    "y_mobile": 410,
+                    "detail": "Chocolat",
+                    "name": "chocolat",
+                    "img": "img.rooms.kitchen.ingredients.chocolat"
+                }, {
+                    "id": 8,
+                    "x": 695,
+                    "y": 468,
+                    "x_mobile": 290,
+                    "y_mobile": 418,
+                    "detail": "Fraises",
+                    "name": "fraises",
+                    "img": "img.rooms.kitchen.ingredients.fraises"
+                }, {
+                    "id": 9,
+                    "x": 790,
+                    "y": 406,
+                    "x_mobile": 385,
+                    "y_mobile": 356,
+                    "detail": "Sucre",
+                    "name": "sucre",
+                    "img": "img.rooms.kitchen.ingredients.sucre"
+                }, {
+                    "id": 10,
+                    "x": 850,
+                    "y": 400,
+                    "x_mobile": 450,
+                    "y_mobile": 350,
+                    "detail": "Levure chimique",
+                    "name": "levure",
+                    "img": "img.rooms.kitchen.ingredients.levure"
+                }, {
+                    "id": 11,
+                    "x": 945,
+                    "y": 470,
+                    "x_mobile": 540,
+                    "y_mobile": 420,
+                    "detail": "Sel",
+                    "name": "sel",
+                    "img": "img.rooms.kitchen.ingredients.sel"
+                }, {
+                    "id": 12,
+                    "x": 980,
+                    "y": 495,
+                    "x_mobile": 575,
+                    "y_mobile": 445,
+                    "detail": "Caramel",
+                    "name": "caramel",
+                    "img": "img.rooms.kitchen.ingredients.caramel"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "x": 1080,
+                    "y": 140,
+                    "x_mobile": 60,
+                    "y_mobile": -110,
+                    "img": "img.rooms.kitchen.0",
+                    "items": [{
+                        "full_img": "img.rooms.kitchen.0_7_large",
+                        "link": "crepe-compote-pomme"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_2_large",
+                        "link": "crepe-compote-fraise"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_0_large",
+                        "link": "crepe-chocolat",
+                        "selection_title": "Cr\u00eape Chocolat",
+                        "more_title": "la cr\u00eape Whaou! Chocolat",
+                        "more_img": "img.rooms.kitchen.0_0_more",
+                        "recette": ["farine", "oeufs", "lait", "sucre", "beurre", "sel", "chocolat"]
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_1_large",
+                        "link": "crepe-choco-noisettes"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_3_large",
+                        "link": "crepe-tout-choco"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_4_large",
+                        "link": "crepe-chocolat-lait"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_5_large",
+                        "link": "crepe-choco-coco"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_6_large",
+                        "link": "crepe-choco-banane"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_8_large",
+                        "link": "crepe-sucre"
+                    }, {
+                        "selection_title": "Cr\u00eape Cracky Chocolat",
+                        "link": "crepe-cracky-chocolat",
+                        "more_title": "la cr\u00eape Whaou! Cracky Chocolat",
+                        "full_img": "img.rooms.kitchen.0_9_large",
+                        "more_img": "img.rooms.kitchen.0_9_more",
+                        "recette": ["farine", "oeufs", "lait", "sucre", "beurre", "sel", "billes", "chocolat"]
+                    }, {
+                        "selection_title": "Cr\u00eape Cracky Caramel",
+                        "link": "crepe-cracky-caramel",
+                        "more_title": "la cr\u00eape Whaou! Cracky Caramel",
+                        "full_img": "img.rooms.kitchen.0_10_large",
+                        "more_img": "img.rooms.kitchen.0_10_more",
+                        "recette": ["farine", "oeufs", "lait", "sucre", "beurre", "sel", "billes", "caramel"]
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_11_large",
+                        "link": "crepe-cracky-choco-noisettes"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_12_large",
+                        "link": "crepe-cracky-chocolat-lait"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_13_large",
+                        "link": "crepe-bio-chocolat"
+                    }, {
+                        "full_img": "img.rooms.kitchen.0_14_large",
+                        "link": "crepe-bio-abricots"
+                    }]
+                }, {
+                    "id": 1,
+                    "x": 1265,
+                    "y": 270,
+                    "x_mobile": 420,
+                    "y_mobile": -110,
+                    "img": "img.rooms.kitchen.1",
+                    "items": [{
+                        "full_img": "img.rooms.kitchen.1_2_large",
+                        "link": "madeleine-chocolat"
+                    }, {
+                        "full_img": "img.rooms.kitchen.1_3_large",
+                        "link": "madeleine-vanille"
+                    }, {
+                        "full_img": "img.rooms.kitchen.1_0_large",
+                        "more_img": "img.rooms.kitchen.1_0_more",
+                        "link": "muffin-pepites-chocolat",
+                        "selection_title": "Muffin aux p\u00e9pites de chocolat",
+                        "more_title": "le muffin Whaou! Coeur chocolat et \u00e9clats de chocolat",
+                        "recette": ["farine", "oeufs", "beurre", "huile", "sucre", "chocolat", "pepites"]
+                    }, {
+                        "full_img": "img.rooms.kitchen.1_1_large",
+                        "link": "muffin-choco-noisettes"
+                    }]
+                }, {
+                    "id": 2,
+                    "x": 1445,
+                    "y": 200,
+                    "x_mobile": 240,
+                    "y_mobile": -110,
+                    "img": "img.rooms.kitchen.2",
+                    "items": [{
+                        "selection_title": "Le Brownie Whaou!",
+                        "more_title": "Le Brownie Whaou!",
+                        "full_img": "img.rooms.kitchen.2_0_large",
+                        "link": "brownie-whaou",
+                        "more_img": "img.rooms.kitchen.2_0_more",
+                        "recette": ["farine", "oeufs", "beurre", "huile", "sucre", "chocolat", "pepites"]
+                    }, {
+                        "link": "moelleux-chocolat-whaou",
+                        "full_img": "img.rooms.kitchen.2_1_large"
+                    }]
+                }]
+            }, {
+                "title": "La<br \/> chambre",
+                "link": "\/pieces\/chambre",
+                "active": true,
+                "posY": 4300,
+                "subtitle": null,
+                "id": 2,
+                "layers": [{
+                    "id": 0,
+                    "top": "-20%",
+                    "left": "0%",
+                    "right": "auto",
+                    "bottom": "auto",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.room.bedroom_garland"
+                }, {
+                    "id": 0,
+                    "top": "auto",
+                    "right": "auto",
+                    "left": "-10%",
+                    "bottom": "-10%",
+                    "depth": 0.5,
+                    "img": "img.rooms.room.bedroom_shelf"
+                }, {
+                    "id": 0,
+                    "right": "-5%",
+                    "top": "auto",
+                    "bottom": "-7%",
+                    "left": "auto",
+                    "depth": 0.45000000000000001,
+                    "img": "img.rooms.room.bedroom_furniture"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "link": "goodies-mains-01",
+                    "img": "img.rooms.room.goodies.goodies_mains_01",
+                    "title": "Emotion<br \/> Yeah!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_mains_01",
+                    "wallpapers": [{
+                        "title": "jpg",
+                        "link": "room\/goodies_wallpaper\/goodies_mains_01.jpg"
+                    }]
+                }, {
+                    "id": 1,
+                    "link": "goodies-mains-02",
+                    "img": "img.rooms.room.goodies.goodies_mains_02",
+                    "title": "Emotion<br \/> Yes!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_mains_02",
+                    "wallpapers": [{
+                        "title": "jpg",
+                        "link": "room\/goodies_wallpaper\/goodies_mains_02.jpg"
+                    }]
+                }, {
+                    "id": 2,
+                    "link": "goodies-mains-03",
+                    "img": "img.rooms.room.goodies.goodies_mains_03",
+                    "title": "Emotion<br \/> Love!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_mains_03",
+                    "wallpapers": [{
+                        "title": "jpg",
+                        "link": "room\/goodies_wallpaper\/goodies_mains_03.jpg"
+                    }]
+                }, {
+                    "id": 3,
+                    "link": "goodies-marquepage",
+                    "img": "img.rooms.room.goodies.goodies_marquepage",
+                    "title": "Emotion<br \/> Love!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_marquepage",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_marquepage.pdf"
+                    }]
+                }, {
+                    "id": 4,
+                    "link": "goodies-poster-paysage-01",
+                    "img": "img.rooms.room.goodies.goodies_poster_paysage_01",
+                    "title": "Emotion<br \/> Love!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_poster_paysage_01",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_poster_paysage.pdf"
+                    }]
+                }, {
+                    "id": 5,
+                    "link": "goodies-poster-portrait-01",
+                    "img": "img.rooms.room.goodies.goodies_poster_portrait_01",
+                    "title": "Poster<br\/>Yolo!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_poster_portrait_01",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_poster_portrait_01.pdf"
+                    }]
+                }, {
+                    "id": 6,
+                    "link": "goodies-poster-portrait-02",
+                    "img": "img.rooms.room.goodies.goodies_poster_portrait_02",
+                    "title": "Poster<br \/> Reste<br \/>Cool!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_poster_portrait_02",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_poster_portrait_02.pdf"
+                    }]
+                }, {
+                    "id": 7,
+                    "link": "goodies-poster-portrait-03",
+                    "img": "img.rooms.room.goodies.goodies_poster_portrait_03",
+                    "title": "Poster<br \/> whaou!<br \/> Cracky",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_poster_portrait_03",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_poster_portrait_03.pdf"
+                    }]
+                }, {
+                    "id": 8,
+                    "link": "goodies-poster-portrait-04",
+                    "img": "img.rooms.room.goodies.goodies_poster_portrait_04",
+                    "title": "Poster<br \/> whaou!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_poster_portrait_04",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_poster_portrait_04.pdf"
+                    }]
+                }, {
+                    "id": 9,
+                    "link": "goodies-sticker-01",
+                    "img": "img.rooms.room.goodies.goodies_sticker_01",
+                    "title": "Sticker<br \/> Keep<br \/>calm!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_sticker_01",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_stickers.pdf"
+                    }]
+                }, {
+                    "id": 10,
+                    "link": "goodies-sticker-02",
+                    "img": "img.rooms.room.goodies.goodies_sticker_02",
+                    "title": "Sticker<br \/> Loin du<br \/>coeur",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_sticker_02",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_stickers.pdf"
+                    }]
+                }, {
+                    "id": 11,
+                    "link": "goodies-sticker-03",
+                    "img": "img.rooms.room.goodies.goodies_sticker_03",
+                    "title": "Sticker<br \/> whaou!<br \/> Life",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_sticker_03",
+                    "wallpapers": [{
+                        "title": "pdf",
+                        "link": "room\/goodies_wallpaper\/goodies_stickers.pdf"
+                    }]
+                }, {
+                    "id": 12,
+                    "link": "goodies-wallpaper-01",
+                    "img": "img.rooms.room.goodies.goodies_wallpaper_01",
+                    "title": "Fond d\u2019\u00e9cran <br \/>Whaou!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_wallpaper_01",
+                    "wallpapers": [{
+                        "title": "galaxy s7",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_01_galaxys7.jpg"
+                    }, {
+                        "title": "galaxy sa3",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_01_galaxysa3.jpg"
+                    }, {
+                        "title": "iphone 5",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_01_iphone5.jpg"
+                    }, {
+                        "title": "iphone 6",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_01_iphone6.jpg"
+                    }, {
+                        "title": "iphone 7 plus",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_01_iphone7plus.jpg"
+                    }]
+                }, {
+                    "id": 13,
+                    "link": "goodies-wallpaper-02",
+                    "img": "img.rooms.room.goodies.goodies_wallpaper_02",
+                    "title": "Fond d\u2019\u00e9cran<br \/> Whaou!",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_wallpaper_02",
+                    "wallpapers": [{
+                        "title": "galaxy s7",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_02_galaxys7.jpg"
+                    }, {
+                        "title": "galaxy sa3",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_02_galaxysa3.jpg"
+                    }, {
+                        "title": "iphone 5",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_02_iphone5.jpg"
+                    }, {
+                        "title": "iphone 6",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_02_iphone6.jpg"
+                    }, {
+                        "title": "iphone 7 plus",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_02_iphone7plus.jpg"
+                    }]
+                }, {
+                    "id": 14,
+                    "link": "goodies-wallpaper-03",
+                    "img": "img.rooms.room.goodies.goodies_wallpaper_03",
+                    "title": "Fond d\u2019\u00e9cran <br \/>t\u00e2ches",
+                    "facebook": true,
+                    "twitter": "D\u00e9couvrez la chambre de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                    "mail": "D\u00e9couvre la chambre de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                    "full_img": "img.rooms.room.goodies_full.goodies_wallpaper_03",
+                    "wallpapers": [{
+                        "title": "galaxy s7",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_03_galaxys7.jpg"
+                    }, {
+                        "title": "galaxy sa3",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_03_galaxysa3.jpg"
+                    }, {
+                        "title": "iphone 5",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_03_iphone5.jpg"
+                    }, {
+                        "title": "iphone 6",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_03_iphone6.jpg"
+                    }, {
+                        "title": "iphone 7 plus",
+                        "link": "room\/goodies_wallpaper\/goodies_wallpaper_03_iphone7plus.jpg"
+                    }]
+                }]
+            }, {
+                "title": "Le Hall of <br \/> Fame",
+                "active": true,
+                "link": "\/pieces\/hall-of-fame",
+                "posY": 5900,
+                "subtitle": null,
+                "id": 3,
+                "layers": [{
+                    "id": 0,
+                    "top": "auto",
+                    "left": "0%",
+                    "right": "auto",
+                    "bottom": "-5%",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.halloffame.halloffame_cactus"
+                }, {
+                    "id": 1,
+                    "top": "auto",
+                    "right": "-6%",
+                    "left": "auto",
+                    "bottom": "-8%",
+                    "depth": 0.5,
+                    "img": "img.rooms.halloffame.halloffame_plant"
+                }],
+                "layers_decoration": [{
+                    "id": 0,
+                    "x": 300,
+                    "y": 1344,
+                    "x_mobile": 40,
+                    "y_mobile": 1344,
+                    "img": "img.rooms.halloffame.halloffame_etagere"
+                }, {
+                    "id": 1,
+                    "x": 300,
+                    "y": 990,
+                    "x_mobile": 40,
+                    "y_mobile": 990,
+                    "img": "img.rooms.halloffame.halloffame_etagere"
+                }, {
+                    "id": 2,
+                    "x": 300,
+                    "y": 636,
+                    "x_mobile": 40,
+                    "y_mobile": 636,
+                    "img": "img.rooms.halloffame.halloffame_etagere"
+                }, {
+                    "id": 3,
+                    "x": 300,
+                    "y": 282,
+                    "x_mobile": 40,
+                    "y_mobile": 282,
+                    "img": "img.rooms.halloffame.halloffame_etagere"
+                }, {
+                    "id": 4,
+                    "x": 300,
+                    "y": -72,
+                    "x_mobile": 40,
+                    "y_mobile": -72,
+                    "img": "img.rooms.halloffame.halloffame_etagere"
+                }, {
+                    "id": 5,
+                    "x": 300,
+                    "y": -426,
+                    "x_mobile": 40,
+                    "y_mobile": -426,
+                    "img": "img.rooms.halloffame.halloffame_etagere"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "x": 425,
+                    "y": 30,
+                    "x_mobile": 175,
+                    "y_mobile": 30,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_cadre1",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_cadre1",
+                    "link": "halloffame-objet-cadre1",
+                    "title": 1988,
+                    "description": "Cr\u00e9ation de la premi\u00e8re cr\u00eape fourr\u00e9e emball\u00e9e dans un sachet individuel. Qui a eu cette id\u00e9e folle? Un cr\u00eapier breton, un passionn\u00e9, Christian Faure. <br \/>Un concept est n\u00e9 et avec lui un nom: la cr\u00eape Whaou!"
+                }, {
+                    "id": 1,
+                    "x": 645,
+                    "y": 10,
+                    "x_mobile": 395,
+                    "y_mobile": 10,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_carte",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_carte",
+                    "link": "halloffame-objet-carte",
+                    "title": 1998,
+                    "description": "La marque a de l\u2019app\u00e9tit! La soci\u00e9t\u00e9 s'agrandit et d\u00e9m\u00e9nage \u00e0 Plou\u00e9dern (Finist\u00e8re). En 10 ans, la marque s\u2019est install\u00e9e comme leader, six parfums composent d\u00e9sormais la gamme de cr\u00eapes: fraise, chocolat, chocolat-banane, chocolat-noix de coco, pomme, tout chocolat."
+                }, {
+                    "id": 2,
+                    "x": 405,
+                    "y": 340,
+                    "x_mobile": 155,
+                    "y_mobile": 340,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_cracky",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_cracky",
+                    "link": "halloffame-objet-cracky",
+                    "zIndex": 2,
+                    "title": 2004,
+                    "description": "Whaou!, marque taill\u00e9e pour l\u2019aventure, bouscule les codes en cr\u00e9ant un nouveau fourrage croustillant compos\u00e9 de chocolat. La cr\u00eape insolite Whaou! Cracky est n\u00e9e. Elle trouve tr\u00e8s vite ses fans !"
+                }, {
+                    "id": 3,
+                    "x": 655,
+                    "y": 380,
+                    "x_mobile": 405,
+                    "y_mobile": 380,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_cadre2",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_cadre2",
+                    "link": "halloffame-objet-cadre2",
+                    "title": 2004,
+                    "description": "C\u2019est aussi la naissance de notre c\u00e9l\u00e8bre mascotte de marque: la mascotte girafon Whaou!"
+                }, {
+                    "id": 4,
+                    "x": 885,
+                    "y": 330,
+                    "x_mobile": 635,
+                    "y_mobile": 330,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_muffin",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_muffin",
+                    "link": "halloffame-objet-muffin",
+                    "title": 2014,
+                    "description": "Les ados sont \u00e0 la recherche de sensations fortes ?! <br \/>Whaou! lance une gamme d\u00e9di\u00e9e aux ados: des muffins encore plus gourmands, associant un max de fondant et un max de croquant."
+                }, {
+                    "id": 5,
+                    "x": 415,
+                    "y": 720,
+                    "x_mobile": 165,
+                    "y_mobile": 720,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_packs",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_packs",
+                    "link": "halloffame-objet-packs",
+                    "title": 2016,
+                    "description": "Face au succ\u00e8s de la cr\u00eape Whaou! Cracky chocolat, le concept de billes de c\u00e9r\u00e9ales se d\u00e9veloppe et Whaou! Cracky s'agrandit avec 2 nouvelles r\u00e9f\u00e9rences: caramel et choco-noisette."
+                }, {
+                    "id": 6,
+                    "x": 805,
+                    "y": 730,
+                    "x_mobile": 555,
+                    "y_mobile": 730,
+                    "img": "img.rooms.halloffame.goodies.halloffame_objet_bio",
+                    "full_img": "img.rooms.halloffame.goodies_full.halloffame_objet_bio",
+                    "link": "halloffame-objet-bio",
+                    "title": 2018,
+                    "description": "\u00abBiotifull\u00bb innovation pour Whaou! qui s'engage autrement dans la naturalit\u00e9 en lan\u00e7ant la premi\u00e8re gamme de cr\u00eapes fourr\u00e9es BIO du march\u00e9."
+                }]
+            }, {
+                "title": "Le<br \/> Grenier",
+                "link": "\/pieces\/grenier",
+                "active": true,
+                "posY": 7300,
+                "subtitle": null,
+                "id": 4,
+                "layers": [{
+                    "id": 0,
+                    "top": "auto",
+                    "left": "0%",
+                    "right": "auto",
+                    "bottom": "-8%",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.grenier.grenier_malle_gauche"
+                }, {
+                    "id": 1,
+                    "top": "auto",
+                    "right": "-6%",
+                    "left": "auto",
+                    "bottom": "-8%",
+                    "depth": 0.5,
+                    "img": "img.rooms.grenier.grenier_malle_droite"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "x": 647,
+                    "y": 1030,
+                    "x_mobile": 647,
+                    "y_mobile": 1030,
+                    "img": "img.rooms.grenier.valise_rouge",
+                    "link": "valise-rouge"
+                }, {
+                    "id": 1,
+                    "x": 668,
+                    "y": 814,
+                    "x_mobile": 668,
+                    "y_mobile": 814,
+                    "img": "img.rooms.grenier.valise_violette",
+                    "bg": "img.rooms.grenier.bg_violet",
+                    "link": "anniv",
+                    "layers_hover": [{
+                        "id": 0,
+                        "link": "anniv\/anniv-carton-invitation",
+                        "img": "img.rooms.grenier.goodies.anniv.anniv_carton_invitation",
+                        "title": "La carte d\u2019invitation<br \/>  Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.anniv.anniv_carton_invitation",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/anniv\/anniv_carton_invitation.jpg"
+                        }]
+                    }, {
+                        "id": 1,
+                        "link": "anniv\/anniv-menu",
+                        "img": "img.rooms.grenier.goodies.anniv.anniv_menu",
+                        "title": "Le menu d\u2019anniversaire<br \/>  Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.anniv.anniv_menu",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/anniv\/anniv_menu.jpg"
+                        }]
+                    }, {
+                        "id": 2,
+                        "link": "anniv\/anniv-set-table",
+                        "img": "img.rooms.grenier.goodies.anniv.anniv_set_table",
+                        "title": "Le set de<br \/> table<br \/> Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.anniv.anniv_set_table",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/anniv\/anniv_set_table.jpg"
+                        }]
+                    }]
+                }, {
+                    "id": 2,
+                    "x": 706,
+                    "y": 578,
+                    "x_mobile": 706,
+                    "y_mobile": 578,
+                    "img": "img.rooms.grenier.valise_orange",
+                    "bg": "img.rooms.grenier.bg_orange",
+                    "link": "recettes",
+                    "layers_hover": [{
+                        "id": 0,
+                        "link": "recettes\/brochettes-crepes",
+                        "img": "img.rooms.grenier.goodies.recettes.brochettes_crepes",
+                        "title": "Brochettes<br \/> de cr\u00eapes",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.recettes.brochettes_crepes",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/recettes\/brochettes_crepes.jpg"
+                        }]
+                    }, {
+                        "id": 1,
+                        "link": "recettes\/brownie-folie",
+                        "img": "img.rooms.grenier.goodies.recettes.brownie_folie",
+                        "title": "Brownie<br \/> Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.recettes.brownie_folie",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/recettes\/brownie_folie.jpg"
+                        }]
+                    }, {
+                        "id": 2,
+                        "link": "recettes\/moelleux-fabuleux",
+                        "img": "img.rooms.grenier.goodies.recettes.moelleux_fabuleux",
+                        "title": "Moelleux<br \/> fabuleux",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.recettes.moelleux_fabuleux",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/recettes\/moelleux_fabuleux.jpg"
+                        }]
+                    }, {
+                        "id": 3,
+                        "link": "recettes\/whaou-cocktail",
+                        "img": "img.rooms.grenier.goodies.recettes.whaou_cocktail",
+                        "title": "Whaou!<br \/> cocktail !",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.recettes.whaou_cocktail",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/recettes\/whaou_cocktail.jpg"
+                        }]
+                    }]
+                }, {
+                    "id": 3,
+                    "x": 697,
+                    "y": 340,
+                    "x_mobile": 697,
+                    "y_mobile": 340,
+                    "img": "img.rooms.grenier.valise_verte",
+                    "bg": "img.rooms.grenier.bg_green",
+                    "link": "diy",
+                    "layers_hover": [{
+                        "id": 0,
+                        "link": "diy\/diy-chapeau",
+                        "img": "img.rooms.grenier.goodies.diy.diy_chapeau",
+                        "title": "Le chapeau Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.diy.diy_chapeau",
+                        "wallpapers": [{
+                            "title": "pdf",
+                            "link": "grenier\/goodies_wallpaper\/diy\/diy_chapeau.pdf"
+                        }]
+                    }, {
+                        "id": 1,
+                        "link": "diy\/diy-cornet-a-bonbons",
+                        "img": "img.rooms.grenier.goodies.diy.diy_cornet_a_bonbons",
+                        "title": "Le cornet \u00e0 bonbons <br \/>Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.diy.diy_cornet_a_bonbons",
+                        "wallpapers": [{
+                            "title": "pdf",
+                            "link": "grenier\/goodies_wallpaper\/diy\/diy_cornet_a_bonbons.pdf"
+                        }]
+                    }, {
+                        "id": 2,
+                        "link": "diy\/diy-masque",
+                        "img": "img.rooms.grenier.goodies.diy.diy_masque",
+                        "title": "Le masque <br \/>Whaou!",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.diy.diy_masque",
+                        "wallpapers": [{
+                            "title": "pdf",
+                            "link": "grenier\/goodies_wallpaper\/diy\/diy_masque.pdf"
+                        }]
+                    }]
+                }, {
+                    "id": 4,
+                    "x": 706,
+                    "y": 84,
+                    "x_mobile": 706,
+                    "y_mobile": 84,
+                    "img": "img.rooms.grenier.valise_jaune",
+                    "bg": "img.rooms.grenier.bg_yellow",
+                    "link": "jeux",
+                    "layers_hover": [{
+                        "id": 0,
+                        "link": "jeux\/jeux-chamboule-tout",
+                        "img": "img.rooms.grenier.goodies.jeux.jeux_chamboule_tout",
+                        "title": "Le Chamboule <br \/>tout",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.jeux.jeux_chamboule_tout",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/jeux\/jeux_chamboule_tout.jpg"
+                        }]
+                    }, {
+                        "id": 1,
+                        "link": "jeux\/jeux-smash-ballons",
+                        "img": "img.rooms.grenier.goodies.jeux.jeux_smash_ballons",
+                        "title": "Le smash <br \/>ballons",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.jeux.jeux_smash_ballons",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/jeux\/jeux_smash_ballons.jpg"
+                        }]
+                    }, {
+                        "id": 2,
+                        "link": "jeux\/jeux-jeu-l-eponge",
+                        "img": "img.rooms.grenier.goodies.jeux.jeux_jeu_l_eponge",
+                        "title": "Le jeu de<br \/> l\u2019\u00e9ponge",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.jeux.jeux_jeu_l_eponge",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/jeux\/jeux_jeu_l_eponge.jpg"
+                        }]
+                    }, {
+                        "id": 3,
+                        "link": "jeux\/jeux-planche-savonneuse",
+                        "img": "img.rooms.grenier.goodies.jeux.jeux_planche_savonneuse",
+                        "title": "La planche savonneuse",
+                        "facebook": true,
+                        "twitter": "D\u00e9couvrez le grenier de Whaou!, de nombreuses surprises vous y attendent ! #Whaou",
+                        "mail": "D\u00e9couvre le grenier de Whaou!, de nombreuses surprises t\u2019y attendent !",
+                        "full_img": "img.rooms.grenier.goodies_full.jeux.jeux_planche_savonneuse",
+                        "wallpapers": [{
+                            "title": "jpg",
+                            "link": "grenier\/goodies_wallpaper\/jeux\/jeux_planche_savonneuse.jpg"
+                        }]
+                    }]
+                }]
+            }, {
+                "title": "Le coin<br \/> des parents",
+                "posY": 9000,
+                "active": true,
+                "link": "\/pieces\/coin-parents",
+                "subtitle": null,
+                "id": 5,
+                "layers": [{
+                    "id": 0,
+                    "color": "ffb026",
+                    "title": "bienvenue dans la fabrique Whaou!",
+                    "img": "rooms.coinparents.goodies.0",
+                    "content": " <div class='subtitle'><p>Savez-vous comment les produits Whaou!\u00a0sont fabriqu\u00e9s ?<\/p><\/div><div class='description'><p> La fabrique Whaou !, c\u2019est 2 sites de fabrication : l\u2019un pour les cr\u00eapes et l\u2019autre pour les g\u00e2teaux \u00e0 partager (brownie, moelleux au chocolat) et muffins.<br \/> Pour fabriquer nos cr\u00eapes, 4 \u00e9tapes indispensables :<br \/> - Nous assemblons tous les ingr\u00e9dients pour faire la p\u00e2te (le lait, la farine, les \u0153ufs, le sucre, l\u2019huile, le beurre et une pointe de sel)<br \/> - Nous cuisons la p\u00e2te \u00e0 cr\u00eapes<br \/> - Nous y ajoutons le fourrage et les \u00e9ventuelles billettes de c\u00e9r\u00e9ales pour les cr\u00eapes Cracky<br \/> - Nous roulons la cr\u00eape, nous la coupons, nous l\u2019emballons et la voil\u00e0 pr\u00eate \u00e0 \u00eatre d\u00e9gust\u00e9e ! <br \/><br \/> Pour fabriquer nos g\u00e2teaux \u00e0 partager et muffins, rien de plus simple :<br \/> - Nous assemblons tous les ingr\u00e9dients pour faire la p\u00e2te<br \/> - Nous y ajoutons les \u00e9ventuelles p\u00e9pites de chocolat ou \u00e9clats de noisettes<br \/> - Pour les muffins, on rajoute le c\u0153ur chocolat, hop au four<br \/> - Nous emballons la p\u00e2tisserie et c\u2019est pr\u00eat \u00e0 \u00eatre d\u00e9gust\u00e9 !<br \/><br \/><br \/><\/p><\/div><div class='subtitle'><p>Localit\u00e9 de production<\/p><\/div><div class='description'><p>Les p\u00e2tisseries Whaou! sont fabriqu\u00e9s en France, en Bretagne: Plou\u00e9dern pour les cr\u00eapes et Locmin\u00e9 pour les g\u00e2teaux \u00e0 partager et les muffins.<\/p><\/div><div class='production'><\/div> ",
+                    "slides": [{
+                        "img": "rooms.coinparents.goodies.0_slide_0"
+                    }, {
+                        "img": "rooms.coinparents.goodies.0_slide_1"
+                    }, {
+                        "img": "rooms.coinparents.goodies.0_slide_2"
+                    }]
+                }, {
+                    "id": 1,
+                    "color": "d06933",
+                    "title": "un bon go\u00fbter passe par de bons ingr\u00e9dients",
+                    "img": "rooms.coinparents.goodies.1",
+                    "content": " <div class='description'> Si les go\u00fbters Whaou! sont si bons, c\u2019est parce que nous travaillons avec nos partenaires sur la s\u00e9lection des ingr\u00e9dients, tant en mati\u00e8re de qualit\u00e9 que d\u2019engagements soci\u00e9taux: <br \/><br \/><div class='img'><span class='farine'><\/span><\/div><p class='split'>- La farine de bl\u00e9: ingr\u00e9dient majeur de nos go\u00fbters, elle est issue de bl\u00e9s 100% fran\u00e7ais et certifi\u00e9s par la norme CRC\u00ae* <br \/> Par an, cela repr\u00e9sente tout de m\u00eame l\u2019\u00e9quivalent de 14 Stade de France !<\/p><br \/><br \/><div class='img'><span class='oeufs'><\/span><\/div><p class='split'>- Les \u0153ufs : ils sont frais voire extra-frais. Nous travaillons avec les fermes \u00e0 proximit\u00e9 des fabriques Whaou! afin d\u2019utiliser des \u0153ufs de premi\u00e8re fra\u00eecheur. <br \/> Chaque jour, c\u2019est plus de 7 000 poules qui pondent pour fabriquer nos p\u00e2tisseries ! <\/p><br \/><br \/><div class='img'><span class='lait'><\/span><\/div><p class='split'>- Le lait : lui aussi, il est r\u00e9colt\u00e9 dans les fermes voisines des fabriques Whaou ! afin de garantir une tra\u00e7abilit\u00e9 et une fra\u00eecheur indispensables pour nos produits. <br \/> Pour fabriquer nos p\u00e2tisseries, nos \u00e9leveurs partenaires traient 59 vaches tous les jours, de quoi fabriquer des produits vachement bons ! <\/p><br \/><br \/><\/div><br \/><div class='description'><div class='desc_texte'>Dans nos recettes, on ne conserve que l\u2019essentiel : tous nos go\u00fbters sont \u00ab SANS conservateur ni huile de palme \u00bb . Cet engagement nous permet de vous proposer des go\u00fbters moelleux de qualit\u00e9 et d\u2019une grande fra\u00eecheur. Par exemple, une cr\u00eape Whaou ! doit \u00eatre consomm\u00e9e dans les 40 jours apr\u00e8s la fabrication alors que pour un biscuit au chocolat, cela peut aller jusqu\u2019\u00e0 1 an.<\/div><div class='desc_img'><\/div><\/div><br \/><br \/><div class='subtitle'> Et pour aller encore plus loin dans l\u2019engagement, Whaou ! vous propose des p\u00e2tisseries Bio ! <\/div><div class='description'><div class='desc_texte'> Depuis fin 2018, Whaou! va un cran plus loin. Gr\u00e2ce \u00e0 nos agriculteurs partenaires, Whaou! propose des go\u00fbters bio, en s\u00e9lectionnant des ingr\u00e9dients de qualit\u00e9 100% issus de l\u2019agriculture biologique :<br \/> - De la farine de bl\u00e9 bio fran\u00e7aise<br \/> - Des \u0153ufs bio fran\u00e7ais de plein air<br \/> - Des fruits bio participant au respect de l\u2019environnement et de la biodiversit\u00e9<br \/> - Du chocolat bio certifi\u00e9 UTZ** qui soutient une culture du cacao de qualit\u00e9 et durable<br \/><\/div><div class='desc_img desc_img_1'><\/div><\/div><br \/><br \/> * <a target='_blank' href='http:\/\/www.lebledenoscampagne.fr'>www.lebledenoscampagne.fr<\/a><br \/> ** <a target='_blank' href='https:\/\/utz.org\/language-landingpage\/french\/'>www.utz.org<\/a> "
+                }, {
+                    "id": 2,
+                    "color": "64311f",
+                    "title": "une bonne dose d'\u00e9nergie pour toute la journ\u00e9e",
+                    "content": " <div class='description'> Devoirs apr\u00e8s l\u2019\u00e9cole, cours de danse ou de foot, les fins de journ\u00e9es ne sont pas de tout repos ! Consid\u00e9r\u00e9 comme un repas \u00e0 part enti\u00e8re, le go\u00fbter est indispensable pour fournir l\u2019\u00e9nergie n\u00e9cessaire \u00e0 votre enfant afin de tenir jusqu\u2019\u00e0 l\u2019heure du diner. En effet, il repr\u00e9sente 15% des apports nutritionnels quotidiens, pas question donc de le bouder ! <\/div><br \/><br \/><div class='subtitle'>Quel go\u00fbter proposer a votre enfant ?<\/div><div class='description'> Dans l\u2019id\u00e9al, le go\u00fbter doit se composer de 4 types d\u2019aliments :<br \/> - Un produit c\u00e9r\u00e9alier (un morceau de pain ou un go\u00fbter Whaou!) qui va apporter l'\u00e9nergie n\u00e9cessaire au bon fonctionnement des muscles et du cerveau.<br \/> - Un produit laitier (lait, yaourt ou fromage), riche en calcium et en prot\u00e9ines, indispensables \u00e0 la croissance.<br \/> - Un fruit ou un jus de fruit, source de fibres et de vitamine C<br \/> - Et une boisson (de l'eau de pr\u00e9f\u00e9rence) <\/div> ",
+                    "img": "rooms.coinparents.goodies.2"
+                }]
+            }, {
+                "title": "La<br \/> Boutique",
+                "link": "\/pieces\/boutique",
+                "active": true,
+                "posY": 10700,
+                "subtitle": null,
+                "id": 6,
+                "more": " <h2>Collectionne tes points et \u00e9change-les contre des cadeaux Whaou!<\/h2><h3>Comment \u00e7a marche ?<\/h3><p> 1. Imprime ton collector Whaou!<br \/> 2. Collecte les points<br \/> 3. Choisis  l\u2019objet que tu souhaites recevoir<br \/> 4. Colle tes points sur le collector<br \/> 5. Joins un ch\u00e8que correspondant \u00e0 ta commande<br \/> 6. Envoie ton collector \u00e0 l\u2019adresse suivante : <br \/><br \/> Boutique Whaou!<br \/> Facility N\u00b0140954<br \/> 13844 VITROLLES CEDEX <br \/><br \/> Ta commande sera trait\u00e9e dans un d\u00e9lai de 4 \u00e0 6 semaines \u00e0 r\u00e9ception de ton courrier. <\/p> ",
+                "layers": [{
+                    "id": 0,
+                    "top": "auto",
+                    "left": "-5%",
+                    "right": "auto",
+                    "bottom": "0%",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.boutique.boutique_balloons_0"
+                }, {
+                    "id": 1,
+                    "top": "auto",
+                    "right": "5%",
+                    "left": "auto",
+                    "bottom": "-10%",
+                    "depth": 0.20000000000000001,
+                    "img": "img.rooms.boutique.boutique_balloons_1"
+                }, {
+                    "id": 2,
+                    "top": "-20%",
+                    "left": "auto",
+                    "right": "0%",
+                    "bottom": "auto",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.boutique.boutique_garland"
+                }],
+                "layers_decoration": [{
+                    "id": 0,
+                    "x": 500,
+                    "y": 100,
+                    "x_mobile": 500,
+                    "y_mobile": 300,
+                    "img": "img.rooms.boutique.machine_avec_rack"
+                }, {
+                    "id": 1,
+                    "x": 670,
+                    "y": 305,
+                    "x_mobile": 670,
+                    "y_mobile": 505,
+                    "img": "img.rooms.boutique.top_texte"
+                }, {
+                    "id": 2,
+                    "x": 1180,
+                    "y": 320,
+                    "x_mobile": 1180,
+                    "y_mobile": 520,
+                    "get_link": "\/static\/whaou_collecteur.pdf",
+                    "img": "img.rooms.boutique.top_btn"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "x": 800,
+                    "y": 670,
+                    "x_mobile": 800,
+                    "y_mobile": 870,
+                    "active": true,
+                    "img": "img.rooms.boutique.goodies.enceinte_machine",
+                    "full_img": "img.rooms.boutique.goodies_full.enceinte_machine",
+                    "link": "enceinte-machine",
+                    "title": "L\u2019enceinte",
+                    "get_link": "\/static\/whaou_collecteur.pdf",
+                    "description": "70 points Ou 30 points et 5\u20ac"
+                }, {
+                    "id": 1,
+                    "x": 985,
+                    "y": 547,
+                    "x_mobile": 980,
+                    "y_mobile": 745,
+                    "active": true,
+                    "img": "img.rooms.boutique.goodies.boite_metal_machine",
+                    "full_img": "img.rooms.boutique.goodies_full.boite_metal_machine",
+                    "link": "boite-metal-machine",
+                    "title": "La boite \u00e0 cr\u00eapes",
+                    "get_link": "\/static\/whaou_collecteur.pdf",
+                    "description": "40 points ou 10 points + 5\u20ac"
+                }, {
+                    "id": 2,
+                    "x": 680,
+                    "y": 880,
+                    "x_mobile": 680,
+                    "y_mobile": 1080,
+                    "active": true,
+                    "img": "img.rooms.boutique.goodies.skate_machine",
+                    "full_img": "img.rooms.boutique.goodies_full.skate_machine",
+                    "link": "skate-machine",
+                    "title": "Le Skate",
+                    "get_link": "\/static\/whaou_collecteur.pdf",
+                    "description": "80 points Ou 15 points + 10\u20ac"
+                }, {
+                    "id": 3,
+                    "x": 683,
+                    "y": 1050,
+                    "x_mobile": 683,
+                    "y_mobile": 1250,
+                    "active": true,
+                    "img": "img.rooms.boutique.goodies.bouee_machine",
+                    "full_img": "img.rooms.boutique.goodies_full.bouee_machine",
+                    "link": "bouee-machine",
+                    "title": "La bou\u00e9e girafon",
+                    "get_link": "\/static\/whaou_collecteur.pdf",
+                    "description": "60 points ou 20 points + 5\u20ac"
+                }, {
+                    "id": 4,
+                    "x": 1020,
+                    "y": 1050,
+                    "x_mobile": 1020,
+                    "y_mobile": 1250,
+                    "active": true,
+                    "img": "img.rooms.boutique.goodies.souris_machine",
+                    "full_img": "img.rooms.boutique.goodies_full.souris_machine",
+                    "link": "souris-machine",
+                    "title": "La souris sans fil",
+                    "get_link": "\/static\/whaou_collecteur.pdf",
+                    "description": "40 points ou 7 points + 6\u20ac"
+                }]
+            }, {
+                "title": "Le <br \/>salon",
+                "link": "\/pieces\/salon",
+                "active": true,
+                "posY": 12400,
+                "subtitle": null,
+                "id": 7,
+                "layers": [{
+                    "id": 0,
+                    "top": "-5%",
+                    "left": "auto",
+                    "right": "2%",
+                    "bottom": "auto",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.salon.salon_lampe"
+                }, {
+                    "id": 0,
+                    "left": "-10%",
+                    "top": "-8%",
+                    "right": "auto",
+                    "bottom": "auto",
+                    "depth": 0.45000000000000001,
+                    "img": "img.rooms.salon.salon_plant"
+                }],
+                "layers_decoration": [{
+                    "id": 0,
+                    "x": 1250,
+                    "y": 650,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_bas"
+                }, {
+                    "id": 1,
+                    "x": 1250,
+                    "y": 650,
+                    "img": "img.rooms.salon.salon_porterevue_bas"
+                }, {
+                    "id": 2,
+                    "x": 1250,
+                    "y": 328,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 3,
+                    "x": 1250,
+                    "y": 328,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 4,
+                    "x": 1250,
+                    "y": 6,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 5,
+                    "x": 1250,
+                    "y": 6,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 6,
+                    "x": 1250,
+                    "y": -316,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 7,
+                    "x": 1250,
+                    "y": -316,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 8,
+                    "x": 1250,
+                    "y": -638,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 9,
+                    "x": 1250,
+                    "y": -638,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 10,
+                    "x": 1250,
+                    "y": -960,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 11,
+                    "x": 1250,
+                    "y": -960,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 12,
+                    "x": 1250,
+                    "y": -1282,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 13,
+                    "x": 1250,
+                    "y": -1282,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 14,
+                    "x": 1250,
+                    "y": -1604,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 15,
+                    "x": 1250,
+                    "y": -1604,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "id": 16,
+                    "x": 1250,
+                    "y": -1926,
+                    "img": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "id": 17,
+                    "x": 1250,
+                    "y": -1926,
+                    "img": "img.rooms.salon.salon_porterevue_repeat"
+                }],
+                "layers_decoration_behind": [{
+                    "id": 0,
+                    "x": 1250,
+                    "y": 328,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "id": 1,
+                    "x": 1250,
+                    "y": 6,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "id": 2,
+                    "x": 1250,
+                    "y": -316,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "id": 3,
+                    "x": 1250,
+                    "y": -638,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "id": 4,
+                    "x": 1250,
+                    "y": -960,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "id": 5,
+                    "x": 1250,
+                    "y": -1282,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "id": 6,
+                    "x": 1250,
+                    "y": -1604,
+                    "img": "img.rooms.salon.salon_porterevue_barres"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "link": "magazine-0",
+                    "img": "img.rooms.salon.0",
+                    "full_img": "img.rooms.salon.0",
+                    "x": 1370,
+                    "y": 355,
+                    "items": [{
+                        "full_img": "img.rooms.salon.0_0",
+                        "link": "magazine-volume-1-01"
+                    }, {
+                        "full_img": "img.rooms.salon.0_1",
+                        "link": "magazine-volume-1-02"
+                    }, {
+                        "full_img": "img.rooms.salon.0_2",
+                        "link": "magazine-volume-1-03"
+                    }, {
+                        "full_img": "img.rooms.salon.0_3",
+                        "link": "magazine-volume-1-04"
+                    }]
+                }, {
+                    "id": 1,
+                    "link": "magazine-1",
+                    "img": "img.rooms.salon.1",
+                    "full_img": "img.rooms.salon.1",
+                    "x": 1370,
+                    "y": 32,
+                    "items": [{
+                        "full_img": "img.rooms.salon.1_0",
+                        "link": "magazine-volume-1-01"
+                    }, {
+                        "full_img": "img.rooms.salon.1_1",
+                        "link": "magazine-volume-1-02"
+                    }, {
+                        "full_img": "img.rooms.salon.1_2",
+                        "link": "magazine-volume-1-03"
+                    }, {
+                        "full_img": "img.rooms.salon.1_3",
+                        "link": "magazine-volume-1-04"
+                    }]
+                }, {
+                    "id": 2,
+                    "link": "magazine-2",
+                    "img": "img.rooms.salon.2",
+                    "full_img": "img.rooms.salon.2",
+                    "x": 1370,
+                    "y": -290,
+                    "items": [{
+                        "full_img": "img.rooms.salon.2_0",
+                        "link": "magazine-volume-2-01"
+                    }, {
+                        "full_img": "img.rooms.salon.2_1",
+                        "link": "magazine-volume-2-02"
+                    }, {
+                        "full_img": "img.rooms.salon.2_2",
+                        "link": "magazine-volume-2-03"
+                    }, {
+                        "full_img": "img.rooms.salon.2_3",
+                        "link": "magazine-volume-2-04"
+                    }]
+                }, {
+                    "id": 3,
+                    "link": "magazine-3",
+                    "img": "img.rooms.salon.3",
+                    "full_img": "img.rooms.salon.3",
+                    "x": 1370,
+                    "y": -613,
+                    "items": [{
+                        "full_img": "img.rooms.salon.3_0",
+                        "link": "magazine-volume-3-01"
+                    }, {
+                        "full_img": "img.rooms.salon.3_1",
+                        "link": "magazine-volume-3-02"
+                    }, {
+                        "full_img": "img.rooms.salon.3_2",
+                        "link": "magazine-volume-3-03"
+                    }, {
+                        "full_img": "img.rooms.salon.3_3",
+                        "link": "magazine-volume-3-04"
+                    }]
+                }, {
+                    "id": 4,
+                    "link": "magazine-4",
+                    "img": "img.rooms.salon.4",
+                    "full_img": "img.rooms.salon.4",
+                    "x": 1370,
+                    "y": -934,
+                    "items": [{
+                        "full_img": "img.rooms.salon.4_0",
+                        "link": "magazine-volume-4-01"
+                    }, {
+                        "full_img": "img.rooms.salon.4_1",
+                        "link": "magazine-volume-4-02"
+                    }, {
+                        "full_img": "img.rooms.salon.4_2",
+                        "link": "magazine-volume-4-03"
+                    }, {
+                        "full_img": "img.rooms.salon.4_3",
+                        "link": "magazine-volume-4-04"
+                    }]
+                }, {
+                    "id": 5,
+                    "link": "magazine-5",
+                    "img": "img.rooms.salon.5",
+                    "full_img": "img.rooms.salon.5",
+                    "x": 1370,
+                    "y": -1256,
+                    "items": [{
+                        "full_img": "img.rooms.salon.5_0",
+                        "link": "magazine-volume-5-01"
+                    }, {
+                        "full_img": "img.rooms.salon.5_1",
+                        "link": "magazine-volume-5-02"
+                    }, {
+                        "full_img": "img.rooms.salon.5_2",
+                        "link": "magazine-volume-5-03"
+                    }, {
+                        "full_img": "img.rooms.salon.5_3",
+                        "link": "magazine-volume-5-04"
+                    }]
+                }]
+            }, {
+                "title": "La <br \/>Geek room",
+                "link": "\/pieces\/geekroom",
+                "active": true,
+                "posY": 14100,
+                "subtitle": null,
+                "id": 8,
+                "layers": [{
+                    "id": 0,
+                    "top": "auto",
+                    "left": "auto",
+                    "right": "-8%",
+                    "bottom": "-6%",
+                    "depth": 0.40000000000000002,
+                    "img": "img.rooms.geekroom.geekroom_jeux"
+                }, {
+                    "id": 0,
+                    "top": "-6%",
+                    "right": "auto",
+                    "left": "-5%",
+                    "bottom": "auto",
+                    "depth": 0.5,
+                    "img": "img.rooms.geekroom.geekroom_fils"
+                }, {
+                    "id": 0,
+                    "top": "auto",
+                    "right": "auto",
+                    "left": "-6.5%",
+                    "bottom": "-6%",
+                    "depth": 0.59999999999999998,
+                    "img": "img.rooms.geekroom.geekroom_enceinte"
+                }],
+                "layers_hover": [{
+                    "id": 0,
+                    "link": "video-0",
+                    "type": "small",
+                    "img": "img.rooms.geekroom.3",
+                    "color": "black",
+                    "spotify_url": "playlist\/25ei0V4PXnoM7z7BA4dlaM"
+                }, {
+                    "id": 1,
+                    "link": "video-1",
+                    "type": "large",
+                    "img": "img.rooms.geekroom.1",
+                    "youtube_id": "qtqCOTIMEAc",
+                    "color": "red"
+                }, {
+                    "id": 2,
+                    "link": "video-2",
+                    "type": "large",
+                    "img": "img.rooms.geekroom.1",
+                    "youtube_id": "n662_mBCtPk",
+                    "color": "blue"
+                }, {
+                    "id": 3,
+                    "link": "video-0",
+                    "type": "small",
+                    "img": "img.rooms.geekroom.2",
+                    "color": "black",
+                    "spotify_url": "playlist\/70ZJIvCs9VdanOY9KmozNs"
+                }, {
+                    "id": 4,
+                    "link": "video-4",
+                    "type": "small",
+                    "img": "img.rooms.geekroom.0",
+                    "color": "black",
+                    "spotify_url": "playlist\/32nWyQ2tOcZ66kr7TWrkMF"
+                }, {
+                    "id": 5,
+                    "link": "video-3",
+                    "type": "large",
+                    "img": "img.rooms.geekroom.1",
+                    "youtube_id": "xj7tHZ1MyvI",
+                    "color": "red"
+                }]
+            }],
+            "terms": " <h4>1 - Presentation generale<\/h4> Vous \u00eates actuellement connect\u00e9 au site http:\/\/http://127.0.0.1:8080\/, \u00e9dit\u00e9 par Whaou!<br \/><br \/> D\u00e9nomination sociale : Whaou!<br \/> Si\u00e8ge social : Go\u00fbters Magiques SAS \u2013 lieu dit Kerichelard ZA de Keranna \u2013 BP 70116 \u2013 56500 Plumelin<br \/> SIRET 499 185 783 00028<br \/> Capital social : 280 000 \u20ac<br \/> H\u00e9bergement :<br \/><br \/> Amazon Web Services LLC<br \/> P.O. Box 81226<br \/> Seattle, WA 98108-1226<br \/> http:\/\/aws.amazon.com<br \/><br \/> L'\u00e9diteur s'engage \u00e0 respecter l'ensemble des lois concernant la mise en place et l'activit\u00e9 d'un site Internet.<br \/><br \/><h4>2 - Informations techniques<\/h4><br \/> Il est rappel\u00e9 que le secret des correspondances n'est pas garanti sur le r\u00e9seau Internet et qu'il appartient \u00e0 chaque utilisateur d'Internet de prendre toutes les mesures appropri\u00e9es de fa\u00e7on \u00e0 prot\u00e9ger ses propres donn\u00e9es et\/ou logiciels de la contamination d'\u00e9ventuels virus circulant sur Internet.<br \/><h4>3 - Charte editoriale<\/h4><br \/> Le site http:\/\/http://127.0.0.1:8080\/ est un site de pr\u00e9sentation des services propos\u00e9s par Whaou! Il est compl\u00e9t\u00e9 par des outils de simulation. La pr\u00e9sentation des produits, prises de vue ou graphismes reste indicative et ne peut engager la responsabilit\u00e9 de la soci\u00e9t\u00e9 Whaou!, ni m\u00eame remettre en cause la validit\u00e9 de la commande.<br \/><h4>4 - Donnees personnelles<\/h4><br \/> Les informations que vous saisirez seront enregistr\u00e9es par Whaou!, elles feront l\u2019objet d\u2019un traitement de donn\u00e9es \u00e0 caract\u00e8re personnel sous la responsabilit\u00e9 de Whaou! en sa qualit\u00e9 de responsable de traitement. Les internautes \u00e2g\u00e9s de moins de 16 ans ne seront pas inscrits sur le site tant qu\u2019un responsable l\u00e9gal titulaire de l\u2019autorit\u00e9 parentale, n\u2019aura pas donn\u00e9 son accord conform\u00e9ment \u00e0 l\u2019article 8 du R\u00e8glement g\u00e9n\u00e9ral sur la protection des donn\u00e9es du 27 avril 2016. Le responsable de traitement se r\u00e9serve le droit de refuser le traitement des donn\u00e9es d\u2019un mineur \u00e2g\u00e9 de moins de 16 ans dont le responsable l\u00e9gal n\u2019aurait pas donn\u00e9 son accord.<br \/><br \/> Les donn\u00e9es collect\u00e9es seront susceptibles d\u2019\u00eatre transmises \u00e0 des sous-traitants et partenaires de Whaou ! qui n\u2019agiront que conform\u00e9ment aux instructions du responsable de traitement et pour son compte.<br \/> Avant de proc\u00e9der \u00e0 un transfert des donn\u00e9es personnelles vers un Etat non membre de l\u2019UE, le responsable de traitement recueillera le consentement des personnes concern\u00e9es et de leurs responsables l\u00e9gaux.<br \/><br \/> Vous disposez d'un droit d'acc\u00e8s, de modification, de rectification, de suppression et d\u2019un droit \u00e0 la portabilit\u00e9 de vos donn\u00e9es, dans les conditions pr\u00e9vues par l'article 31 de la loi du 6 janvier 1978 modifi\u00e9e, relative \u00e0 l'informatique, aux fichiers et aux libert\u00e9s et par le R\u00e8glement europ\u00e9en sur la protection des donn\u00e9es. Pour l'exercer, adressez-vous par courrier au gestionnaire du site, \u00e0 l'adresse suivante : contact@whaou.com Conform\u00e9ment \u00e0 l\u2019article 17 du r\u00e8glement, les personnes mineures inscrites b\u00e9n\u00e9ficient \u00e9galement d\u2019un droit \u00e0 l\u2019effacement de leurs donn\u00e9es.<br \/><br \/> En poursuivant votre navigation sur le site Whaou!, vous acceptez l\u2019utilisation de Cookies ou autres traceurs conform\u00e9ment \u00e0 la loi informatique et libert\u00e9s.<br \/><h4>5 - Liens hypertextes<\/h4><br \/> La cr\u00e9ation de liens hypertextes vers le site http:\/\/127.0.0.1:8080\/ est soumise \u00e0 l'accord pr\u00e9alable du Directeur de la Publication. Les liens hypertextes \u00e9tablis en direction d'autres sites \u00e0 partir de http:\/\/127.0.0.1:8080\/ ne sauraient, en aucun cas, engager la responsabilit\u00e9 de Whaou!.<br \/><h4>6 - Droits d'auteurs<\/h4><br \/> La reproduction ou repr\u00e9sentation, int\u00e9grale ou partielle, des pages, des donn\u00e9es et de tout autre \u00e9l\u00e9ment constitutif au site, par quelque proc\u00e9d\u00e9 ou support que ce soit, est interdite et constitue sans autorisation de l'\u00e9diteur une contrefa\u00e7on. "
+        };
+        var manifestJSON = [{
+            "id": "default",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/default\/pack.json",
+                "mapping": [{
+                    "library_id": "img.cloud1"
+                }, {
+                    "library_id": "img.cloud0"
+                }, {
+                    "library_id": "img.cloud"
+                }, {
+                    "library_id": "tpl.global.swiper"
+                }, {
+                    "library_id": "tpl.help"
+                }, {
+                    "library_id": "tpl.more"
+                }, {
+                    "library_id": "tpl.congrats"
+                }, {
+                    "library_id": "tpl.bend"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/default\/pack.pack"
+            }]
+        }, {
+            "id": "kitchen",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/kitchen\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.kitchen.ingredients.caramel"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.sel"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.levure"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.sucre"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.fraises"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.chocolat"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.pepites"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.beurre"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.billes"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.huile"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.oeufs"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.farine"
+                }, {
+                    "library_id": "img.rooms.kitchen.ingredients.lait"
+                }, {
+                    "library_id": "img.rooms.kitchen.kitchen_shelf_empty_shadow"
+                }, {
+                    "library_id": "img.rooms.kitchen.kitchen_salad"
+                }, {
+                    "library_id": "img.rooms.kitchen.2_1_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.2_0_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.2"
+                }, {
+                    "library_id": "img.rooms.kitchen.1_3_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.1_2_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.1_1_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.1_0_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.1"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_14_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_13_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_12_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_11_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_10_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_9_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_8_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_7_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_6_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_5_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_4_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_3_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_2_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_1_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0_0_large"
+                }, {
+                    "library_id": "img.rooms.kitchen.0"
+                }, {
+                    "library_id": "img.rooms.kitchen.kitchen_toaster"
+                }, {
+                    "library_id": "img.rooms.kitchen.kitchen_plant"
+                }, {
+                    "library_id": "img.rooms.kitchen.kitchen_mug_yellow"
+                }, {
+                    "library_id": "img.rooms.kitchen.kitchen_mug_green"
+                }, {
+                    "library_id": "img.rooms.kitchen.sprite"
+                }, {
+                    "library_id": "img.rooms.kitchen.bg_mobile_extra"
+                }, {
+                    "library_id": "img.rooms.kitchen.bg_mobile"
+                }, {
+                    "library_id": "img.rooms.kitchen.bg"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/kitchen\/pack.pack"
+            }]
+        }, {
+            "id": "bedroom",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/bedroom\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.room.goodies_full.goodies_marquepage"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_poster_paysage_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_wallpaper_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_wallpaper_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_wallpaper_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_sticker_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_sticker_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_sticker_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_poster_portrait_04"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_poster_portrait_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_poster_portrait_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_poster_portrait_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_mains_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_mains_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies_full.goodies_mains_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_marquepage"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_poster_paysage_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_wallpaper_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_wallpaper_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_wallpaper_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_sticker_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_sticker_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_sticker_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_poster_portrait_04"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_poster_portrait_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_poster_portrait_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_poster_portrait_01"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_mains_03"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_mains_02"
+                }, {
+                    "library_id": "img.rooms.room.goodies.goodies_mains_01"
+                }, {
+                    "library_id": "img.rooms.room.bg"
+                }, {
+                    "library_id": "img.rooms.room.bedroom_shelf"
+                }, {
+                    "library_id": "img.rooms.room.bedroom_garland"
+                }, {
+                    "library_id": "img.rooms.room.bedroom_furniture"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/bedroom\/pack.pack"
+            }]
+        }, {
+            "id": "halloffame",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/halloffame\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_packs"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_muffin"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_cracky"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_carte"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_cadre2"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_cadre1"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies_full.halloffame_objet_bio"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_packs"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_muffin"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_cracky"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_carte"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_cadre2"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_cadre1"
+                }, {
+                    "library_id": "img.rooms.halloffame.goodies.halloffame_objet_bio"
+                }, {
+                    "library_id": "img.rooms.halloffame.bg"
+                }, {
+                    "library_id": "img.rooms.halloffame.halloffame_plant"
+                }, {
+                    "library_id": "img.rooms.halloffame.halloffame_etagere"
+                }, {
+                    "library_id": "img.rooms.halloffame.halloffame_cactus"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/halloffame\/pack.pack"
+            }]
+        }, {
+            "id": "geekroom",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/geekroom\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.geekroom.geekroom_jeux"
+                }, {
+                    "library_id": "img.rooms.geekroom.geekroom_fils"
+                }, {
+                    "library_id": "img.rooms.geekroom.geekroom_enceinte"
+                }, {
+                    "library_id": "img.rooms.geekroom.3"
+                }, {
+                    "library_id": "img.rooms.geekroom.2"
+                }, {
+                    "library_id": "img.rooms.geekroom.1"
+                }, {
+                    "library_id": "img.rooms.geekroom.0"
+                }, {
+                    "library_id": "img.rooms.geekroom.bg"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/geekroom\/pack.pack"
+            }]
+        }, {
+            "id": "salledejeux",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/salledejeux\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.salledejeux.maison_morpion"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_table_1"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_table_0"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_balloon"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_meuble"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_shelf"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_plant_top"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_cactus"
+                }, {
+                    "library_id": "img.rooms.salledejeux.maison_plant"
+                }, {
+                    "library_id": "img.rooms.salledejeux.1"
+                }, {
+                    "library_id": "img.rooms.salledejeux.0"
+                }, {
+                    "library_id": "img.rooms.salledejeux.bg"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/salledejeux\/pack.pack"
+            }]
+        }, {
+            "id": "salon",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/salon\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.salon.salon_porterevue_repeat"
+                }, {
+                    "library_id": "img.rooms.salon.salon_porterevue_ombre_repeat"
+                }, {
+                    "library_id": "img.rooms.salon.salon_porterevue_ombre_bas"
+                }, {
+                    "library_id": "img.rooms.salon.salon_porterevue_mag"
+                }, {
+                    "library_id": "img.rooms.salon.salon_porterevue_bas"
+                }, {
+                    "library_id": "img.rooms.salon.salon_porterevue_barres"
+                }, {
+                    "library_id": "img.rooms.salon.salon_plant"
+                }, {
+                    "library_id": "img.rooms.salon.5_3"
+                }, {
+                    "library_id": "img.rooms.salon.5_2"
+                }, {
+                    "library_id": "img.rooms.salon.5_1"
+                }, {
+                    "library_id": "img.rooms.salon.5_0"
+                }, {
+                    "library_id": "img.rooms.salon.5"
+                }, {
+                    "library_id": "img.rooms.salon.4_3"
+                }, {
+                    "library_id": "img.rooms.salon.4_2"
+                }, {
+                    "library_id": "img.rooms.salon.4_1"
+                }, {
+                    "library_id": "img.rooms.salon.4_0"
+                }, {
+                    "library_id": "img.rooms.salon.4"
+                }, {
+                    "library_id": "img.rooms.salon.3_3"
+                }, {
+                    "library_id": "img.rooms.salon.3_2"
+                }, {
+                    "library_id": "img.rooms.salon.3_1"
+                }, {
+                    "library_id": "img.rooms.salon.3_0"
+                }, {
+                    "library_id": "img.rooms.salon.3"
+                }, {
+                    "library_id": "img.rooms.salon.2_3"
+                }, {
+                    "library_id": "img.rooms.salon.2_2"
+                }, {
+                    "library_id": "img.rooms.salon.2_1"
+                }, {
+                    "library_id": "img.rooms.salon.2_0"
+                }, {
+                    "library_id": "img.rooms.salon.2"
+                }, {
+                    "library_id": "img.rooms.salon.1_3"
+                }, {
+                    "library_id": "img.rooms.salon.1_2"
+                }, {
+                    "library_id": "img.rooms.salon.1_1"
+                }, {
+                    "library_id": "img.rooms.salon.1_0"
+                }, {
+                    "library_id": "img.rooms.salon.1"
+                }, {
+                    "library_id": "img.rooms.salon.0_3"
+                }, {
+                    "library_id": "img.rooms.salon.0_2"
+                }, {
+                    "library_id": "img.rooms.salon.0_1"
+                }, {
+                    "library_id": "img.rooms.salon.0_0"
+                }, {
+                    "library_id": "img.rooms.salon.0"
+                }, {
+                    "library_id": "img.rooms.salon.salon_lampe"
+                }, {
+                    "library_id": "img.rooms.salon.bg_mobile"
+                }, {
+                    "library_id": "img.rooms.salon.bg"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/salon\/pack.pack"
+            }]
+        }, {
+            "id": "boutique",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/boutique\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.boutique.goodies_full.souris_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies_full.bouee_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies_full.boite_metal_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies_full.skate_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies_full.montre_rouge_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies_full.montre_bleue_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies_full.enceinte_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.souris_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.bouee_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.boite_metal_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.skate_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.montre_rouge_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.montre_bleue_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.goodies.enceinte_machine"
+                }, {
+                    "library_id": "img.rooms.boutique.bg"
+                }, {
+                    "library_id": "img.rooms.boutique.vitre"
+                }, {
+                    "library_id": "img.rooms.boutique.top_texte"
+                }, {
+                    "library_id": "img.rooms.boutique.top_btn"
+                }, {
+                    "library_id": "img.rooms.boutique.machine_avec_rack"
+                }, {
+                    "library_id": "img.rooms.boutique.boutique_balloons_1"
+                }, {
+                    "library_id": "img.rooms.boutique.boutique_balloons_0"
+                }, {
+                    "library_id": "img.rooms.boutique.boutique_garland"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/boutique\/pack.pack"
+            }]
+        }, {
+            "id": "grenier",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/grenier\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.grenier.goodies_full.recettes.whaou_cocktail"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.recettes.moelleux_fabuleux"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.recettes.brownie_folie"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.recettes.brochettes_crepes"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.jeux.jeux_smash_ballons"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.jeux.jeux_planche_savonneuse"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.jeux.jeux_jeu_l_eponge"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.jeux.jeux_chamboule_tout"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.diy.diy_masque"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.diy.diy_cornet_a_bonbons"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.diy.diy_chapeau"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.anniv.anniv_set_table"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.anniv.anniv_menu"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies_full.anniv.anniv_carton_invitation"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.recettes.whaou_cocktail"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.recettes.moelleux_fabuleux"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.recettes.brownie_folie"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.recettes.brochettes_crepes"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.jeux.jeux_smash_ballons"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.jeux.jeux_planche_savonneuse"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.jeux.jeux_jeu_l_eponge"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.jeux.jeux_chamboule_tout"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.diy.diy_masque"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.diy.diy_cornet_a_bonbons"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.diy.diy_chapeau"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.anniv.anniv_set_table"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.anniv.anniv_menu"
+                }, {
+                    "library_id": "img.rooms.grenier.goodies.anniv.anniv_carton_invitation"
+                }, {
+                    "library_id": "img.rooms.grenier.bg_orange"
+                }, {
+                    "library_id": "img.rooms.grenier.bg_violet"
+                }, {
+                    "library_id": "img.rooms.grenier.bg_yellow"
+                }, {
+                    "library_id": "img.rooms.grenier.bg_green"
+                }, {
+                    "library_id": "img.rooms.grenier.bg"
+                }, {
+                    "library_id": "img.rooms.grenier.valise_violette"
+                }, {
+                    "library_id": "img.rooms.grenier.valise_verte"
+                }, {
+                    "library_id": "img.rooms.grenier.valise_rouge"
+                }, {
+                    "library_id": "img.rooms.grenier.valise_orange"
+                }, {
+                    "library_id": "img.rooms.grenier.valise_jaune"
+                }, {
+                    "library_id": "img.rooms.grenier.grenier_malle_gauche"
+                }, {
+                    "library_id": "img.rooms.grenier.grenier_malle_droite"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/grenier\/pack.pack"
+            }]
+        }, {
+            "id": "coinparents",
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/coinparents\/pack.json",
+                "mapping": [{
+                    "library_id": "img.rooms.coinparents.bg"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/coinparents\/pack.pack"
+            }]
+        }, {
+            "id": "home",
+            "dependencies": ["default"],
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/home\/pack.json",
+                "mapping": [{
+                    "library_id": "tpl.home"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/home\/pack.pack"
+            }]
+        }, {
+            "id": "rooms",
+            "dependencies": ["default"],
+            "files": [{
+                "id": "packConf",
+                "src": "packs\/rooms\/pack.json",
+                "mapping": [{
+                    "library_id": "tpl.rooms"
+                }]
+            }, {
+                "id": "packFile",
+                "src": "packs\/rooms\/pack.pack"
+            }]
+        }];
+        var modulesJSON = {
+            "modules": [{
+                "id": "home",
+                "routes": ["\/", "\/contact"]
+            }, {
+                "id": "rooms",
+                "routes": ["\/pieces\/:id", "\/pieces\/:id\/:poster", "\/pieces\/:id\/:poster\/:category"]
+            }]
+        };
+        var svgsJSON = {
+            "close": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" preserveAspectRatio=\"xMidYMid\" width=\"15\" height=\"14\" viewBox=\"0 0 15 14\">\n  <image xlink:href=\"data:img\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAMAAADHVLbdAAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAD\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/8AAADnxl6iAAAAFnRSTlMAhfvKHfrkJ6jrMgap8T4DmvaAAYp5HzEe0gAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABeSURBVAjXbU9JEoAgDAsgIC6AC\/n\/U63gqWMObTLTpimMdRMGJmcNPBlilzGQHjPJtIhckrAZ6yZtz8i79G0FShVynIfUWt696+bAfX3GrcsG\/Go1r\/z0PZ1H51X\/PBQcCVEtCtFoAAAAAElFTkSuQmCC\" width=\"15\" height=\"14\"\/>\n<\/svg>\n",
+            "facebook": "<svg x=\"0px\" y=\"0px\" viewBox=\"0 0 134.4 283.2\" style=\"enable-background:new 0 0 134.4 283.2;\" xml:space=\"preserve\">\n<path d=\"M134.4,48.3h-30.2c-10.6,0-14.4,6-14.4,14.4v28.7h44.6l-5.3,50.6H89.9v141.2H30.2V142H0V91.4h30.2V62.7\n\tc0-34,11.3-61.2,59.7-62.7h44.6V48.3z\"\/>\n<\/svg>\n",
+            "instagram": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"20px\" height=\"20px\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <!-- Generator: Sketch 48.2 (47327) - http:\/\/www.bohemiancoding.com\/sketch -->\n    <title>Instagram-icon-black<\/title>\n    <desc>Created with Sketch.<\/desc>\n    <defs>\n        <polygon id=\"path-1\" points=\"4.37636761e-05 0.0315973742 19.9684026 0.0315973742 19.9684026 19.9973742 4.37636761e-05 19.9973742\"><\/polygon>\n    <\/defs>\n    <g id=\"Desktop-HD-1440*800---Home\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" transform=\"translate(-1179.000000, -840.000000)\">\n        <g id=\"Footer\" transform=\"translate(238.000000, 807.000000)\">\n            <g id=\"Instagram-icon-black\" transform=\"translate(941.000000, 33.000000)\">\n                <g id=\"Group-3\">\n                    <mask id=\"mask-2\" fill=\"white\">\n                        <use xlink:href=\"#path-1\"><\/use>\n                    <\/mask>\n                    <g id=\"Clip-2\"><\/g>\n                    <path d=\"M9.98424508,0.0315098468 C7.27269147,0.0315098468 6.93269147,0.0429321663 5.86778993,0.0915973742 C4.80503282,0.140131291 4.07925602,0.308884026 3.44424508,0.555667396 C2.78765864,0.810809628 2.23085339,1.15221007 1.67579869,1.70726477 C1.12074398,2.26231947 0.779343545,2.81916849 0.524245077,3.47571116 C0.277330416,4.11080963 0.108577681,4.83658643 0.060131291,5.89929978 C0.0115098468,6.96420131 4.37636761e-05,7.30415755 4.37636761e-05,10.0157112 C4.37636761e-05,12.7273523 0.0115098468,13.0673085 0.060131291,14.1322101 C0.108577681,15.1949234 0.277330416,15.9207002 0.524245077,16.5557987 C0.779343545,17.2123414 1.12074398,17.7691904 1.67579869,18.3242451 C2.23085339,18.8792998 2.78765864,19.2207002 3.44424508,19.4758425 C4.07925602,19.7226258 4.80503282,19.8913786 5.86778993,19.9399125 C6.93269147,19.9884902 7.27269147,20 9.98424508,20 C12.6957987,20 13.0358425,19.9884902 14.100744,19.9399125 C15.1634573,19.8913786 15.8892341,19.7226258 16.5242888,19.4758425 C17.1808753,19.2207002 17.7376368,18.8792998 18.2926915,18.3242451 C18.8477462,17.7691904 19.1891466,17.2123414 19.4442888,16.5557987 C19.6911597,15.9207002 19.8599125,15.1949234 19.9084026,14.1322101 C19.9570241,13.0673085 19.9684464,12.7273523 19.9684464,10.0157112 C19.9684464,7.30415755 19.9570241,6.96420131 19.9084026,5.89929978 C19.8599125,4.83658643 19.6911597,4.11080963 19.4442888,3.47571116 C19.1891466,2.81916849 18.8477462,2.26231947 18.2926915,1.70726477 C17.7376368,1.15221007 17.1808753,0.810809628 16.5242888,0.555667396 C15.8892341,0.308884026 15.1634573,0.140131291 14.100744,0.0915973742 C13.0358425,0.0429321663 12.6957987,0.0315098468 9.98424508,0.0315098468 M9.98424508,1.83045952 C12.6501532,1.83045952 12.9658643,1.84061269 14.0187309,1.88862144 C14.9921663,1.93304158 15.5208315,2.09575492 15.8726477,2.23242888 C16.3387309,2.41356674 16.6713348,2.62993435 17.0206565,2.97929978 C17.3701094,3.32870897 17.586477,3.66126915 17.7675274,4.12730853 C17.9042013,4.47912473 18.0669147,5.0078337 18.1113348,5.98122538 C18.1593435,7.0340919 18.1695405,7.34980306 18.1695405,10.0157112 C18.1695405,12.6817068 18.1593435,12.9974179 18.1113348,14.0501969 C18.0669147,15.0236761 17.9042013,15.5523851 17.7675274,15.9042013 C17.586477,16.3701969 17.3701094,16.7028009 17.0206565,17.0522101 C16.6713348,17.4015755 16.3387309,17.6179431 15.8726477,17.7990372 C15.5208315,17.9357549 14.9921663,18.0984683 14.0187309,18.1428009 C12.9660394,18.1908972 12.650372,18.2010066 9.98424508,18.2010066 C7.31811816,18.2010066 7.00245077,18.1908972 5.9497593,18.1428009 C4.97636761,18.0984683 4.44765864,17.9357549 4.09584245,17.7990372 C3.62980306,17.6179431 3.29719912,17.4015755 2.9478337,17.0522101 C2.59851204,16.7028009 2.38214442,16.3701969 2.20100656,15.9042013 C2.06428884,15.5523851 1.90161926,15.0236761 1.85715536,14.0501969 C1.80919037,12.9974179 1.79899344,12.6817068 1.79899344,10.0157112 C1.79899344,7.34980306 1.80919037,7.0340919 1.85715536,5.98122538 C1.90161926,5.0078337 2.06428884,4.47912473 2.20100656,4.12730853 C2.38214442,3.66126915 2.59851204,3.32870897 2.9478337,2.97929978 C3.29719912,2.62993435 3.62980306,2.41356674 4.09584245,2.23242888 C4.44765864,2.09575492 4.97636761,1.93304158 5.9497593,1.88862144 C7.00262582,1.84061269 7.31833698,1.83045952 9.98424508,1.83045952\" id=\"Fill-1\" fill=\"#000000\" mask=\"url(#mask-2)\"><\/path>\n                <\/g>\n                <path d=\"M9.98424508,13.3438074 C8.14621444,13.3438074 6.6561488,11.8537856 6.6561488,10.0157112 C6.6561488,8.17768053 8.14621444,6.68765864 9.98424508,6.68765864 C11.8223195,6.68765864 13.3123414,8.17768053 13.3123414,10.0157112 C13.3123414,11.8537856 11.8223195,13.3438074 9.98424508,13.3438074 M9.98424508,4.88870897 C7.15269147,4.88870897 4.85724289,7.18420131 4.85724289,10.0157112 C4.85724289,12.8473523 7.15269147,15.1427571 9.98424508,15.1427571 C12.8157987,15.1427571 15.1112473,12.8473523 15.1112473,10.0157112 C15.1112473,7.18420131 12.8157987,4.88870897 9.98424508,4.88870897\" id=\"Fill-4\" fill=\"#000000\"><\/path>\n                <path d=\"M16.5119912,4.68612691 C16.5119912,5.34778993 15.9755799,5.88424508 15.3138731,5.88424508 C14.6522101,5.88424508 14.1157549,5.34778993 14.1157549,4.68612691 C14.1157549,4.02442013 14.6522101,3.48800875 15.3138731,3.48800875 C15.9755799,3.48800875 16.5119912,4.02442013 16.5119912,4.68612691\" id=\"Fill-5\" fill=\"#000000\"><\/path>\n            <\/g>\n        <\/g>\n    <\/g>\n<\/svg>",
+            "twitter": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 200 162.5\" style=\"enable-background:new 0 0 200 162.5;\" xml:space=\"preserve\">\n<path class=\"st0\" d=\"M200,19.2c-7.4,3.3-15.3,5.5-23.6,6.5c8.5-5.1,15-13.1,18-22.7c-7.9,4.7-16.7,8.1-26.1,10c-7.5-8-18.1-13-30-13\n\tc-22.7,0-41,18.4-41,41c0,3.2,0.4,6.3,1.1,9.4c-34.1-1.7-64.3-18-84.6-42.9c-3.5,6.1-5.6,13.1-5.6,20.6c0,14.2,7.2,26.8,18.3,34.2\n\tc-6.7-0.2-13.1-2.1-18.6-5.1c0,0.2,0,0.3,0,0.5c0,19.9,14.1,36.5,32.9,40.2c-3.4,0.9-7.1,1.4-10.8,1.4c-2.6,0-5.2-0.3-7.7-0.7\n\tc5.2,16.3,20.4,28.2,38.3,28.5c-14,11-31.7,17.6-51,17.6c-3.3,0-6.6-0.2-9.8-0.6c18.2,11.6,39.7,18.4,62.9,18.4\n\tc75.5,0,116.7-62.5,116.7-116.7c0-1.8,0-3.5-0.1-5.3C187.5,34.7,194.5,27.5,200,19.2z\"\/>\n<\/svg>\n"
+        };
+        var libraryJSON = {
+            "tpl": {
+                "bend": "shared\/html\/partials\/bend.twig",
+                "congrats": "shared\/html\/partials\/congrats.twig",
+                "global.ads": "shared\/html\/partials\/global\/ads.twig",
+                "global.analytics": "shared\/html\/partials\/global\/analytics.twig",
+                "global.contact": "shared\/html\/partials\/global\/contact.twig",
+                "global.cookies": "shared\/html\/partials\/global\/cookies.twig",
+                "global.facebook": "shared\/html\/partials\/global\/facebook.twig",
+                "global.footer": "shared\/html\/partials\/global\/footer.twig",
+                "global.head": "shared\/html\/partials\/global\/head.twig",
+                "global.header": "shared\/html\/partials\/global\/header.twig",
+                "global.intro": "shared\/html\/partials\/global\/intro.twig",
+                "global.jsons": "shared\/html\/partials\/global\/jsons.twig",
+                "global.loader": "shared\/html\/partials\/global\/loader.twig",
+                "global.main-loader": "shared\/html\/partials\/global\/main-loader.twig",
+                "global.menu": "shared\/html\/partials\/global\/menu.twig",
+                "global.meta.social": "shared\/html\/partials\/global\/meta\/social.twig",
+                "global.modules": "shared\/html\/partials\/global\/modules.twig",
+                "global.orientation": "shared\/html\/partials\/global\/orientation.twig",
+                "global.swiper": "shared\/html\/partials\/global\/swiper.twig",
+                "global.terms": "shared\/html\/partials\/global\/terms.twig",
+                "global.vars": "shared\/html\/partials\/global\/vars.twig",
+                "help": "shared\/html\/partials\/help.twig",
+                "home": "shared\/html\/partials\/home.twig",
+                "more": "shared\/html\/partials\/more.twig",
+                "rooms": "shared\/html\/partials\/rooms.twig",
+                "slider": "shared\/html\/partials\/slider.twig"
+            },
+            "img": {
+                "arrow": "img\/arrow.png",
+                "burger-bg": "img\/burger-bg.png",
+                "burger-close": "img\/burger-close.png",
+                "burger-hover": "img\/burger-hover.png",
+                "burger": "img\/burger.png",
+                "close": "img\/close.png",
+                "cloud": "img\/cloud.png",
+                "cloud0": "img\/cloud0.png",
+                "cloud1": "img\/cloud1.png",
+                "cloud2": "img\/cloud2.png",
+                "cloud3": "img\/cloud3.png",
+                "cookies_decoration": "img\/cookies_decoration.png",
+                "facebook": "img\/facebook.png",
+                "home.actu_30ans": "img\/home\/actu_30ans.png",
+                "home.actu_adventurechallengeopti": "img\/home\/actu_adventurechallengeopti.png",
+                "home.actu_auchan": "img\/home\/actu_auchan.png",
+                "home.actu_coupedumonde": "img\/home\/actu_coupedumonde.png",
+                "home.actu_girafe": "img\/home\/actu_girafe.png",
+                "home.actu_madeleines": "img\/home\/actu_madeleines.png",
+                "home.actu_news": "img\/home\/actu_news.png",
+                "home.actu_nouvelles_crepes": "img\/home\/actu_nouvelles_crepes.png",
+                "home.actu_pubtv": "img\/home\/actu_pubtv.png",
+                "home.actu_spotspub": "img\/home\/actu_spotspub.png",
+                "home.discover": "img\/home\/discover.png",
+                "home.intro_adventurechallenge": "img\/home\/intro_adventurechallenge.png",
+                "home.intro_auchan": "img\/home\/intro_auchan.jpg",
+                "home.letter_B": "img\/home\/letter_B.png",
+                "home.letter_E": "img\/home\/letter_E.png",
+                "home.letter_I": "img\/home\/letter_I.png",
+                "home.letter_N": "img\/home\/letter_N.png",
+                "home.letter_U": "img\/home\/letter_U.png",
+                "home.letter_V": "img\/home\/letter_V.png",
+                "home.noise": "img\/home\/noise.jpg",
+                "home.slide0": "img\/home\/slide0.png",
+                "loader": "img\/loader.png",
+                "logo": "img\/logo.png",
+                "mouse": "img\/mouse.png",
+                "orientation": "img\/orientation.png",
+                "rooms.boutique.bg": "img\/rooms\/boutique\/bg.jpg",
+                "rooms.boutique.boutique_balloons_0": "img\/rooms\/boutique\/boutique_balloons_0.png",
+                "rooms.boutique.boutique_balloons_1": "img\/rooms\/boutique\/boutique_balloons_1.png",
+                "rooms.boutique.boutique_garland": "img\/rooms\/boutique\/boutique_garland.png",
+                "rooms.boutique.facebook": "img\/rooms\/boutique\/facebook.png",
+                "rooms.boutique.goodies.boite_metal_machine": "img\/rooms\/boutique\/goodies\/boite_metal_machine.png",
+                "rooms.boutique.goodies.bouee_machine": "img\/rooms\/boutique\/goodies\/bouee_machine.png",
+                "rooms.boutique.goodies.enceinte_machine": "img\/rooms\/boutique\/goodies\/enceinte_machine.png",
+                "rooms.boutique.goodies.montre_bleue_machine": "img\/rooms\/boutique\/goodies\/montre_bleue_machine.png",
+                "rooms.boutique.goodies.montre_rouge_machine": "img\/rooms\/boutique\/goodies\/montre_rouge_machine.png",
+                "rooms.boutique.goodies.skate_machine": "img\/rooms\/boutique\/goodies\/skate_machine.png",
+                "rooms.boutique.goodies.souris_machine": "img\/rooms\/boutique\/goodies\/souris_machine.png",
+                "rooms.boutique.goodies_full.boite_metal_machine": "img\/rooms\/boutique\/goodies_full\/boite_metal_machine.png",
+                "rooms.boutique.goodies_full.bouee_machine": "img\/rooms\/boutique\/goodies_full\/bouee_machine.png",
+                "rooms.boutique.goodies_full.enceinte_machine": "img\/rooms\/boutique\/goodies_full\/enceinte_machine.png",
+                "rooms.boutique.goodies_full.montre_bleue_machine": "img\/rooms\/boutique\/goodies_full\/montre_bleue_machine.png",
+                "rooms.boutique.goodies_full.montre_rouge_machine": "img\/rooms\/boutique\/goodies_full\/montre_rouge_machine.png",
+                "rooms.boutique.goodies_full.skate_machine": "img\/rooms\/boutique\/goodies_full\/skate_machine.png",
+                "rooms.boutique.goodies_full.souris_machine": "img\/rooms\/boutique\/goodies_full\/souris_machine.png",
+                "rooms.boutique.machine_avec_rack": "img\/rooms\/boutique\/machine_avec_rack.png",
+                "rooms.boutique.mail": "img\/rooms\/boutique\/mail.png",
+                "rooms.boutique.top_btn": "img\/rooms\/boutique\/top_btn.png",
+                "rooms.boutique.top_texte": "img\/rooms\/boutique\/top_texte.png",
+                "rooms.boutique.twitter": "img\/rooms\/boutique\/twitter.png",
+                "rooms.boutique.vitre": "img\/rooms\/boutique\/vitre.png",
+                "rooms.coinparents.bg": "img\/rooms\/coinparents\/bg.jpg",
+                "rooms.coinparents.carte_france": "img\/rooms\/coinparents\/carte_france.png",
+                "rooms.coinparents.farine": "img\/rooms\/coinparents\/farine.png",
+                "rooms.coinparents.goodies.0": "img\/rooms\/coinparents\/goodies\/0.png",
+                "rooms.coinparents.goodies.0_slide_0": "img\/rooms\/coinparents\/goodies\/0_slide_0.jpg",
+                "rooms.coinparents.goodies.0_slide_1": "img\/rooms\/coinparents\/goodies\/0_slide_1.jpg",
+                "rooms.coinparents.goodies.0_slide_2": "img\/rooms\/coinparents\/goodies\/0_slide_2.jpg",
+                "rooms.coinparents.goodies.1": "img\/rooms\/coinparents\/goodies\/1.png",
+                "rooms.coinparents.goodies.2": "img\/rooms\/coinparents\/goodies\/2.png",
+                "rooms.coinparents.lait": "img\/rooms\/coinparents\/lait.png",
+                "rooms.coinparents.logo_conservateurs": "img\/rooms\/coinparents\/logo_conservateurs.png",
+                "rooms.coinparents.logos_biologiques": "img\/rooms\/coinparents\/logos_biologiques.png",
+                "rooms.coinparents.oeufs": "img\/rooms\/coinparents\/oeufs.png",
+                "rooms.geekroom.0": "img\/rooms\/geekroom\/0.jpg",
+                "rooms.geekroom.1": "img\/rooms\/geekroom\/1.jpg",
+                "rooms.geekroom.2": "img\/rooms\/geekroom\/2.jpg",
+                "rooms.geekroom.3": "img\/rooms\/geekroom\/3.jpg",
+                "rooms.geekroom.bg": "img\/rooms\/geekroom\/bg.jpg",
+                "rooms.geekroom.black": "img\/rooms\/geekroom\/black.png",
+                "rooms.geekroom.blue": "img\/rooms\/geekroom\/blue.png",
+                "rooms.geekroom.geekroom_enceinte": "img\/rooms\/geekroom\/geekroom_enceinte.png",
+                "rooms.geekroom.geekroom_fils": "img\/rooms\/geekroom\/geekroom_fils.png",
+                "rooms.geekroom.geekroom_jeux": "img\/rooms\/geekroom\/geekroom_jeux.png",
+                "rooms.geekroom.poster_0": "img\/rooms\/geekroom\/poster_0.png",
+                "rooms.geekroom.red": "img\/rooms\/geekroom\/red.png",
+                "rooms.grenier.bg": "img\/rooms\/grenier\/bg.jpg",
+                "rooms.grenier.bg_green": "img\/rooms\/grenier\/bg_green.jpg",
+                "rooms.grenier.bg_orange": "img\/rooms\/grenier\/bg_orange.jpg",
+                "rooms.grenier.bg_violet": "img\/rooms\/grenier\/bg_violet.jpg",
+                "rooms.grenier.bg_yellow": "img\/rooms\/grenier\/bg_yellow.jpg",
+                "rooms.grenier.goodies.anniv.anniv_carton_invitation": "img\/rooms\/grenier\/goodies\/anniv\/anniv_carton_invitation.png",
+                "rooms.grenier.goodies.anniv.anniv_menu": "img\/rooms\/grenier\/goodies\/anniv\/anniv_menu.png",
+                "rooms.grenier.goodies.anniv.anniv_set_table": "img\/rooms\/grenier\/goodies\/anniv\/anniv_set_table.png",
+                "rooms.grenier.goodies.diy.diy_chapeau": "img\/rooms\/grenier\/goodies\/diy\/diy_chapeau.png",
+                "rooms.grenier.goodies.diy.diy_cornet_a_bonbons": "img\/rooms\/grenier\/goodies\/diy\/diy_cornet_a_bonbons.png",
+                "rooms.grenier.goodies.diy.diy_masque": "img\/rooms\/grenier\/goodies\/diy\/diy_masque.png",
+                "rooms.grenier.goodies.jeux.jeux_chamboule_tout": "img\/rooms\/grenier\/goodies\/jeux\/jeux_chamboule_tout.png",
+                "rooms.grenier.goodies.jeux.jeux_jeu_l_eponge": "img\/rooms\/grenier\/goodies\/jeux\/jeux_jeu_l_eponge.png",
+                "rooms.grenier.goodies.jeux.jeux_planche_savonneuse": "img\/rooms\/grenier\/goodies\/jeux\/jeux_planche_savonneuse.png",
+                "rooms.grenier.goodies.jeux.jeux_smash_ballons": "img\/rooms\/grenier\/goodies\/jeux\/jeux_smash_ballons.png",
+                "rooms.grenier.goodies.recettes.brochettes_crepes": "img\/rooms\/grenier\/goodies\/recettes\/brochettes_crepes.png",
+                "rooms.grenier.goodies.recettes.brownie_folie": "img\/rooms\/grenier\/goodies\/recettes\/brownie_folie.png",
+                "rooms.grenier.goodies.recettes.moelleux_fabuleux": "img\/rooms\/grenier\/goodies\/recettes\/moelleux_fabuleux.png",
+                "rooms.grenier.goodies.recettes.whaou_cocktail": "img\/rooms\/grenier\/goodies\/recettes\/whaou_cocktail.png",
+                "rooms.grenier.goodies_full.anniv.anniv_carton_invitation": "img\/rooms\/grenier\/goodies_full\/anniv\/anniv_carton_invitation.jpg",
+                "rooms.grenier.goodies_full.anniv.anniv_menu": "img\/rooms\/grenier\/goodies_full\/anniv\/anniv_menu.jpg",
+                "rooms.grenier.goodies_full.anniv.anniv_set_table": "img\/rooms\/grenier\/goodies_full\/anniv\/anniv_set_table.jpg",
+                "rooms.grenier.goodies_full.diy.diy_chapeau": "img\/rooms\/grenier\/goodies_full\/diy\/diy_chapeau.png",
+                "rooms.grenier.goodies_full.diy.diy_cornet_a_bonbons": "img\/rooms\/grenier\/goodies_full\/diy\/diy_cornet_a_bonbons.png",
+                "rooms.grenier.goodies_full.diy.diy_masque": "img\/rooms\/grenier\/goodies_full\/diy\/diy_masque.png",
+                "rooms.grenier.goodies_full.jeux.jeux_chamboule_tout": "img\/rooms\/grenier\/goodies_full\/jeux\/jeux_chamboule_tout.png",
+                "rooms.grenier.goodies_full.jeux.jeux_jeu_l_eponge": "img\/rooms\/grenier\/goodies_full\/jeux\/jeux_jeu_l_eponge.png",
+                "rooms.grenier.goodies_full.jeux.jeux_planche_savonneuse": "img\/rooms\/grenier\/goodies_full\/jeux\/jeux_planche_savonneuse.png",
+                "rooms.grenier.goodies_full.jeux.jeux_smash_ballons": "img\/rooms\/grenier\/goodies_full\/jeux\/jeux_smash_ballons.png",
+                "rooms.grenier.goodies_full.recettes.brochettes_crepes": "img\/rooms\/grenier\/goodies_full\/recettes\/brochettes_crepes.png",
+                "rooms.grenier.goodies_full.recettes.brownie_folie": "img\/rooms\/grenier\/goodies_full\/recettes\/brownie_folie.png",
+                "rooms.grenier.goodies_full.recettes.moelleux_fabuleux": "img\/rooms\/grenier\/goodies_full\/recettes\/moelleux_fabuleux.png",
+                "rooms.grenier.goodies_full.recettes.whaou_cocktail": "img\/rooms\/grenier\/goodies_full\/recettes\/whaou_cocktail.png",
+                "rooms.grenier.goodies_wallpaper.anniv.anniv_carton_invitation": "img\/rooms\/grenier\/goodies_wallpaper\/anniv\/anniv_carton_invitation.jpg",
+                "rooms.grenier.goodies_wallpaper.anniv.anniv_menu": "img\/rooms\/grenier\/goodies_wallpaper\/anniv\/anniv_menu.jpg",
+                "rooms.grenier.goodies_wallpaper.anniv.anniv_set_table": "img\/rooms\/grenier\/goodies_wallpaper\/anniv\/anniv_set_table.jpg",
+                "rooms.grenier.goodies_wallpaper.diy.diy_chapeau": "img\/rooms\/grenier\/goodies_wallpaper\/diy\/diy_chapeau.pdf",
+                "rooms.grenier.goodies_wallpaper.diy.diy_cornet_a_bonbons": "img\/rooms\/grenier\/goodies_wallpaper\/diy\/diy_cornet_a_bonbons.pdf",
+                "rooms.grenier.goodies_wallpaper.diy.diy_masque": "img\/rooms\/grenier\/goodies_wallpaper\/diy\/diy_masque.pdf",
+                "rooms.grenier.goodies_wallpaper.jeux.jeux_chamboule_tout": "img\/rooms\/grenier\/goodies_wallpaper\/jeux\/jeux_chamboule_tout.jpg",
+                "rooms.grenier.goodies_wallpaper.jeux.jeux_jeu_l_eponge": "img\/rooms\/grenier\/goodies_wallpaper\/jeux\/jeux_jeu_l_eponge.jpg",
+                "rooms.grenier.goodies_wallpaper.jeux.jeux_planche_savonneuse": "img\/rooms\/grenier\/goodies_wallpaper\/jeux\/jeux_planche_savonneuse.jpg",
+                "rooms.grenier.goodies_wallpaper.jeux.jeux_smash_ballons": "img\/rooms\/grenier\/goodies_wallpaper\/jeux\/jeux_smash_ballons.jpg",
+                "rooms.grenier.goodies_wallpaper.recettes.brochettes_crepes": "img\/rooms\/grenier\/goodies_wallpaper\/recettes\/brochettes_crepes.jpg",
+                "rooms.grenier.goodies_wallpaper.recettes.brownie_folie": "img\/rooms\/grenier\/goodies_wallpaper\/recettes\/brownie_folie.jpg",
+                "rooms.grenier.goodies_wallpaper.recettes.moelleux_fabuleux": "img\/rooms\/grenier\/goodies_wallpaper\/recettes\/moelleux_fabuleux.jpg",
+                "rooms.grenier.goodies_wallpaper.recettes.whaou_cocktail": "img\/rooms\/grenier\/goodies_wallpaper\/recettes\/whaou_cocktail.jpg",
+                "rooms.grenier.grenier_malle_droite": "img\/rooms\/grenier\/grenier_malle_droite.png",
+                "rooms.grenier.grenier_malle_gauche": "img\/rooms\/grenier\/grenier_malle_gauche.png",
+                "rooms.grenier.valise_jaune": "img\/rooms\/grenier\/valise_jaune.png",
+                "rooms.grenier.valise_orange": "img\/rooms\/grenier\/valise_orange.png",
+                "rooms.grenier.valise_rouge": "img\/rooms\/grenier\/valise_rouge.png",
+                "rooms.grenier.valise_verte": "img\/rooms\/grenier\/valise_verte.png",
+                "rooms.grenier.valise_violette": "img\/rooms\/grenier\/valise_violette.png",
+                "rooms.halloffame.bg": "img\/rooms\/halloffame\/bg.jpg",
+                "rooms.halloffame.facebook": "img\/rooms\/halloffame\/facebook.png",
+                "rooms.halloffame.goodies.halloffame_objet_bio": "img\/rooms\/halloffame\/goodies\/halloffame_objet_bio.png",
+                "rooms.halloffame.goodies.halloffame_objet_cadre1": "img\/rooms\/halloffame\/goodies\/halloffame_objet_cadre1.png",
+                "rooms.halloffame.goodies.halloffame_objet_cadre2": "img\/rooms\/halloffame\/goodies\/halloffame_objet_cadre2.png",
+                "rooms.halloffame.goodies.halloffame_objet_carte": "img\/rooms\/halloffame\/goodies\/halloffame_objet_carte.png",
+                "rooms.halloffame.goodies.halloffame_objet_cracky": "img\/rooms\/halloffame\/goodies\/halloffame_objet_cracky.png",
+                "rooms.halloffame.goodies.halloffame_objet_muffin": "img\/rooms\/halloffame\/goodies\/halloffame_objet_muffin.png",
+                "rooms.halloffame.goodies.halloffame_objet_packs": "img\/rooms\/halloffame\/goodies\/halloffame_objet_packs.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_bio": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_bio.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_cadre1": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_cadre1.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_cadre2": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_cadre2.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_carte": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_carte.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_cracky": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_cracky.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_muffin": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_muffin.png",
+                "rooms.halloffame.goodies_full.halloffame_objet_packs": "img\/rooms\/halloffame\/goodies_full\/halloffame_objet_packs.png",
+                "rooms.halloffame.halloffame_cactus": "img\/rooms\/halloffame\/halloffame_cactus.png",
+                "rooms.halloffame.halloffame_etagere": "img\/rooms\/halloffame\/halloffame_etagere.png",
+                "rooms.halloffame.halloffame_plant": "img\/rooms\/halloffame\/halloffame_plant.png",
+                "rooms.halloffame.mail": "img\/rooms\/halloffame\/mail.png",
+                "rooms.halloffame.twitter": "img\/rooms\/halloffame\/twitter.png",
+                "rooms.kitchen.0": "img\/rooms\/kitchen\/0.png",
+                "rooms.kitchen.0_0_large": "img\/rooms\/kitchen\/0_0_large.png",
+                "rooms.kitchen.0_0_more": "img\/rooms\/kitchen\/0_0_more.png",
+                "rooms.kitchen.0_10_large": "img\/rooms\/kitchen\/0_10_large.png",
+                "rooms.kitchen.0_10_more": "img\/rooms\/kitchen\/0_10_more.png",
+                "rooms.kitchen.0_11_large": "img\/rooms\/kitchen\/0_11_large.png",
+                "rooms.kitchen.0_12_large": "img\/rooms\/kitchen\/0_12_large.png",
+                "rooms.kitchen.0_13_large": "img\/rooms\/kitchen\/0_13_large.png",
+                "rooms.kitchen.0_14_large": "img\/rooms\/kitchen\/0_14_large.png",
+                "rooms.kitchen.0_1_large": "img\/rooms\/kitchen\/0_1_large.png",
+                "rooms.kitchen.0_2_large": "img\/rooms\/kitchen\/0_2_large.png",
+                "rooms.kitchen.0_3_large": "img\/rooms\/kitchen\/0_3_large.png",
+                "rooms.kitchen.0_4_large": "img\/rooms\/kitchen\/0_4_large.png",
+                "rooms.kitchen.0_5_large": "img\/rooms\/kitchen\/0_5_large.png",
+                "rooms.kitchen.0_6_large": "img\/rooms\/kitchen\/0_6_large.png",
+                "rooms.kitchen.0_7_large": "img\/rooms\/kitchen\/0_7_large.png",
+                "rooms.kitchen.0_8_large": "img\/rooms\/kitchen\/0_8_large.png",
+                "rooms.kitchen.0_9_large": "img\/rooms\/kitchen\/0_9_large.png",
+                "rooms.kitchen.0_9_more": "img\/rooms\/kitchen\/0_9_more.png",
+                "rooms.kitchen.1": "img\/rooms\/kitchen\/1.png",
+                "rooms.kitchen.1_0_large": "img\/rooms\/kitchen\/1_0_large.png",
+                "rooms.kitchen.1_0_more": "img\/rooms\/kitchen\/1_0_more.png",
+                "rooms.kitchen.1_1_large": "img\/rooms\/kitchen\/1_1_large.png",
+                "rooms.kitchen.1_2_large": "img\/rooms\/kitchen\/1_2_large.png",
+                "rooms.kitchen.1_3_large": "img\/rooms\/kitchen\/1_3_large.png",
+                "rooms.kitchen.2": "img\/rooms\/kitchen\/2.png",
+                "rooms.kitchen.2_0_large": "img\/rooms\/kitchen\/2_0_large.png",
+                "rooms.kitchen.2_0_more": "img\/rooms\/kitchen\/2_0_more.png",
+                "rooms.kitchen.2_1_large": "img\/rooms\/kitchen\/2_1_large.png",
+                "rooms.kitchen.bg": "img\/rooms\/kitchen\/bg.jpg",
+                "rooms.kitchen.bg_mobile": "img\/rooms\/kitchen\/bg_mobile.jpg",
+                "rooms.kitchen.bg_mobile_extra": "img\/rooms\/kitchen\/bg_mobile_extra.jpg",
+                "rooms.kitchen.ingredients.beurre": "img\/rooms\/kitchen\/ingredients\/beurre.png",
+                "rooms.kitchen.ingredients.billes": "img\/rooms\/kitchen\/ingredients\/billes.png",
+                "rooms.kitchen.ingredients.caramel": "img\/rooms\/kitchen\/ingredients\/caramel.png",
+                "rooms.kitchen.ingredients.chocolat": "img\/rooms\/kitchen\/ingredients\/chocolat.png",
+                "rooms.kitchen.ingredients.farine": "img\/rooms\/kitchen\/ingredients\/farine.png",
+                "rooms.kitchen.ingredients.fraises": "img\/rooms\/kitchen\/ingredients\/fraises.png",
+                "rooms.kitchen.ingredients.huile": "img\/rooms\/kitchen\/ingredients\/huile.png",
+                "rooms.kitchen.ingredients.lait": "img\/rooms\/kitchen\/ingredients\/lait.png",
+                "rooms.kitchen.ingredients.levure": "img\/rooms\/kitchen\/ingredients\/levure.png",
+                "rooms.kitchen.ingredients.oeufs": "img\/rooms\/kitchen\/ingredients\/oeufs.png",
+                "rooms.kitchen.ingredients.pepites": "img\/rooms\/kitchen\/ingredients\/pepites.png",
+                "rooms.kitchen.ingredients.sel": "img\/rooms\/kitchen\/ingredients\/sel.png",
+                "rooms.kitchen.ingredients.sucre": "img\/rooms\/kitchen\/ingredients\/sucre.png",
+                "rooms.kitchen.ingredients_small.beurre": "img\/rooms\/kitchen\/ingredients_small\/beurre.png",
+                "rooms.kitchen.ingredients_small.billes": "img\/rooms\/kitchen\/ingredients_small\/billes.png",
+                "rooms.kitchen.ingredients_small.caramel": "img\/rooms\/kitchen\/ingredients_small\/caramel.png",
+                "rooms.kitchen.ingredients_small.check": "img\/rooms\/kitchen\/ingredients_small\/check.png",
+                "rooms.kitchen.ingredients_small.check_failed": "img\/rooms\/kitchen\/ingredients_small\/check_failed.png",
+                "rooms.kitchen.ingredients_small.chocolat": "img\/rooms\/kitchen\/ingredients_small\/chocolat.png",
+                "rooms.kitchen.ingredients_small.farine": "img\/rooms\/kitchen\/ingredients_small\/farine.png",
+                "rooms.kitchen.ingredients_small.fraises": "img\/rooms\/kitchen\/ingredients_small\/fraises.png",
+                "rooms.kitchen.ingredients_small.huile": "img\/rooms\/kitchen\/ingredients_small\/huile.png",
+                "rooms.kitchen.ingredients_small.lait": "img\/rooms\/kitchen\/ingredients_small\/lait.png",
+                "rooms.kitchen.ingredients_small.levure": "img\/rooms\/kitchen\/ingredients_small\/levure.png",
+                "rooms.kitchen.ingredients_small.oeufs": "img\/rooms\/kitchen\/ingredients_small\/oeufs.png",
+                "rooms.kitchen.ingredients_small.pepites": "img\/rooms\/kitchen\/ingredients_small\/pepites.png",
+                "rooms.kitchen.ingredients_small.sel": "img\/rooms\/kitchen\/ingredients_small\/sel.png",
+                "rooms.kitchen.ingredients_small.sucre": "img\/rooms\/kitchen\/ingredients_small\/sucre.png",
+                "rooms.kitchen.kitchen_mug_green": "img\/rooms\/kitchen\/kitchen_mug_green.png",
+                "rooms.kitchen.kitchen_mug_yellow": "img\/rooms\/kitchen\/kitchen_mug_yellow.png",
+                "rooms.kitchen.kitchen_plant": "img\/rooms\/kitchen\/kitchen_plant.png",
+                "rooms.kitchen.kitchen_salad": "img\/rooms\/kitchen\/kitchen_salad.png",
+                "rooms.kitchen.kitchen_shelf": "img\/rooms\/kitchen\/kitchen_shelf.png",
+                "rooms.kitchen.kitchen_shelf_empty": "img\/rooms\/kitchen\/kitchen_shelf_empty.png",
+                "rooms.kitchen.kitchen_shelf_empty_shadow": "img\/rooms\/kitchen\/kitchen_shelf_empty_shadow.png",
+                "rooms.kitchen.kitchen_shelf_shadow": "img\/rooms\/kitchen\/kitchen_shelf_shadow.png",
+                "rooms.kitchen.kitchen_toaster": "img\/rooms\/kitchen\/kitchen_toaster.png",
+                "rooms.kitchen.sprite": "img\/rooms\/kitchen\/sprite.png",
+                "rooms.room.bedroom_furniture": "img\/rooms\/room\/bedroom_furniture.png",
+                "rooms.room.bedroom_garland": "img\/rooms\/room\/bedroom_garland.png",
+                "rooms.room.bedroom_shelf": "img\/rooms\/room\/bedroom_shelf.png",
+                "rooms.room.bg": "img\/rooms\/room\/bg.jpg",
+                "rooms.room.facebook": "img\/rooms\/room\/facebook.png",
+                "rooms.room.goodies.goodies_mains_01": "img\/rooms\/room\/goodies\/goodies_mains_01.png",
+                "rooms.room.goodies.goodies_mains_02": "img\/rooms\/room\/goodies\/goodies_mains_02.png",
+                "rooms.room.goodies.goodies_mains_03": "img\/rooms\/room\/goodies\/goodies_mains_03.png",
+                "rooms.room.goodies.goodies_marquepage": "img\/rooms\/room\/goodies\/goodies_marquepage.png",
+                "rooms.room.goodies.goodies_poster_paysage_01": "img\/rooms\/room\/goodies\/goodies_poster_paysage_01.png",
+                "rooms.room.goodies.goodies_poster_portrait_01": "img\/rooms\/room\/goodies\/goodies_poster_portrait_01.png",
+                "rooms.room.goodies.goodies_poster_portrait_02": "img\/rooms\/room\/goodies\/goodies_poster_portrait_02.png",
+                "rooms.room.goodies.goodies_poster_portrait_03": "img\/rooms\/room\/goodies\/goodies_poster_portrait_03.png",
+                "rooms.room.goodies.goodies_poster_portrait_04": "img\/rooms\/room\/goodies\/goodies_poster_portrait_04.png",
+                "rooms.room.goodies.goodies_sticker_01": "img\/rooms\/room\/goodies\/goodies_sticker_01.png",
+                "rooms.room.goodies.goodies_sticker_02": "img\/rooms\/room\/goodies\/goodies_sticker_02.png",
+                "rooms.room.goodies.goodies_sticker_03": "img\/rooms\/room\/goodies\/goodies_sticker_03.png",
+                "rooms.room.goodies.goodies_wallpaper_01": "img\/rooms\/room\/goodies\/goodies_wallpaper_01.png",
+                "rooms.room.goodies.goodies_wallpaper_02": "img\/rooms\/room\/goodies\/goodies_wallpaper_02.png",
+                "rooms.room.goodies.goodies_wallpaper_03": "img\/rooms\/room\/goodies\/goodies_wallpaper_03.png",
+                "rooms.room.goodies_full.goodies_mains_01": "img\/rooms\/room\/goodies_full\/goodies_mains_01.jpg",
+                "rooms.room.goodies_full.goodies_mains_02": "img\/rooms\/room\/goodies_full\/goodies_mains_02.jpg",
+                "rooms.room.goodies_full.goodies_mains_03": "img\/rooms\/room\/goodies_full\/goodies_mains_03.jpg",
+                "rooms.room.goodies_full.goodies_marquepage": "img\/rooms\/room\/goodies_full\/goodies_marquepage.png",
+                "rooms.room.goodies_full.goodies_poster_paysage_01": "img\/rooms\/room\/goodies_full\/goodies_poster_paysage_01.jpg",
+                "rooms.room.goodies_full.goodies_poster_portrait_01": "img\/rooms\/room\/goodies_full\/goodies_poster_portrait_01.jpg",
+                "rooms.room.goodies_full.goodies_poster_portrait_02": "img\/rooms\/room\/goodies_full\/goodies_poster_portrait_02.jpg",
+                "rooms.room.goodies_full.goodies_poster_portrait_03": "img\/rooms\/room\/goodies_full\/goodies_poster_portrait_03.jpg",
+                "rooms.room.goodies_full.goodies_poster_portrait_04": "img\/rooms\/room\/goodies_full\/goodies_poster_portrait_04.jpg",
+                "rooms.room.goodies_full.goodies_sticker_01": "img\/rooms\/room\/goodies_full\/goodies_sticker_01.png",
+                "rooms.room.goodies_full.goodies_sticker_02": "img\/rooms\/room\/goodies_full\/goodies_sticker_02.png",
+                "rooms.room.goodies_full.goodies_sticker_03": "img\/rooms\/room\/goodies_full\/goodies_sticker_03.png",
+                "rooms.room.goodies_full.goodies_wallpaper_01": "img\/rooms\/room\/goodies_full\/goodies_wallpaper_01.jpg",
+                "rooms.room.goodies_full.goodies_wallpaper_02": "img\/rooms\/room\/goodies_full\/goodies_wallpaper_02.jpg",
+                "rooms.room.goodies_full.goodies_wallpaper_03": "img\/rooms\/room\/goodies_full\/goodies_wallpaper_03.jpg",
+                "rooms.room.goodies_wallpaper.goodies_mains_01": "img\/rooms\/room\/goodies_wallpaper\/goodies_mains_01.jpg",
+                "rooms.room.goodies_wallpaper.goodies_mains_02": "img\/rooms\/room\/goodies_wallpaper\/goodies_mains_02.jpg",
+                "rooms.room.goodies_wallpaper.goodies_mains_03": "img\/rooms\/room\/goodies_wallpaper\/goodies_mains_03.jpg",
+                "rooms.room.goodies_wallpaper.goodies_marquepage": "img\/rooms\/room\/goodies_wallpaper\/goodies_marquepage.pdf",
+                "rooms.room.goodies_wallpaper.goodies_poster_paysage": "img\/rooms\/room\/goodies_wallpaper\/goodies_poster_paysage.pdf",
+                "rooms.room.goodies_wallpaper.goodies_poster_portrait_01": "img\/rooms\/room\/goodies_wallpaper\/goodies_poster_portrait_01.pdf",
+                "rooms.room.goodies_wallpaper.goodies_poster_portrait_02": "img\/rooms\/room\/goodies_wallpaper\/goodies_poster_portrait_02.pdf",
+                "rooms.room.goodies_wallpaper.goodies_poster_portrait_03": "img\/rooms\/room\/goodies_wallpaper\/goodies_poster_portrait_03.pdf",
+                "rooms.room.goodies_wallpaper.goodies_poster_portrait_04": "img\/rooms\/room\/goodies_wallpaper\/goodies_poster_portrait_04.pdf",
+                "rooms.room.goodies_wallpaper.goodies_stickers": "img\/rooms\/room\/goodies_wallpaper\/goodies_stickers.pdf",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_01_galaxys7": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_01_galaxys7.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_01_galaxysa3": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_01_galaxysa3.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_01_iphone5": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_01_iphone5.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_01_iphone6": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_01_iphone6.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_01_iphone7plus": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_01_iphone7plus.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_02_galaxya3": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_02_galaxya3.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_02_galaxys7": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_02_galaxys7.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_02_iphone5": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_02_iphone5.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_02_iphone6": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_02_iphone6.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_02_iphone7plus": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_02_iphone7plus.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_03_galaxya3": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_03_galaxya3.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_03_galaxys7": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_03_galaxys7.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_03_iphone5": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_03_iphone5.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_03_iphone6": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_03_iphone6.jpg",
+                "rooms.room.goodies_wallpaper.goodies_wallpaper_03_iphone7plus": "img\/rooms\/room\/goodies_wallpaper\/goodies_wallpaper_03_iphone7plus.jpg",
+                "rooms.room.mail": "img\/rooms\/room\/mail.png",
+                "rooms.room.twitter": "img\/rooms\/room\/twitter.png",
+                "rooms.salledejeux.0": "img\/rooms\/salledejeux\/0.jpg",
+                "rooms.salledejeux.1": "img\/rooms\/salledejeux\/1.jpg",
+                "rooms.salledejeux.bg": "img\/rooms\/salledejeux\/bg.jpg",
+                "rooms.salledejeux.black": "img\/rooms\/salledejeux\/black.png",
+                "rooms.salledejeux.blue": "img\/rooms\/salledejeux\/blue.png",
+                "rooms.salledejeux.maison_balloon": "img\/rooms\/salledejeux\/maison_balloon.png",
+                "rooms.salledejeux.maison_cactus": "img\/rooms\/salledejeux\/maison_cactus.png",
+                "rooms.salledejeux.maison_meuble": "img\/rooms\/salledejeux\/maison_meuble.png",
+                "rooms.salledejeux.maison_morpion": "img\/rooms\/salledejeux\/maison_morpion.png",
+                "rooms.salledejeux.maison_plant": "img\/rooms\/salledejeux\/maison_plant.png",
+                "rooms.salledejeux.maison_plant_top": "img\/rooms\/salledejeux\/maison_plant_top.png",
+                "rooms.salledejeux.maison_shelf": "img\/rooms\/salledejeux\/maison_shelf.png",
+                "rooms.salledejeux.maison_table_0": "img\/rooms\/salledejeux\/maison_table_0.png",
+                "rooms.salledejeux.maison_table_1": "img\/rooms\/salledejeux\/maison_table_1.png",
+                "rooms.salledejeux.poster_0": "img\/rooms\/salledejeux\/poster_0.png",
+                "rooms.salledejeux.red": "img\/rooms\/salledejeux\/red.png",
+                "rooms.salon.0": "img\/rooms\/salon\/0.jpg",
+                "rooms.salon.0_0": "img\/rooms\/salon\/0_0.png",
+                "rooms.salon.0_1": "img\/rooms\/salon\/0_1.png",
+                "rooms.salon.0_2": "img\/rooms\/salon\/0_2.png",
+                "rooms.salon.0_3": "img\/rooms\/salon\/0_3.png",
+                "rooms.salon.1": "img\/rooms\/salon\/1.jpg",
+                "rooms.salon.1_0": "img\/rooms\/salon\/1_0.png",
+                "rooms.salon.1_1": "img\/rooms\/salon\/1_1.png",
+                "rooms.salon.1_2": "img\/rooms\/salon\/1_2.png",
+                "rooms.salon.1_3": "img\/rooms\/salon\/1_3.png",
+                "rooms.salon.2": "img\/rooms\/salon\/2.jpg",
+                "rooms.salon.2_0": "img\/rooms\/salon\/2_0.png",
+                "rooms.salon.2_1": "img\/rooms\/salon\/2_1.png",
+                "rooms.salon.2_2": "img\/rooms\/salon\/2_2.png",
+                "rooms.salon.2_3": "img\/rooms\/salon\/2_3.png",
+                "rooms.salon.3": "img\/rooms\/salon\/3.jpg",
+                "rooms.salon.3_0": "img\/rooms\/salon\/3_0.png",
+                "rooms.salon.3_1": "img\/rooms\/salon\/3_1.png",
+                "rooms.salon.3_2": "img\/rooms\/salon\/3_2.png",
+                "rooms.salon.3_3": "img\/rooms\/salon\/3_3.png",
+                "rooms.salon.4": "img\/rooms\/salon\/4.jpg",
+                "rooms.salon.4_0": "img\/rooms\/salon\/4_0.png",
+                "rooms.salon.4_1": "img\/rooms\/salon\/4_1.png",
+                "rooms.salon.4_2": "img\/rooms\/salon\/4_2.png",
+                "rooms.salon.4_3": "img\/rooms\/salon\/4_3.png",
+                "rooms.salon.5": "img\/rooms\/salon\/5.jpg",
+                "rooms.salon.5_0": "img\/rooms\/salon\/5_0.png",
+                "rooms.salon.5_1": "img\/rooms\/salon\/5_1.png",
+                "rooms.salon.5_2": "img\/rooms\/salon\/5_2.png",
+                "rooms.salon.5_3": "img\/rooms\/salon\/5_3.png",
+                "rooms.salon.bg": "img\/rooms\/salon\/bg.jpg",
+                "rooms.salon.bg_mobile": "img\/rooms\/salon\/bg_mobile.jpg",
+                "rooms.salon.salon_lampe": "img\/rooms\/salon\/salon_lampe.png",
+                "rooms.salon.salon_plant": "img\/rooms\/salon\/salon_plant.png",
+                "rooms.salon.salon_porterevue_barres": "img\/rooms\/salon\/salon_porterevue_barres.png",
+                "rooms.salon.salon_porterevue_bas": "img\/rooms\/salon\/salon_porterevue_bas.png",
+                "rooms.salon.salon_porterevue_mag": "img\/rooms\/salon\/salon_porterevue_mag.jpg",
+                "rooms.salon.salon_porterevue_ombre_bas": "img\/rooms\/salon\/salon_porterevue_ombre_bas.png",
+                "rooms.salon.salon_porterevue_ombre_repeat": "img\/rooms\/salon\/salon_porterevue_ombre_repeat.png",
+                "rooms.salon.salon_porterevue_repeat": "img\/rooms\/salon\/salon_porterevue_repeat.png",
+                "sprite": "img\/sprite.png",
+                "spritesheet": "img\/spritesheet.png"
+            },
+            "gl": {
+                "girafe": "gl\/girafe.fbx"
+            }
+        };
+    </script>
+</head>
+
+<body class="loading">
+    <div id="main-loader">
+        <div id="main-loader-content">
+            <div class="sprite"></div>
+            <div class="indicator">0</div>
+        </div>
+    </div>
+    <div id="loader">
+        <div id="loader-spinner"></div>
+    </div>
+    <div id="cookies"></div>
+    <div id="orientation">
+        <div class="center">
+            <div class="icon"></div>
+        </div>
+    </div>
+    <header id="header" class="header">
+
+    </header>
+    <section id="menu">
+        <div class="scrolling">
+            <div class="center">
+                <ul class="roadmap">
+                    <li><a data-id="" href="/" rel="internal">Accueil</a></li>
+                    <li><a data-id="0" href="/pieces/salledejeux" rel="internal">La salle de jeux</a></li>
+                    <li><a data-id="1" href="/pieces/cuisine" rel="internal">La cuisine</a></li>
+                    <li><a data-id="2" href="/pieces/chambre" rel="internal">La chambre</a></li>
+                    <li><a data-id="3" href="/pieces/hall-of-fame" rel="internal">Le Hall of Fame</a></li>
+                    <li><a data-id="4" href="/pieces/grenier" rel="internal">Le Grenier</a></li>
+                    <li><a data-id="5" href="/pieces/boutique" rel="internal">La Boutique</a></li>
+                    <li><a data-id="6" href="/pieces/coin-parents" rel="internal">Le coin des parents</a></li>
+                    <li><a data-id="7" href="/pieces/salon" rel="internal">Le salon</a></li>
+                    <li><a data-id="8" href="/pieces/geekroom" rel="internal">La geek room</a></li>
+                </ul>
+                <ul class="socials">
+                    <li class="facebook">
+                        <a target="_blank" href="https://www.facebook.com/Whaou-135422266494043/"><img src="assets/20190620_104841/img/facebook.png" /></a>
+                    </li>
+                </ul>
+                <ul class="terms">
+                    <li class="contact-link"><a href="#">Contact</a></li>
+                    <li><a href="http://www.gouters-magiques.com/offre-emplois-groupe-gouters-magiques/p7.html" target="_bank">Rejoindre notre groupe</a></li>
+                    <li class="terms-link"><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="nav">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+                <div id="swiper">
+                    <div class="slides">
+                        <a target="internal" href="/pieces/salledejeux" class="slide"><img src="../../assets/20190620_104841/img/home/actu_adventurechallengeopti.png" />
+                            <div class="content">
+                                <div class="date"></div>
+                                <div class="description default"></div>
+                            </div>
+                        </a>
+                        <a target="internal" href="/pieces/cuisine/" class="slide"><img src="../../assets/20190620_104841/img/home/actu_nouvelles_crepes.png" />
+                            <div class="content">
+                                <div class="date"></div>
+                                <div class="description default">NOUVEAU !
+                                    <br />Les crêpes
+                                    <br />à la compote !</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="overlay-menu"></section>
+    <section id="terms">
+        <div class="close">
+            <div class="img"></div>
+        </div>
+        <div class="scrolling">
+            <div class="center">
+                <h4>1 - Presentation generale</h4> Vous êtes actuellement connecté au site http://127.0.0.1:8080/, édité par Whaou!
+                <br />
+                <br /> Dénomination sociale : Whaou!
+                <br /> Siège social : Goûters Magiques SAS – lieu dit Kerichelard ZA de Keranna – BP 70116 – 56500 Plumelin
+                <br /> SIRET 499 185 783 00028
+                <br /> Capital social : 280 000 €
+                <br /> Hébergement :
+                <br />
+                <br /> Amazon Web Services LLC
+                <br /> P.O. Box 81226
+                <br /> Seattle, WA 98108-1226
+                <br /> http://aws.amazon.com
+                <br />
+                <br /> L'éditeur s'engage à respecter l'ensemble des lois concernant la mise en place et l'activité d'un site Internet.
+                <br />
+                <br />
+                <h4>2 - Informations techniques</h4>
+                <br /> Il est rappelé que le secret des correspondances n'est pas garanti sur le réseau Internet et qu'il appartient à chaque utilisateur d'Internet de prendre toutes les mesures appropriées de façon à protéger ses propres données et/ou logiciels de la contamination d'éventuels virus circulant sur Internet.
+                <br />
+                <h4>3 - Charte editoriale</h4>
+                <br /> Le site http://127.0.0.1:8080/ est un site de présentation des services proposés par Whaou! Il est complété par des outils de simulation. La présentation des produits, prises de vue ou graphismes reste indicative et ne peut engager la responsabilité de la société Whaou!, ni même remettre en cause la validité de la commande.
+                <br />
+                <h4>4 - Donnees personnelles</h4>
+                <br /> Les informations que vous saisirez seront enregistrées par Whaou!, elles feront l’objet d’un traitement de données à caractère personnel sous la responsabilité de Whaou! en sa qualité de responsable de traitement. Les internautes âgés de moins de 16 ans ne seront pas inscrits sur le site tant qu’un responsable légal titulaire de l’autorité parentale, n’aura pas donné son accord conformément à l’article 8 du Règlement général sur la protection des données du 27 avril 2016. Le responsable de traitement se réserve le droit de refuser le traitement des données d’un mineur âgé de moins de 16 ans dont le responsable légal n’aurait pas donné son accord.
+                <br />
+                <br /> Les données collectées seront susceptibles d’être transmises à des sous-traitants et partenaires de Whaou ! qui n’agiront que conformément aux instructions du responsable de traitement et pour son compte.
+                <br /> Avant de procéder à un transfert des données personnelles vers un Etat non membre de l’UE, le responsable de traitement recueillera le consentement des personnes concernées et de leurs responsables légaux.
+                <br />
+                <br /> Vous disposez d'un droit d'accès, de modification, de rectification, de suppression et d’un droit à la portabilité de vos données, dans les conditions prévues par l'article 31 de la loi du 6 janvier 1978 modifiée, relative à l'informatique, aux fichiers et aux libertés et par le Règlement européen sur la protection des données. Pour l'exercer, adressez-vous par courrier au gestionnaire du site, à l'adresse suivante : contact@whaou.com Conformément à l’article 17 du règlement, les personnes mineures inscrites bénéficient également d’un droit à l’effacement de leurs données.
+                <br />
+                <br /> En poursuivant votre navigation sur le site Whaou!, vous acceptez l’utilisation de Cookies ou autres traceurs conformément à la loi informatique et libertés.
+                <br />
+                <h4>5 - Liens hypertextes</h4>
+                <br /> La création de liens hypertextes vers le site http://127.0.0.1:8080/ est soumise à l'accord préalable du Directeur de la Publication. Les liens hypertextes établis en direction d'autres sites à partir de http://127.0.0.1:8080/ ne sauraient, en aucun cas, engager la responsabilité de Whaou!.
+                <br />
+                <h4>6 - Droits d'auteurs</h4>
+                <br /> La reproduction ou représentation, intégrale ou partielle, des pages, des données et de tout autre élément constitutif au site, par quelque procédé ou support que ce soit, est interdite et constitue sans autorisation de l'éditeur une contrefaçon.
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="close">
+            <div class="img"></div>
+        </div>
+        <div class="scrolling">
+            <form id="form" name="form_sample" autocomplete="false" class="center">
+                <h4>Contact</h4>
+                <input type="hidden" id="baseURL" name="baseURL" value="http://127.0.0.1:8080" /> Notre service consommateurs est à votre écoute.
+                <br /> N'hésitez pas à nous envoyer vos questions, remarques ou suggestions.
+                <br />
+                <br />
+                <label>Civilité *</label>
+                <p class="inline">
+                    <input type="checkbox" name="sexe-m" id="sexe-m" /><span for="sexe-m">M.</span></p>
+                <p class="inline inline-margin">
+                    <input name="sexe-mme" type="checkbox" id="sexe-mme" /><span for="sexe-mme">Mme</span></p>
+                <label>Prénom *</label>
+                <input type="text" name="first_name" id="first_name" />
+                <label>Nom *</label>
+                <input type="text" name="last_name" id="last_name" />
+                <label>Adresse *</label>
+                <input type="text" name="address" id="address" />
+                <label>Code postal *</label>
+                <input type="text" name="zip" id="zip" />
+                <label>Ville *</label>
+                <input type="text" name="city" id="city" />
+                <label>Pays</label>
+                <input type="text" name="country" id="country" />
+                <label>Email *</label>
+                <input type="text" name="email" id="email" />
+                <label>Confirmer votre email *</label>
+                <input type="text" name="email-confirm" id="email-confirm" />
+                <label>Téléphone</label>
+                <input type="text" name="phone" id="phone" />
+                <label>Date de naissance *</label>
+                <input type="text" name="birthday" id="birthday" placeholder="15/01/2000" />
+                <br />
+                <label>Votre demande concerne</label>
+                <select id="request" name="request">
+                    <option data-id="opt-0">Choisir une demande</option>
+                    <option data-id="opt-1">Un commentaire produit</option>
+                    <option data-id="opt-2">Une suggestion / une idée</option>
+                    <option data-id="opt-3">Nos jeux promotionnels</option>
+                    <option data-id="opt-4">Nos lieux de vente</option>
+                    <option data-id="opt-5">Autre(s) demande(s)</option>
+                </select>
+                <div class="opt-spinner"></div>
+                <div class="opt opt-0"></div>
+                <div class="opt opt-1">
+                    <br />
+                    <label>Produit concerné *</label>
+                    <input type="text" name="product_name" id="product_name" />
+                    <label>Date de consommation conseillée *</label>
+                    <input type="text" name="product_date" id="product_date" placeholder="15/01/2000" />
+                    <label>Numéro de Lot *</label>
+                    <input placeholder="(par exemple: 168 12:41 N°23, FG051C.)" type="text" name="product_lot" id="product_lot" />
+                    <label>Insérer une pièce jointe max 3mo *</label>
+                    <input type="file" id="product_images" name="product_images[]" multiple />
+                </div>
+                <div class="opt opt-2"></div>
+                <div class="opt opt-3">
+                    <br />
+                    <label>Jeu concerné *</label>
+                    <input type="text" name="game_name" id="game_name" />
+                </div>
+                <div class="opt opt-4"></div>
+                <div class="opt opt-5">
+                    <br />
+                    <label>Insérer une pièce jointe max 3mo</label>
+                    <input type="file" id="other_images" name="other_images[]" multiple />
+                </div>
+                <br />
+                <label>Votre message *</label>
+                <textarea id="message" name="message"></textarea>
+                <br />
+                <br />
+                <div class="message-pub">
+                    Pour toute demande d’objets publicitaires, de bons de réduction et d’échantillons de produits, nous regrettons de pouvoir vous répondre favorablement en raison d’un nombre très important de demandes.
+                    <br /> Les objets publicitaires dont nous disposons sont fabriqués en quantité limitée et principalement destinés à des animations en magasin.
+                    <br />
+                    <br />
+                </div>
+
+                Pour nous envoyer vos remarques, suggestions ou questions, nous vous invitons à utiliser le formulaire ci-dessus ou nous écrire à l’adresse suivante : Service consommateurs Whaou! CS 70116 – 56500 Plumelin
+
+                <p class="inline inline-x">
+                    <input id="permission_whaou" name="permission_whaou" type="checkbox" /><span for="permission_whaou">Cochez cette case pour recevoir toutes les actualités Whaou !</span></p>
+                <div class="captcha"></div>
+                <div class="submit-wrapper">
+                    <div class="loader-spinner"></div><a href="#" class="submit">Envoyer</a></div>
+                <div class="g-recaptcha" data-sitekey="6LevPmAUAAAAAPzO2LbVZEKh2hZNXpyJ_4p2soJ3" data-callback="onSubmit" data-size="invisible"></div>
+            </form>
+            <div class="center" id="form-after">
+                Nous vous remercions de votre message qui a bien été transmis.
+                <br /> Nous vous répondrons dans les plus brefs délais.
+                <br /> A très bientôt !
+                <br />L’équipe Whaou!
+            </div>
+        </div>
+    </section>
+    <div id="slider">
+        <div class="scroller"></div><a href="#" class="close"><span></span></a>
+        <div class="pagination">
+            <div class="pagination-wrapper"><span class="left"></span>
+                <p>1/13</p><span class="right"></span></div>
+        </div>
+        <div class="slides"></div>
+    </div>
+    <div class="overlay"></div>
+    <div id="root"></div>
+    <footer id="footer" class="footer"></footer>
+</body>
+<script type="text/javascript" src="/static/inflate.min.js"></script>
+<script type="text/javascript" src="/static/tarteaucitron.js"></script>
+<script type="text/javascript" src="../../assets/20190620_104841/js/bundle.js"></script>
+<script>
+    var privacyUrl = '/static/politique_de_gestion_des_cookies.pdf';
+    tarteaucitron.init({
+        "AcceptAllCta": true,
+        "cookieslist": false,
+        "adblocker": false,
+        "european": true,
+        "hashtag": "#tarteaucitron",
+        "highPrivacy": true,
+        "orientation": "bottom",
+        "removeCredit": false,
+        "showAlertSmall": true,
+        "privacyUrl": privacyUrl,
+        "cookieName": "tarteaucitron",
+        "handleBrowserDNTRequest": false,
+        "moreInfoLink": false
+    });
+</script>
+
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="fr" class="no-js window lt-ie9 lt-ie8 lt-ie7 oldie"> <![endif]-->
+<!--[if IE 7]>         <html lang="fr" class="no-js window lt-ie9 lt-ie8 oldie"> <![endif]-->
+<!--[if IE 8]>         <html lang="fr" class="no-js window lt-ie9 oldie"> <![endif]-->
+<!--[if IE 9]>         <html lang="fr" class="no-js window lt-ie10 oldie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="fr" class="no-js window"> <!--<![endif]-->
+
+<!--[if lt IE 9]>
+<script>window.location.href="/ie.php";</script>
+<![endif]-->
+
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Actualités | Doudou blues | Un conte musical par Annsophie Lombrail</title>
+
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="wp-content/themes/doudoublues/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="wp-content/themes/doudoublues/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="wp-content/themes/doudoublues/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="wp-content/themes/doudoublues/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="wp-content/themes/doudoublues/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="wp-content/themes/doudoublues/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="wp-content/themes/doudoublues/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="wp-content/themes/doudoublues/img/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="wp-content/themes/doudoublues/img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="wp-content/themes/doudoublues/img/manifest.json">
+    <link rel="mask-icon" href="wp-content/themes/doudoublues/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/wp-content/themes/doudoublues/img/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="wp-content/themes/doudoublues/img/favicon-96x96.png" sizes="96x96">
+
+    <link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css@ver=4.3' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js@ver=1.11.3'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js@ver=1.2.1'></script>
+<link rel="stylesheet" href="wp-content/themes/doudoublues/generated/default_1452189643824.css" /><meta name="description" content="Découvrez le conte musical Doudou Blues d&#039;Annsophie Lombrail en Livre-CD et ebook : un conte de Noël pour enfants qui réunit de talentueux artistes français (Claire Keim, Cali, Sinclair...)." /><meta property="og:image" content="http://www.doudoublues.com/wp-content/themes/doudoublues/img/share.png" /><meta property="og:title" content="Actualités | Doudou blues | Un conte musical par Annsophie Lombrail" /><meta property="og:description" content="Découvrez le conte musical Doudou Blues d&#039;Annsophie Lombrail en Livre-CD et ebook : un conte de Noël pour enfants qui réunit de talentueux artistes français (Claire Keim, Cali, Sinclair...)." /><meta property="og:site_name" content="Actualités | Doudou blues | Un conte musical par Annsophie Lombrail" />    <script>
+        (function(w) {
+            w.F = w.F || {};
+            w.F.CONFIG = {
+                PATH_URL : '/',
+                ROOT_URL : 'http://www.doudoublues.com/',
+                DEBUG : false,
+                DISABLE_AJAX : false
+            };
+            F.isMobile = function() {return F._.wW < 950;};
+            w.F._ = {
+                wW : w.innerWidth,
+                wH : w.innerHeight || document.documentElement.offsetHeight,
+                scrollTop : 0
+            }
+            
+            w.F.PAGES_VIEWS = {
+              'connect' : 'Home',
+              'home' : 'Actualites',
+              'histoire' : 'Histoire',
+              'galerie' : 'Galerie',
+              'actualites' : 'Actualites',
+              'auteurs' : 'Auteurs',
+              'personnages' : 'Personnages',
+              'artistes' : 'Artistes',
+              'boutique' : 'Boutique'
+            };
+            w.F.PAGES_MODELS = {};
+            
+        })(window);
+
+    </script>
+    <script src="wp-content/themes/doudoublues/generated/default-header_1463673226362.js"  ></script><script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+</head>
+
+<body class="blog">
+<div id="header-wrapper">
+
+    <header id="header" class="" role="banner">
+
+        <a class="no-link btn-menu">
+            Menu
+            <i></i>
+            <i></i>
+            <i></i>
+        </a>
+                <div class="site-logo">
+            <a href="histoire" rel="home">
+                <img alt="Logo Doudoublues" src="wp-content/themes/doudoublues/img/logo.png">
+            </a>
+        </div>
+
+        	</header>
+</div>
+
+<div class="loader"></div>
+
+
+<div class="player">
+    <a class="mute no-link"></a>
+    <span class="player-btn pause"></span>
+
+    <div class="player-bar">
+        <div class="player-cursor"></div>
+    </div>
+
+    <audio id="song-global">
+        <source src="wp-content/themes/doudoublues/sounds/univers_global.mp3" />
+    </audio>
+
+    <audio id="song-1">
+        <source src="wp-content/themes/doudoublues/sounds/univers_1.mp3" />
+    </audio>
+
+    <audio id="song-2">
+        <source src="wp-content/themes/doudoublues/sounds/univers_2.mp3" />
+    </audio>
+
+    <audio id="song-3">
+        <source src="wp-content/themes/doudoublues/sounds/univers_3.mp3" />
+    </audio>
+
+    <audio id="song-4">
+        <source src="wp-content/themes/doudoublues/sounds/univers_4.mp3" />
+    </audio>
+</div>
+
+
+<div id="page" class="hfeed site">
+
+
+<div id="menu">
+
+    <nav class="menu-nav">
+        <span data-id="0" class="activ"></span>
+        <span data-id="1"></span>
+        <span data-id="2"></span>
+        <span data-id="3"></span>
+        <span data-id="4"></span>
+        <span data-id="5"></span>
+        <span data-id="6"></span>
+    </nav>
+
+    <a href="actualites" class="no-link cursor">
+        <span class="a"></span>
+        <span class="b"></span>
+    </a>
+
+    <a class="no-link close">
+        <i></i>
+        <i></i>
+    </a>
+ 
+    <div class="menu-main">
+        
+        <div id="scroller">
+            <div class="item item-histoire"><a href="histoire" class="item-content">
+                <h3>L'histoire</h3>
+                <span class="item-flottant erable-xl"></span>
+                <span class="item-flottant erable-s"></span>
+            </a></div><!--
+            --><div class="item item-persos"><a href="personnages" class="item-content">
+                <h3>Les personnages</h3>
+                <span class="item-flottant allumette-xl"></span>
+                <span class="item-flottant allumette-s"></span>
+            </a>
+
+            </div><!--
+            --><div class="item item-artistes"><a href="les-artistes" class="item-content">
+                <h3>Les artistes</h3>
+                <span class="item-flottant coquelicot-a"></span>
+                <span class="item-flottant feuille-floue"></span>
+            </a></div><!--
+            --><div class="item item-auteurs"><a href="auteurs" class="item-content">
+                <h3>Les auteurs</h3>
+                <span class="item-flottant plume"></span>
+                <span class="item-flottant coquelicot-b"></span>
+            </a></div><!--
+            --><div class="item item-actualites"><a href="actualites" class="item-content">
+                <h3>Les actualites</h3>
+                <span class="item-flottant journal2"></span>
+            </a></div><!--
+            --><div class="item item-galerie"><a href="galerie" class="item-content">
+                <h3>La galerie</h3>
+                                <span class="item-flottant coquelicot-c"></span>
+
+                <span class="item-flottant feuille-xl"></span>
+            </a></div><!--
+            --><div class="item item-boutique"><a href="boutique" class="item-content">
+                <h3>La boutique</h3>
+                <span class="item-flottant plume2"></span>
+            </a></div>
+        </div>
+        
+    </div>
+
+    <a href="boutique" class="link link-commander">Commander le livre</a>
+
+    <div class="menu-footer">
+        <ul>
+            <li><a class="no-link" data-tab="newsletter" href="actualites#">Newsletter</a></li>
+            <li><a class="no-link" data-tab="mentions" href="actualites#">Mentions légales</a></li>
+            <li><a class="no-link" data-tab="credits" href="actualites#">Crédits</a></li>
+            <li><a class="no-link" data-tab="contact" href="actualites#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="ss-menu-content">
+
+        <div class="content content-newsletter">
+            <h2>Newsletter</h2>
+            <p class="subtitle">Abonnez-vous à la newsletter pour être tenu au courant des dernières actualités de Doudou Blues.</p>
+        
+            <form class="sml_subscribe" method="post"><input class="sml_hiddenfield" name="sml_subscribe" type="hidden" value="1"><p class="sml_name"><label class="sml_namelabel" for="sml_name">Name:</label><input class="sml_nameinput" placeholder="Name..." name="sml_name" type="text" value=""></p><p class="sml_email"><label class="sml_emaillabel" for="sml_email">Email:</label><input class="sml_emailinput" name="sml_email" placeholder="Email Address..." type="text" value=""></p><p class="sml_submit"><input name="submit" class="btn sml_submitbtn" type="submit" value="Submit"></p></form>        </div>
+
+        <div class="content content-mentions">
+
+                <h2>Mentions légales</h2>
+                <p class="subtitle">Edité le 20 octobre 2015</p>
+
+
+                <div id="scrollable-mentions">
+                    <div>
+                        <p>ANNSORA – SARL au capital de 5000 euros, immatriculée 812 140 390 RCS Paris.</p>
+
+                        <p>Siège social : 56 rue des Prairies 75020 Paris</p>
+
+                        <p>Directeur de publication – Responsable de la rédaction : Annsophie Lombrail</p>
+
+                        <p>Hébergeur :<br>
+                        Ce site est hébergé par OVH<br>
+                        http://www.ovh.com<br>
+                        2 rue Kellermann<br>
+                        BP 80157<br>
+                        59100 Roubaix</p>
+
+                        <p>1. Droit applicable<br>
+                        Le site Internet http://www.doudoublues.com/ et les présentes conditions générales sont soumises au droit français et sont rédigées en français.
+                        ANNSORA se réserve le droit de modifier les présentes mentions à tout moment. L’utilisateur s’engage à la consulter régulièrement.</p>
+
+
+                        <p>2. Propriété intellectuelle – Copyright<br>
+                        Le Site constitue une oeuvre protégée en France par le Code de la Propriété Intellectuelle et, à l’étranger, par les conventions internationales en vigueur sur le droit d’auteur. La reproduction de tout ou partie de ce site, par quelque procédé que ce soit, est formellement interdite, sauf autorisation expresse du directeur de la publication. La violation de l’un des droits d’auteur de l’oeuvre est un délit de contrefaçon passible, aux termes de l’article L. 335-2 du Code de la Propriété Intellectuelle, de trois ans d’emprisonnement et de 300 000 Euros d’amende.
+                        Les marques citées sur ce site sont déposées par ANNSORA qui en est propriétaire ou dispose d’une licence d’utilisation. Toute reproduction totale ou partielle ainsi que tout usage ou apposition des marques et/ou logos est interdite sans l’accord préalable de ANNSORA , conformément aux articles L713-2 et L 713-3 du Code de la Propriété Intellectuelle.
+                        </p>
+
+                        <p>3. Liens hypertextes et virus<br>
+                        Les liens hypertextes, éventuellement mis en place dans le cadre du site en direction d’autres sites présents sur le réseau Internet, ne sauraient engager la responsabilité de ANNSORA .
+                        </p>
+
+                        <p>De façon générale, il appartient à l’utilisateur de prendre les précautions nécessaires pour s’assurer que le site sélectionné n’est pas infesté de virus ou de tout autre parasite de nature destructive. En aucun cas, ANNSORA ne pourra être tenu responsable des dommages directs ou indirects résultant de l’usage de son site web ou d’autres sites qui lui sont liés.
+                        </p>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="content content-credits">
+            <h2>Crédits</h2>
+            <p class="subtitle">Réalisation du site </p>
+            <p><a href="http://www.fcinq.com/" target="_blank">FCINQ</a></p>
+            <p class="subtitle">Photos Artistes</p>
+            <p>Annsophie Lombrail & Jean-Baptiste D’Enquin</p>
+        </div>
+
+        <div class="content content-contact">
+            <h2>Contact</h2>
+            <p class="subtitle">Pour plus d’information, n’hésitez pas à contacter Annsophie.</p>
+
+            <div role="form" class="wpcf7" id="wpcf7-f127-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="actualites#wpcf7-f127-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="127" />
+<input type="hidden" name="_wpcf7_version" value="4.3" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f127-o1" />
+<input type="hidden" name="_wpnonce" value="60ececcdae" />
+</div>
+<p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Votre email" /></span> </p>
+<p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ecrivez votre message ici..."></textarea></span> </p>
+<p><input type="submit" value="Envoyer" class="wpcf7-form-control wpcf7-submit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+    <div id="loader"></div>
+
+    <div id="content" class="site-content wrapper">
+
+<a href="auteurs" class="nav-x nav-x-left">Les auteurs</a>
+<a href="galerie" class="nav-x nav-x-right">La galerie</a>
+
+<div id="actualites" class="wrapper">
+
+	<div class="content">
+		<h1 class="forward">Les actualités</h1>
+
+		
+		<article class="post">
+
+			<h2>Cali invité des Maternelles</h2>
+			<p class="date">le 15 November 2015</p>
+			<div class="featured">
+				<div class="video-wrapper">
+					<iframe src="https://www.youtube.com/embed/ZwtF3XPL5VI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<span class="type-link yt-link" ></span>
+
+		</article>
+
+		
+
+		
+		<article class="post">
+
+			<h2>Doudou Blues sur doolittle.fr</h2>
+			<p class="date">le 15 November 2015</p>
+						<div class="featured">
+				<a target="_blank" href="http://www.doolittle.fr/sur-air-de-blues/"><img src="wp-content/uploads/2015/11/capture-d-ecran-2015-11-15-a-21-25-16-485x279.png" /></a>
+			</div>
+			<div class="main-content">
+				<p><p>Merci à doolittle.fr pour son article sur Doudou Blues !</p>
+</p>
+			</div>
+			<a target="_blank" class="btn btn-enter" href="http://www.doolittle.fr/sur-air-de-blues/"><span class="hover"></span><span class="before"></span><span class="after"></span>Voir l'article</a>
+
+		</article>
+
+		
+
+		
+		<article class="post">
+
+			<h2>Le Teaser</h2>
+			<p class="date">le 27 October 2015</p>
+			<div class="featured">
+				<div class="video-wrapper">
+					<iframe src="https://www.youtube.com/embed/dsJGmHV35oQ" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<span class="type-link yt-link" ></span>
+
+		</article>
+
+		
+
+		
+	</div>
+
+</div>
+
+        </div>
+    </div>
+    <div id="mobile-wrapper">
+    <div id="mobile-bkg">
+
+        <div class="univers-2">
+            <div class="obj obj-feuille-jaune"></div>
+            <div class="obj obj-journal"></div>
+            <div class="obj forward obj-feuille-verte-nav"></div>
+            <div class="obj obj-feuille-orange"></div>
+            <div class="obj obj-feuille-orange-floue"></div>
+            <div class="obj obj-feuille-verte-1"></div>
+            <div class="obj obj-feuille-verte-2"></div>
+            <div class="obj obj-feuille-verte-3"></div>
+            <div class="obj obj-feuille-verte-floue"></div>
+        </div>
+        <div class="univers-4">
+            <div class="obj obj-a"></div>
+            <div class="obj obj-b"></div>
+            <div class="obj obj-d"></div>
+            <div class="obj obj-e"></div>
+            <div class="obj obj-e"></div>
+            <div class="obj obj-f"></div>
+            <div class="obj obj-g"></div>
+            <div class="obj obj-h"></div>
+            <div class="obj obj-i"></div>
+        </div>
+    </div>
+    <img id="mobile-logo" src="wp-content/themes/doudoublues/img/logo.png" />
+
+    <p class="mobile-intro">
+        Un conte de Noël musical et poétique, qui réunit de talentueux artistes français, disponible dès le 16 novembre.<br><br>
+        </p>
+        <p class="mobile-intro" style="color: #f39ba9;">Pour voir la version intégrale du site et découvrir tout l’univers de Doudou Blues, connectez-vous d’un ordinateur 
+    </p>
+    <div id="mobile-iframe-wrapper">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dsJGmHV35oQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>Ce joli conte dédié aux enfants met en scène les aventures d’un doudou égaré la veille de Noël.</p>
+<p>Doudou Bues réunit de talentueux artistes français (Marie Gillain, Claire Keim, Cali, Sinclair, Carmen Maria Vega, Hugh Coltman, Tom Novembre, Faada Freddy, Viktor Lazlo) autour d'Annsophie Lombrail l'auteure, Scott Pennor's l’illustrateur et Martin Gamet le compositeur.
+</p><p>Grâce à cette belle équipe, ce conte de Noël prend une dimension magique.</p>
+
+    
+<a href="galerie" class="nav-x nav-x-left">La galerie</a>
+<div id="mobile-boutique" class="wrapper">
+<div id="mobile-boutique-scroller">
+<h1>La boutique</h1>
+
+<div class="content">
+
+
+	<div class="onglets">
+		<a data-type="online" class="no-link onglet on onglet-online" href="actualites#">Commander en ligne</a>
+		<a data-type="ebook" class="no-link onglet onglet-ebook" href="actualites#">Ebook</a>
+		<a data-type="librairies" class="no-link onglet onglet-librairie" href="actualites#">En librairie</a>
+	</div>
+
+	<div class="onglet-content on onglet-content-online">
+
+		<div class="livre">
+			<img src="wp-content/themes/doudoublues/img/livre.png" />
+		</div><!--
+
+		--><div class="text">
+			<h2>Doudoublues</h2>
+
+			<ul>
+				<li>
+				Doudou Blues est disponible&nbsp;:<br />
+				 - <a style="color: #5a6d95;" href="https://www.amazon.fr/Doudou-Blues-audio-Annsophie-Lombrail/dp/2955433101/ref=sr_1_1?s=books&ie=UTF8&qid=1479903216&sr=1-1&keywords=doudou+blues" target="_blank">Amazon.fr</a><br />
+				 - <a style="color: #5a6d95;" href="http://livre.fnac.com/a9280376/Annsophie-Lombrail-Doudou-blues?omnsearchpos=1" target="_blank">Fnac.fr</a>
+				<br/> <br />
+				</li>
+				<li>Auteur&nbsp;: Annsophie Lombrail</li>
+				<li>Illustrateur&nbsp;: Scott Pennor’s</li>
+				<li>Compositeur&nbsp;: Martin Gamet</li>
+				<li>dès 3ans</li>
+				<li>48 pages</li>
+				<li>Prix&nbsp;: 26,50 €</li>
+			</ul>
+		</div>
+
+		<a class="btn btn-enter no-ajax" target="_blank" href="http://www.amazon.fr/gp/product/2955433101"><span class="hover"></span><span class="before"></span><span class="after"></span>Commander le livre</a>
+
+
+	</div>
+
+	<div class="onglet-content onglet-content-ebook">
+
+			<div class="livre">
+				<img src="wp-content/themes/doudoublues/img/ebook.png" />
+			</div><!--
+
+			--><div class="text">
+				<h2>Doudou Blues <br>e-book</h2>
+
+				<ul>
+				<p>Doudou Blues est disponible sur l'App Store.</p>
+
+									<li><a href="https://itunes.apple.com/fr/book/doudou-blues/id1068543733?mt=11" target="_blank" class="nom">Commande l'e-Book</a></li>
+
+				   
+				</ul>
+			</div>
+
+	</div>
+
+	<div class="onglet-content onglet-content-librairies">
+
+			<h2>Paris</h2>
+
+							<div class="break  point-vente">
+					<p class="nom">Annsora (sur RDV)<br />
+Chez l'éditeur<br />
+<br />
+</p>
+					<p class="adresse">18 avenue Parmentier<br />
+75011 Paris<br />
+aslombrail@gmail.com<br />
+06.63.30.39.33</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/18+Avenue+Parmentier,+75011+Paris/data=!4m2!3m1!1s0x47e66df74f72930b:0xb7521e0bcb87bab?sa=X&ved=0CB8Q8gEwAGoVChMI67zJ_MOUyQIVSR8aCh1LdQ-w" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">Comme<br />
+un roman</p>
+					<p class="adresse">39 Rue de Bretagne<br />
+75003 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/Comme+un+roman/@48.8629392,2.3600173,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66e068f8a2a67:0x7fcd40b43443bac3" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">Les<br />
+traversées</p>
+					<p class="adresse">2 rue Edouard Quénu<br />
+75005 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/2+Rue+Edouard+Quenu,+75005+Paris/@48.8393332,2.3474901,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671ec6ec4e02d:0x153996645c4f9abe" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="break  point-vente">
+					<p class="nom">L'écume<br />
+des pages</p>
+					<p class="adresse">174 bd Saint-Germain<br />
+75006 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/L'Ecume+des+Pages/@48.8541867,2.3302046,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671d79dabb0a5:0xad90d8a08d14eba3" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">Le bon Marché Rive Gauche<br />
+</p>
+					<p class="adresse">24 rue de Sèvres<br />
+75007 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/le+bon+march%C3%A9/@48.8511354,2.3243648,15z/data=!4m2!3m1!1s0x0:0xd99b7bf65c716272?sa=X&ved=0CH0Q_BIwDmoVChMInvauh8-VyQIVSusaCh1Png2G" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">Librairie Fontaine</p>
+					<p class="adresse">88 rue de Sèvres<br />
+75007 Paris</p>
+
+					<a target="_blank" href="http://www.doudoublues.com/actualites/88%20Rue%20de%20S%D0%93%D0%81vres%D0%92%C2%A0%D0%B2%D0%82%E2%80%9C%D0%92%C2%A0Google%D0%92%C2%A0Maps" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="break  point-vente">
+					<p class="nom">Centre Commercial Kids</p>
+					<p class="adresse">22 rue Yves Toudic<br />
+75010 Paris</p>
+
+					<a target="_blank" href="22 rue Yves Toudic<br />
+Google Maps" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">L'arbre<br />
+à lettres</p>
+					<p class="adresse">62 Faubourg Saint Antoine<br />
+75011 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/L'Arbre+%C3%A0+Lettres/@48.8518614,2.3712584,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67206c08f746b:0xda459032cdee69cc" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">Ava & Mr Joe Parmentier</p>
+					<p class="adresse">17 bis avenue Parmentier<br />
+75011 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/17+Avenue+Parmentier,+75011+Paris/@48.8604785,2.3760272,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66df9ff369965:0x9a3e52e1b2910e95" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="break  point-vente">
+					<p class="nom">Ava et Mr Joe Montreuil</p>
+					<p class="adresse">36 bis rue de Montreuil<br />
+75011 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/Ava+%26+Mr+Joe/@48.8503191,2.3867906,15z/data=!4m2!3m1!1s0x0:0xa7e86a0b208d825" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">La rubrique à bulles</p>
+					<p class="adresse">110 bld Richard Lenoir<br />
+75011 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/La+rubrique+%C3%A0+bulles/@48.8640977,2.3691885,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66dfcee922f5b:0x43b838c7ed37356d" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">La petite<br />
+lumière<br />
+</p>
+					<p class="adresse">14 rue Boulard<br />
+75014 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/L'Arbre+%C3%A0+Lettres/@48.8343812,2.3269931,17z/data=!3m1!4b1!4m2!3m1!1s0x47e671b7afa7e553:0x66fb358ed30bef6c" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="break  point-vente">
+					<p class="nom">L'Emile</p>
+					<p class="adresse">136 avenue Emile Zola<br />
+75015 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/L'Emile/@48.8468249,2.2909451,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67010accb058f:0xcd9076765c2beeed" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">Librairie Lavocat<br />
+</p>
+					<p class="adresse">101 Avenue Mozart<br />
+75016 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/Librairie+Lavocat/@48.8515355,2.2656084,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67aae676b8fb3:0xeec8fdfd6ad94b4d" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">La girafe<br />
+et la lune<br />
+</p>
+					<p class="adresse">29 rue des gâtines<br />
+75020 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/La+Girafe+et+la+Lune/@48.8661058,2.3988507,15z/data=!4m2!3m1!1s0x0:0xeb9e86150f2e674e?sa=X&ved=0CGgQ_BIwCmoVChMI3-LhkcmLyQIVQjwaCh0Xbwyh" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="break  point-vente">
+					<p class="nom">Le comptoir<br />
+des mots</p>
+					<p class="adresse">239 rue des Pyréenées<br />
+75020 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/Le+Comptoir+des+Mots/@48.8643537,2.3987244,15z/data=!4m2!3m1!1s0x0:0xdf07cd58764ac4e6?sa=X&ved=0CHQQ_BIwC2oVChMIssDUl8mLyQIVi4YaCh0V3wT8" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">L'atelier d'en face</p>
+					<p class="adresse">3 rue Constant-Berthaut <br />
+75020 Paris</p>
+
+					<a target="_blank" href="https://www.google.fr/maps/place/L'Atelier:+En+Face/@48.8743462,2.387228,17z/data=!4m5!1m2!2m1!1sL'atelier+d'en+face!3m1!1s0x47e66deac21d36d7:0x60f6a578f7939632" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   				<div class="  point-vente">
+					<p class="nom">TITELIVE</p>
+					<p class="adresse">Le livre disque est référencé  sur TITELIVE.</p>
+
+					<a target="_blank" href="http://www.titelive.com/" class="voir-plan">Voir le plan</a>
+				</div>
+			       
+			   
+	</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</div>    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="wp-content/themes/doudoublues/scripts/vendor/jquery-1.11.1.min.js"><\/script>');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72348452-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js@ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.doudoublues.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js@ver=4.3'></script>
+<script src="wp-content/themes/doudoublues/generated/default-footer_1463673226362.js" async ></script>
+</body>
+</html>
+
+
