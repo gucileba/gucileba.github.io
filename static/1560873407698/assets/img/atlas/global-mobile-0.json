@@ -1,0 +1,52 @@
+{"frames": {
+
+"boat.png":
+{
+	"frame": {"x":1,"y":515,"w":231,"h":302},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":238,"y":608,"w":231,"h":302},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"button-pickuppoint.png":
+{
+	"frame": {"x":364,"y":515,"w":58,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":100},
+	"sourceSize": {"w":58,"h":100}
+},
+"water-displacement-overlay.png":
+{
+	"frame": {"x":234,"y":515,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"water-displacement.png":
+{
+	"frame": {"x":234,"y":645,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"water-mask.png":
+{
+	"frame": {"x":1,"y":1,"w":512,"h":512},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":512},
+	"sourceSize": {"w":512,"h":512}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "global-mobile-0.png",
+	"format": "RGBA8888",
+	"size": {"w":514,"h":818},
+	"scale": "0.25",
+	"smartupdate": "$TexturePacker:SmartUpdate:3aa7db25a84a74d9df56e08be6c82ad3:2395dc93279b1ef8c1541d7203dd214a:da834ab2b8cc0b666d4438a4c7c50be2$"
+}
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "title": "section 1",
+        "assets": {
+            "foreground": "s1-foreground.png",
+            "water": "s1-water.png",
+            "shadow": "s1-shadow.png",
+            "clouds": "s1-cloud.png"
+        }
+    },
+    {
+        "title": "section 2",
+        "assets": {
+            "foreground": "s2-foreground.png",
+            "water": "s2-water.png",
+            "shadow": "s2-shadow.png",
+            "clouds": "s2-cloud.png"
+        }
+    },
+    {
+        "title": "section 3",
+        "assets": {
+            "foreground": "s3-foreground.png",
+            "water": "s3-water.png",
+            "shadow": "s3-shadow.png",
+            "clouds": "s3-cloud.png"
+        }
+    },
+    {
+        "title": "section 4",
+        "assets": {
+            "foreground": "s4-foreground.png",
+            "water": "s4-water.png",
+            "shadow": "s4-shadow.png",
+            "clouds": "s4-cloud.png"
+        }
+    },
+    {
+        "title": "section 5",
+        "assets": {
+            "foreground": "s2-foreground.png",
+            "water": "s2-water.png",
+            "shadow": "s2-shadow.png",
+            "clouds": "s2-cloud.png"
+        }
+    },
+    {
+        "title": "section 6",
+        "assets": {
+            "foreground": "s3-foreground.png",
+            "water": "s3-water.png",
+            "shadow": "s3-shadow.png",
+            "clouds": "s3-cloud.png"
+        }
+    }
+]
